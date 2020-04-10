@@ -1,19 +1,22 @@
-import React from 'react';
-import { useRef, useEffect, useState } from 'react';
+/**
+ * 感染者数グラフカード
+ */
+
+import React, { useRef, useEffect, useState } from 'react';
 import 'd3';
-import c3 from 'c3';
-// import 'c3/c3.css';
+import c3, { ChartAPI } from 'c3';
+import containerStyles from '@/styles/modules/container.module.scss';
 import styles from './index.module.scss';
-
-import moment from 'moment';
-import { getCases, getCaseDataLastUpdateTime } from '@/plugins/useCityCases';
-
-moment.locale('ja');
+import { getCases } from '@/plugins/useCityCases';
 
 const Chart = (): JSX.Element => {
-  const updateTime = getCaseDataLastUpdateTime();
-  const allCases = getCases().reverse();
-  const data = allCases.reduce((accumulator: { date: string; data: CaseItem[] }[], currentValue) => {
+  const allCases = [...getCases()].sort((a, b) => {
+    if (a.date < b.date) return -1;
+    if (a.date > b.date) return 1;
+    return 0;
+  });
+
+  const data = [...allCases].reduce((accumulator: { date: string; data: CaseItem[] }[], currentValue) => {
     if (!accumulator.length) {
       accumulator = [
         {
@@ -36,116 +39,122 @@ const Chart = (): JSX.Element => {
     return accumulator;
   }, []);
 
-  const graphColX = data.map((item) => item.date);
-  const graphColCase = data.map((item) => item.data.length);
-  const graphColCumulative = data.reduce((acc: number[], current) => {
+  const graphColX = [...data].map((item) => item.date);
+  const graphColCase = [...data].map((item) => item.data.length);
+  const graphColCumulative = [...data].reduce((acc: number[], current) => {
     if (!acc.length) {
       acc = [...acc, current.data.length];
     } else {
       acc = [...acc, current.data.length + acc[acc.length - 1]];
     }
-
     return acc;
   }, []);
 
   const chartEl = useRef(null);
+  const [chart, setChart] = useState<ChartAPI | null>(null);
 
   useEffect(() => {
-    c3.generate({
-      bindto: chartEl.current,
-      size: {
-        height: 480,
-      },
-      padding: {
-        top: 20,
-        left: 24,
-        right: 24,
-        bottom: 0,
-      },
-      color: {
-        pattern: [
-          '#1f77b4',
-          '#aec7e8',
-          '#ff7f0e',
-          '#ffbb78',
-          '#2ca02c',
-          '#98df8a',
-          '#d62728',
-          '#ff9896',
-          '#9467bd',
-          '#c5b0d5',
-          '#8c564b',
-          '#c49c94',
-          '#e377c2',
-          '#f7b6d2',
-          '#7f7f7f',
-          '#c7c7c7',
-          '#bcbd22',
-          '#dbdb8d',
-          '#17becf',
-          '#9edae5',
-        ],
-      },
-      data: {
-        x: 'x',
-        columns: [
-          ['x', ...graphColX],
-          ['日別', ...graphColCase],
-          ['累計', ...graphColCumulative],
-        ],
-        types: {
-          累計: 'area',
-          日別: 'bar',
+    setChart(
+      c3.generate({
+        bindto: chartEl.current,
+        size: {
+          height: 480,
         },
-        axes: {
-          累計: 'y2',
+        padding: {
+          top: 25,
+          left: 30,
+          right: 35,
+          bottom: 0,
         },
-      },
-      zoom: {
-        enabled: true,
-      },
-      axis: {
-        x: {
-          type: 'timeseries',
-          tick: {
-            format: '%m/%d',
-            rotate: 90,
-            multiline: false,
+        color: {
+          pattern: [
+            '#1f77b4',
+            '#aec7e8',
+            '#ff7f0e',
+            '#ffbb78',
+            '#2ca02c',
+            '#98df8a',
+            '#d62728',
+            '#ff9896',
+            '#9467bd',
+            '#c5b0d5',
+            '#8c564b',
+            '#c49c94',
+            '#e377c2',
+            '#f7b6d2',
+            '#7f7f7f',
+            '#c7c7c7',
+            '#bcbd22',
+            '#dbdb8d',
+            '#17becf',
+            '#9edae5',
+          ],
+        },
+        data: {
+          x: 'x',
+          columns: [
+            ['x', ...graphColX],
+            ['新規', ...graphColCase],
+            ['累計', ...graphColCumulative],
+          ],
+          types: {
+            累計: 'area',
+            新規: 'bar',
+          },
+          axes: {
+            累計: 'y2',
           },
         },
-        y2: {
-          show: true,
+        zoom: {
+          enabled: true,
         },
-      },
-      grid: {
-        x: {
-          show: true,
-        },
-        y: {
-          show: true,
-        },
-      },
-      point: {
-        r: 2,
-        focus: {
-          expand: {
-            enabled: true,
+        axis: {
+          x: {
+            type: 'timeseries',
+            tick: {
+              format: '%m/%d',
+              rotate: 90,
+              multiline: false,
+            },
+          },
+          y: {
+            label: '新規',
+          },
+          y2: {
+            label: '累計',
+            show: true,
           },
         },
-      },
-      bar: {
-        width: {
-          ratio: 0.3,
+        grid: {
+          x: {
+            show: true,
+          },
+          y: {
+            show: true,
+          },
         },
-      },
-    });
+        point: {
+          r: 3,
+          focus: {
+            expand: {
+              enabled: true,
+            },
+          },
+        },
+        bar: {
+          width: {
+            ratio: 0.3,
+          },
+        },
+      }),
+    );
   }, [chartEl]);
 
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.wrapperInner}>
+    <div className={containerStyles.container}>
+      <div className={containerStyles.containerInner}>
         <div className={styles.block}>
-          <h2 className={styles.block_heading}>感染者数グラフ</h2>
+          <h2 className={styles.block_heading}>感染者の推移</h2>
           <div className={styles.block_map}>
             <div ref={chartEl}></div>
           </div>
