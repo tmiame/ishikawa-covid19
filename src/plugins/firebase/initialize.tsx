@@ -12,7 +12,7 @@ const firebaseConfig = {
   measurementId: process.env.FIREBASE_MEASUREMENT_ID,
 };
 
-if (process.browser && !firebase.apps.length) {
+if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 }

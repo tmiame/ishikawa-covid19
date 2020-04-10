@@ -18,6 +18,7 @@ export default function useResize() {
   }
 
   useEffect(() => {
+    handleWindowChange();
     window.addEventListener('resize', handleWindowChange);
     return () => {
       window.removeEventListener('resize', handleWindowChange);

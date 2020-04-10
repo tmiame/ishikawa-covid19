@@ -9,7 +9,7 @@ import MapCumulative from '@/components/cards/MapCumulative';
 import Summary from '@/components/cards/Summary';
 import styles from './index.module.scss';
 
-const Loading = () => <div>Hello</div>;
+const Loading = () => <div>Loading</div>;
 
 const Chart = Loadable({
   loader: () => import('@/components/Chart'),
@@ -18,7 +18,7 @@ const Chart = Loadable({
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO />
     <Header />
     <CardDailyCases />
     <div className={styles.map}>

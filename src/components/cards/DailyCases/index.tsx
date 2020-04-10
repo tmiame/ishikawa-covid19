@@ -8,6 +8,8 @@ import styles from './index.module.scss';
 import { getCases, getBetweenCases, getCaseDataLastUpdateTime } from '@/plugins/useCityCases';
 
 const DailyCases = (): JSX.Element => {
+  moment.locale('fr');
+
   const updateTime = getCaseDataLastUpdateTime();
   const todayCases = getCases(updateTime);
   const yesterdayCases = getCases(moment(updateTime).subtract(1, 'day'));

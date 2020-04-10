@@ -12,6 +12,7 @@
     "firebase": "^7.14.0",
     "gatsby": "^2.20.12",
     "gatsby-plugin-manifest": "^2.3.3",
+    "gatsby-plugin-minify-classnames": "^0.2.0",
     "gatsby-plugin-offline": "^3.1.2",
     "gatsby-plugin-react-helmet": "^3.2.1",
     "gatsby-plugin-sass": "^2.2.1",
@@ -55,7 +56,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "firebase deploy --only hosting"
   },
   "repository": {
     "type": "git",

@@ -1,12 +1,8 @@
 @import '@/styles/import.scss';
 
-.layout {
+.map {
   position: relative;
-  padding-bottom: SIZE(100);
-}
-
-.layout .map {
-  position: relative;
+  margin: 0 auto;
 
   @include FR_MQ_MIN(T) {
     display: flex;
@@ -27,7 +23,7 @@
   }
 }
 
-.layout .mapItem {
+.mapItem {
   position: relative;
 
   @include FR_MQ_MIN(T) {

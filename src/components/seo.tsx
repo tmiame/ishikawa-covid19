@@ -1,45 +1,24 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from 'react';
 import Helmet from 'react-helmet';
-import { useStaticQuery, graphql } from 'gatsby';
+import siteMetadata from '@/data/siteMetadata';
 
 interface Props {
   description?: string;
   lang?: string;
   meta?: { name: string; content: string }[];
-  title: string;
+  title?: string;
 }
 
-const SEO: React.FC<Props> = ({ description = '', lang = 'ja', meta = [], title }) => {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-          }
-        }
-      }
-    `,
-  );
-
-  const metaDescription = description || site.siteMetadata.description;
+const SEO: React.FC<Props> = ({ description = '', lang = 'ja', meta = [], title = '' }) => {
+  const metaDescription = description || siteMetadata.description;
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={title ? title : siteMetadata.title}
+      titleTemplate={`%s | ${siteMetadata.title}`}
       meta={[
         {
           name: `description`,
@@ -59,11 +38,11 @@ const SEO: React.FC<Props> = ({ description = '', lang = 'ja', meta = [], title 
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: siteMetadata.author,
         },
         {
           name: `twitter:title`,
