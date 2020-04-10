@@ -1,0 +1,12 @@
+[build]
+  publish = "out/"
+  command = "npm run export"
+  environment = { ENV = "staging" }
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = '''
+    public,
+    max-age=31536000,
+    immutable'''

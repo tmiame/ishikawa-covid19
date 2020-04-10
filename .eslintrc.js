@@ -9,7 +9,11 @@ module.exports = {
       jsx: true,
     },
   },
-  root: true,
+  settings: {
+    react: {
+      version: 'detect'
+    }
+  },
   env: {
     browser: true,
     node: true,
