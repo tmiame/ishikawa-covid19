@@ -13,6 +13,7 @@ interface ContactRelationItem {
 interface CaseItem {
   id: number;
   date: string;
+  datePublish?: string;
   age: number;
   gender: number;
   city:

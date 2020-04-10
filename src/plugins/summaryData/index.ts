@@ -5,8 +5,13 @@ export function getLastSummary(): {
   date: string;
   hospitalized: number;
   discharged: number;
+  all: number;
 } {
-  return summaryData[summaryData.length - 1];
+  const [summary] = summaryData;
+  return {
+    ...summary,
+    all: summary.hospitalized + summary.discharged,
+  };
 }
 
 export function getLastSummaryUpdateUpdateDateTime(): Moment {

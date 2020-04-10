@@ -2,12 +2,11 @@
  * 検査陽性者の状況のカード
  */
 
+import React from 'react';
 import moment from 'moment';
 import styles from './index.module.scss';
 import { getCases, getCaseDataLastUpdateTime } from '@/plugins/useCityCases';
-import { city, CityItemType } from '@/constants/city';
-
-moment.locale('ja');
+import { city } from '@/constants/city';
 
 const DailyCases = (): JSX.Element => {
   const updateTime = getCaseDataLastUpdateTime();

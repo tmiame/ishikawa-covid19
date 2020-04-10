@@ -1,9 +1,479 @@
-export const lastUpdateDateTime = '2020-04-09 22:00';
+export const lastUpdateDateTime = '2020-04-10 22:00';
 
 const caseList: CaseItem[] = [
   {
+    id: 92,
+    date: '2020-04-10',
+    datePublish: '2020-04-10',
+    age: 50,
+    gender: 1,
+    city: 'kanazawa',
+    symptoms: [
+      {
+        date: '2020-04-05',
+        text: '37度台の発熱、咳、頭痛',
+      },
+      {
+        date: '2020-04-07',
+        text: '県内のD医療機関受診',
+      },
+      {
+        date: '2020-04-09',
+        text: '帰国者・接触者相談センターに相談のうえ、PCR検査の実施を決定',
+      },
+      {
+        date: '2020-04-10',
+        text: '石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明',
+      },
+    ],
+  },
+  {
+    id: 91,
+    date: '2020-04-10',
+    datePublish: '2020-04-10',
+    age: 40,
+    gender: 1,
+    city: 'kanazawa',
+    symptoms: [
+      {
+        date: '2020-04-03',
+        text: '38度台の発熱、咳',
+      },
+      {
+        date: '2020-04-08',
+        text: '県内のC医療機関受診\n帰国者・接触者相談センターに相談',
+      },
+      {
+        date: '2020-04-09',
+        text: '帰国者・接触者外来を受診',
+      },
+      {
+        date: '2020-04-10',
+        text: '石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明',
+      },
+    ],
+  },
+  {
+    id: 90,
+    date: '2020-04-10',
+    datePublish: '2020-04-10',
+    age: 50,
+    gender: 1,
+    city: 'kanazawa',
+    symptoms: [
+      {
+        date: '2020-04-08',
+        text: '咳',
+      },
+      {
+        date: '2020-04-09',
+        text: '帰国者・接触者相談センターに相談\n帰国者・接触者外来を受診',
+      },
+      {
+        date: '2020-04-10',
+        text: '石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明',
+      },
+    ],
+  },
+  {
+    id: 89,
+    date: '2020-04-10',
+    datePublish: '2020-04-10',
+    age: 50,
+    gender: 1,
+    city: 'kanazawa',
+    symptoms: [
+      {
+        date: '2020-04-08',
+        text: '38度台の発熱、咳、全身倦怠感',
+      },
+      {
+        date: '2020-04-09',
+        text: '帰国者・接触者相談センターに相談\n帰国者・接触者外来を受診、肺炎と診断',
+      },
+      {
+        date: '2020-04-10',
+        text: '石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明',
+      },
+    ],
+  },
+  {
+    id: 88,
+    date: '2020-04-10',
+    datePublish: '2020-04-10',
+    age: 50,
+    gender: 2,
+    city: 'hakusan',
+    symptoms: [
+      {
+        date: '2020-04-04',
+        text: '38度台の発熱、咳',
+      },
+      {
+        date: '2020-04-08',
+        text: '帰国者・接触者相談センターに相談',
+      },
+      {
+        date: '2020-04-09',
+        text: '帰国者・接触者外来を受診',
+      },
+      {
+        date: '2020-04-10',
+        text: '石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明',
+      },
+    ],
+  },
+  {
+    id: 87,
+    date: '2020-04-10',
+    datePublish: '2020-04-10',
+    age: 30,
+    gender: 2,
+    city: 'uchinada',
+    symptoms: [
+      {
+        date: '2020-04-04',
+        text: '37度台の発熱、咳、鼻閉、味覚障害',
+      },
+      {
+        date: '2020-04-08',
+        text: '帰国者・接触者相談センターに相談',
+      },
+      {
+        date: '2020-04-09',
+        text: '帰国者・接触者外来を受診',
+      },
+      {
+        date: '2020-04-10',
+        text: '石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明',
+      },
+    ],
+  },
+  {
+    id: 86,
+    date: '2020-04-10',
+    datePublish: '2020-04-10',
+    age: 50,
+    gender: 1,
+    city: 'komatsu',
+    symptoms: [
+      {
+        date: '2020-04-04',
+        text: '38度台の発熱',
+      },
+      {
+        date: '2020-04-07',
+        text: '県内のB医療機関受診',
+      },
+      {
+        date: '2020-04-09',
+        text: '帰国者・接触者相談センターに相談\n帰国者・接触者外来を受診し、肺炎と診断',
+      },
+      {
+        date: '2020-04-10',
+        text: '石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明',
+      },
+    ],
+  },
+  {
+    id: 85,
+    date: '2020-04-09',
+    datePublish: '2020-04-10',
+    age: 60,
+    gender: 1,
+    city: 'hakui',
+    symptoms: [
+      {
+        date: '2020-04-03',
+        text: '37度台の発熱、全身倦怠感',
+      },
+      {
+        date: '2020-04-09',
+        text:
+          '帰国者・接触者相談センターに相談\n帰国者・接触者外来を受診し、肺炎と診断\n石川県保健環境センターにおいて、PCR検査を実施したところ、陽性を判明',
+      },
+    ],
+  },
+  {
+    id: 84,
+    date: '2020-04-09',
+    datePublish: '2020-04-10',
+    age: 60,
+    gender: 1,
+    city: 'kanazawa',
+    symptoms: [
+      {
+        date: '2020-04-03',
+        text: '37度台の発熱',
+      },
+      {
+        date: '2020-04-07',
+        text: '帰国者・接触者相談センターに相談',
+      },
+      {
+        date: '2020-04-09',
+        text: '石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明',
+      },
+    ],
+  },
+  {
+    id: 83,
+    date: '2020-04-09',
+    datePublish: '2020-04-10',
+    age: 70,
+    gender: 1,
+    city: 'kanazawa',
+    symptoms: [
+      {
+        date: '2020-04-01',
+        text: '39度台の発熱\n県内A医療機関受診',
+      },
+      {
+        date: '2020-04-05',
+        text: '帰国者・接触者相談センターに相談',
+      },
+      {
+        date: '2020-04-09',
+        text:
+          '帰国者・接触者相談センターに再度相談\n帰国者・接触者外来を受診\n石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明',
+      },
+    ],
+  },
+  {
+    id: 82,
+    date: '2020-04-09',
+    datePublish: '2020-04-10',
+    age: 30,
+    gender: 2,
+    city: 'tsubata',
+    symptoms: [
+      {
+        date: '2020-04-06',
+        text: '37度台の発熱',
+      },
+      {
+        date: '2020-04-09',
+        text:
+          '帰国者・接触者相談センターに相談\n帰国者・接触者外来を受診\n石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明',
+      },
+    ],
+  },
+  {
+    id: 81,
+    date: '2020-04-09',
+    datePublish: '2020-04-10',
+    age: 30,
+    gender: 1,
+    city: 'tsubata',
+    symptoms: [
+      {
+        date: '2020-04-03',
+        text: '38度台の発熱',
+      },
+      {
+        date: '2020-04-09',
+        text:
+          '帰国者・接触者相談センターに相談\n帰国者・接触者外来を受診\n石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明',
+      },
+    ],
+  },
+  {
+    id: 80,
+    date: '2020-04-10',
+    datePublish: '2020-04-10',
+    age: 40,
+    gender: 2,
+    city: 'kanazawa',
+    symptoms: [
+      {
+        date: '2020-04-07',
+        text: '感染者47の濃厚接触者として、在宅にて健康観察',
+      },
+      {
+        date: '2020-04-10',
+        text: '石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明',
+      },
+    ],
+    contactRelation: [
+      {
+        id: 47,
+        text: '感染者47の職場の同僚',
+      },
+    ],
+  },
+  {
+    id: 79,
+    date: '2020-04-10',
+    datePublish: '2020-04-10',
+    age: 50,
+    gender: 2,
+    city: 'kanazawa',
+    symptoms: [
+      {
+        date: '2020-04-07',
+        text: '感染者50の濃厚接触者として、在宅にて健康観察',
+      },
+      {
+        date: '2020-04-10',
+        text: '石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明',
+      },
+    ],
+    contactRelation: [
+      {
+        id: 50,
+        text: '感染者50の親族',
+      },
+    ],
+  },
+  {
+    id: 78,
+    date: '2020-04-10',
+    datePublish: '2020-04-10',
+    age: 50,
+    gender: 2,
+    city: 'kanazawa',
+    symptoms: [
+      {
+        date: '2020-04-07',
+        text: '感染者50の濃厚接触者として、在宅にて健康観察',
+      },
+      {
+        date: '2020-04-10',
+        text: '石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明',
+      },
+    ],
+    contactRelation: [
+      {
+        id: 50,
+        text: '感染者50の親族',
+      },
+    ],
+  },
+  {
+    id: 77,
+    date: '2020-04-09',
+    datePublish: '2020-04-10',
+    age: 10,
+    gender: 2,
+    city: 'kanazawa',
+    symptoms: [
+      {
+        date: '2020-04-08',
+        text: '感染者66の同居者として、在宅にて健康観察',
+      },
+      {
+        date: '2020-04-09',
+        text: '石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明',
+      },
+    ],
+    contactRelation: [
+      {
+        id: 66,
+        text: '感染者66の同居者',
+      },
+    ],
+  },
+  {
+    id: 76,
+    date: '2020-04-09',
+    datePublish: '2020-04-10',
+    age: 60,
+    gender: 2,
+    city: 'kanazawa',
+    symptoms: [
+      {
+        date: '2020-04-08',
+        text: '感染者66の同居者として、在宅にて健康観察',
+      },
+      {
+        date: '2020-04-09',
+        text: '石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明',
+      },
+    ],
+    contactRelation: [
+      {
+        id: 66,
+        text: '感染者66の同居者',
+      },
+    ],
+  },
+  {
+    id: 75,
+    date: '2020-04-09',
+    datePublish: '2020-04-10',
+    age: 40,
+    gender: 2,
+    city: 'kanazawa',
+    symptoms: [
+      {
+        date: '2020-04-08',
+        text: '感染者66の同居者として、在宅にて健康観察',
+      },
+      {
+        date: '2020-04-09',
+        text: '石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明',
+      },
+    ],
+    contactRelation: [
+      {
+        id: 66,
+        text: '感染者66の同居者',
+      },
+    ],
+  },
+  {
+    id: 74,
+    date: '2020-04-09',
+    datePublish: '2020-04-10',
+    age: 50,
+    gender: 2,
+    city: 'kanazawa',
+    symptoms: [
+      {
+        date: '2020-04-08',
+        text: '感染者61の濃厚接触者として、在宅にて健康観察',
+      },
+      {
+        date: '2020-04-09',
+        text: '石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明',
+      },
+    ],
+    contactRelation: [
+      {
+        id: 61,
+        text: '感染者61の親族',
+      },
+    ],
+  },
+  {
+    id: 73,
+    date: '2020-04-09',
+    datePublish: '2020-04-10',
+    age: 0,
+    gender: 1,
+    city: 'kahoku',
+    note: '乳児(1歳未満)',
+    symptoms: [
+      {
+        date: '2020-04-08',
+        text: '感染者61の同居者として、在宅にて健康観察',
+      },
+      {
+        date: '2020-04-09',
+        text: '石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明',
+      },
+    ],
+    contactRelation: [
+      {
+        id: 61,
+        text: '感染者61の同居者',
+      },
+    ],
+  },
+  {
     id: 72,
     date: '2020-04-09',
+    datePublish: '2020-04-10',
     age: 30,
     gender: 1,
     city: 'komatsu',
@@ -25,6 +495,7 @@ const caseList: CaseItem[] = [
   {
     id: 71,
     date: '2020-04-09',
+    datePublish: '2020-04-10',
     age: 40,
     gender: 1,
     city: 'kanazawa',
@@ -50,6 +521,7 @@ const caseList: CaseItem[] = [
   {
     id: 70,
     date: '2020-04-09',
+    datePublish: '2020-04-10',
     age: 50,
     gender: 1,
     city: 'kanazawa',
@@ -75,6 +547,7 @@ const caseList: CaseItem[] = [
   {
     id: 69,
     date: '2020-04-09',
+    datePublish: '2020-04-10',
     age: 30,
     gender: 1,
     city: 'kanazawa',
@@ -100,6 +573,7 @@ const caseList: CaseItem[] = [
   {
     id: 68,
     date: '2020-04-08',
+    datePublish: '2020-04-10',
     age: 30,
     gender: 1,
     city: 'kanazawa',
@@ -126,6 +600,7 @@ const caseList: CaseItem[] = [
   {
     id: 67,
     date: '2020-04-08',
+    datePublish: '2020-04-10',
     age: 40,
     gender: 1,
     city: 'kanazawa',
@@ -152,6 +627,7 @@ const caseList: CaseItem[] = [
   {
     id: 66,
     date: '2020-04-08',
+    datePublish: '2020-04-08',
     age: 40,
     gender: 1,
     city: 'kanazawa',
@@ -177,6 +653,7 @@ const caseList: CaseItem[] = [
   {
     id: 65,
     date: '2020-04-08',
+    datePublish: '2020-04-08',
     age: 30,
     gender: 1,
     city: 'komatsu',
@@ -198,6 +675,7 @@ const caseList: CaseItem[] = [
   {
     id: 64,
     date: '2020-04-08',
+    datePublish: '2020-04-08',
     age: 40,
     gender: 1,
     city: 'kahoku',
@@ -227,6 +705,7 @@ const caseList: CaseItem[] = [
   {
     id: 63,
     date: '2020-04-08',
+    datePublish: '2020-04-08',
     age: 40,
     gender: 1,
     city: 'kanazawa',
@@ -244,6 +723,7 @@ const caseList: CaseItem[] = [
   {
     id: 62,
     date: '2020-04-08',
+    datePublish: '2020-04-08',
     age: 50,
     gender: 1,
     city: 'kanazawa',
@@ -269,6 +749,7 @@ const caseList: CaseItem[] = [
   {
     id: 61,
     date: '2020-04-08',
+    datePublish: '2020-04-08',
     age: 30,
     gender: 2,
     city: 'kahoku',
@@ -294,6 +775,7 @@ const caseList: CaseItem[] = [
   {
     id: 60,
     date: '2020-04-08',
+    datePublish: '2020-04-08',
     age: 40,
     gender: 1,
     city: 'kanazawa',
@@ -319,6 +801,7 @@ const caseList: CaseItem[] = [
   {
     id: 59,
     date: '2020-04-08',
+    datePublish: '2020-04-08',
     age: 40,
     gender: 1,
     city: 'hakusan',
@@ -344,6 +827,7 @@ const caseList: CaseItem[] = [
   {
     id: 58,
     date: '2020-04-08',
+    datePublish: '2020-04-08',
     age: 70,
     gender: 2,
     city: 'kanazawa',
@@ -367,6 +851,7 @@ const caseList: CaseItem[] = [
   {
     id: 57,
     date: '2020-04-07',
+    datePublish: '2020-04-08',
     age: 20,
     gender: 2,
     city: 'kanazawa',
@@ -392,6 +877,7 @@ const caseList: CaseItem[] = [
   {
     id: 56,
     date: '2020-04-07',
+    datePublish: '2020-04-08',
     age: 40,
     gender: 1,
     city: 'kanazawa',
@@ -417,6 +903,7 @@ const caseList: CaseItem[] = [
   {
     id: 55,
     date: '2020-04-07',
+    datePublish: '2020-04-08',
     age: 60,
     gender: 2,
     city: 'kanazawa',
@@ -438,6 +925,7 @@ const caseList: CaseItem[] = [
   {
     id: 54,
     date: '2020-04-07',
+    datePublish: '2020-04-08',
     age: 30,
     gender: 1,
     city: 'nonoichi',
@@ -456,6 +944,7 @@ const caseList: CaseItem[] = [
   {
     id: 53,
     date: '2020-04-07',
+    datePublish: '2020-04-08',
     age: 40,
     gender: 1,
     city: 'kanazawa',
@@ -481,6 +970,7 @@ const caseList: CaseItem[] = [
   {
     id: 52,
     date: '2020-04-07',
+    datePublish: '2020-04-08',
     age: 30,
     gender: 1,
     city: 'kanazawa',
@@ -502,6 +992,7 @@ const caseList: CaseItem[] = [
   {
     id: 51,
     date: '2020-04-07',
+    datePublish: '2020-04-07',
     age: 30,
     gender: 2,
     city: 'kanazawa',
@@ -523,6 +1014,7 @@ const caseList: CaseItem[] = [
   {
     id: 50,
     date: '2020-04-07',
+    datePublish: '2020-04-07',
     age: 50,
     gender: 2,
     city: 'kanazawa',
@@ -552,6 +1044,7 @@ const caseList: CaseItem[] = [
   {
     id: 49,
     date: '2020-04-07',
+    datePublish: '2020-04-07',
     age: 50,
     gender: 1,
     city: 'kanazawa',
@@ -577,6 +1070,7 @@ const caseList: CaseItem[] = [
   {
     id: 48,
     date: '2020-04-07',
+    datePublish: '2020-04-07',
     age: 60,
     gender: 1,
     city: 'kanazawa',
@@ -610,6 +1104,7 @@ const caseList: CaseItem[] = [
   {
     id: 47,
     date: '2020-04-07',
+    datePublish: '2020-04-07',
     age: 60,
     gender: 1,
     city: 'hakusan',
@@ -635,6 +1130,7 @@ const caseList: CaseItem[] = [
   {
     id: 46,
     date: '2020-04-07',
+    datePublish: '2020-04-07',
     age: 60,
     gender: 2,
     city: 'kawakita',
@@ -658,6 +1154,7 @@ const caseList: CaseItem[] = [
   {
     id: 45,
     date: '2020-04-06',
+    datePublish: '2020-04-06',
     age: 20,
     gender: 1,
     city: 'nonoichi',
@@ -680,6 +1177,7 @@ const caseList: CaseItem[] = [
   {
     id: 44,
     date: '2020-04-06',
+    datePublish: '2020-04-06',
     age: 40,
     gender: 1,
     city: 'kanazawa',
@@ -703,6 +1201,7 @@ const caseList: CaseItem[] = [
   {
     id: 43,
     date: '2020-04-05',
+    datePublish: '2020-04-05',
     age: 60,
     gender: 1,
     city: 'kanazawa',
@@ -728,6 +1227,7 @@ const caseList: CaseItem[] = [
   {
     id: 42,
     date: '2020-04-05',
+    datePublish: '2020-04-05',
     age: 60,
     gender: 2,
     city: 'kanazawa',
@@ -746,6 +1246,7 @@ const caseList: CaseItem[] = [
   {
     id: 41,
     date: '2020-04-05',
+    datePublish: '2020-04-05',
     age: 60,
     gender: 1,
     city: 'kanazawa',
@@ -764,6 +1265,7 @@ const caseList: CaseItem[] = [
   {
     id: 40,
     date: '2020-04-05',
+    datePublish: '2020-04-05',
     age: 60,
     gender: 1,
     city: 'kawakita',
@@ -790,6 +1292,7 @@ const caseList: CaseItem[] = [
   {
     id: 39,
     date: '2020-04-05',
+    datePublish: '2020-04-05',
     age: 70,
     gender: 1,
     city: 'kanazawa',
@@ -815,6 +1318,7 @@ const caseList: CaseItem[] = [
   {
     id: 38,
     date: '2020-04-05',
+    datePublish: '2020-04-05',
     age: 60,
     gender: 1,
     city: 'nakanoto',
@@ -836,6 +1340,7 @@ const caseList: CaseItem[] = [
   {
     id: 37,
     date: '2020-04-05',
+    datePublish: '2020-04-05',
     age: 40,
     gender: 1,
     city: 'kanazawa',
@@ -866,6 +1371,7 @@ const caseList: CaseItem[] = [
   {
     id: 36,
     date: '2020-04-05',
+    datePublish: '2020-04-05',
     age: 40,
     gender: 1,
     city: 'kanazawa',
@@ -895,6 +1401,7 @@ const caseList: CaseItem[] = [
   {
     id: 35,
     date: '2020-04-05',
+    datePublish: '2020-04-05',
     age: 40,
     gender: 1,
     city: 'kanazawa',
@@ -918,6 +1425,7 @@ const caseList: CaseItem[] = [
   {
     id: 34,
     date: '2020-04-05',
+    datePublish: '2020-04-05',
     age: 40,
     gender: 2,
     city: 'kanazawa',
@@ -941,6 +1449,7 @@ const caseList: CaseItem[] = [
   {
     id: 33,
     date: '2020-04-05',
+    datePublish: '2020-04-05',
     age: 50,
     gender: 2,
     city: 'kanazawa',
@@ -978,6 +1487,7 @@ const caseList: CaseItem[] = [
   {
     id: 31,
     date: '2020-04-04',
+    datePublish: '2020-04-04',
     age: 60,
     gender: 2,
     city: 'kanazawa',
@@ -1004,6 +1514,7 @@ const caseList: CaseItem[] = [
   {
     id: 30,
     date: '2020-04-04',
+    datePublish: '2020-04-04',
     age: 50,
     gender: 1,
     city: 'kanazawa',
@@ -1029,6 +1540,7 @@ const caseList: CaseItem[] = [
   {
     id: 29,
     date: '2020-04-04',
+    datePublish: '2020-04-04',
     age: 60,
     gender: 1,
     city: 'kanazawa',
@@ -1054,6 +1566,7 @@ const caseList: CaseItem[] = [
   {
     id: 28,
     date: '2020-04-04',
+    datePublish: '2020-04-04',
     age: 30,
     gender: 1,
     city: 'kanazawa',
@@ -1083,6 +1596,7 @@ const caseList: CaseItem[] = [
   {
     id: 27,
     date: '2020-04-04',
+    datePublish: '2020-04-04',
     age: 10,
     gender: 1,
     city: 'kanazawa',
@@ -1104,6 +1618,7 @@ const caseList: CaseItem[] = [
   {
     id: 26,
     date: '2020-04-04',
+    datePublish: '2020-04-04',
     age: 50,
     gender: 1,
     city: 'kanazawa',
@@ -1127,6 +1642,7 @@ const caseList: CaseItem[] = [
   {
     id: 25,
     date: '2020-04-04',
+    datePublish: '2020-04-04',
     age: 50,
     gender: 1,
     city: 'kanazawa',
@@ -1150,6 +1666,7 @@ const caseList: CaseItem[] = [
   {
     id: 24,
     date: '2020-04-03',
+    datePublish: '2020-04-03',
     age: 20,
     gender: 1,
     city: 'kanazawa',
@@ -1171,6 +1688,7 @@ const caseList: CaseItem[] = [
   {
     id: 23,
     date: '2020-04-03',
+    datePublish: '2020-04-03',
     age: 50,
     gender: 1,
     city: 'kanazawa',
@@ -1196,6 +1714,7 @@ const caseList: CaseItem[] = [
   {
     id: 22,
     date: '2020-04-03',
+    datePublish: '2020-04-03',
     age: 50,
     gender: 2,
     city: 'kanazawa',
@@ -1215,6 +1734,7 @@ const caseList: CaseItem[] = [
   {
     id: 21,
     date: '2020-04-03',
+    datePublish: '2020-04-03',
     age: 70,
     gender: 2,
     city: 'kanazawa',
@@ -1234,6 +1754,7 @@ const caseList: CaseItem[] = [
   {
     id: 20,
     date: '2020-04-03',
+    datePublish: '2020-04-03',
     age: 50,
     gender: 1,
     city: 'unknown',
@@ -1263,6 +1784,7 @@ const caseList: CaseItem[] = [
   {
     id: 19,
     date: '2020-04-03',
+    datePublish: '2020-04-03',
     age: 60,
     gender: 1,
     note: '石川県（石川中央保健福祉センター管内）',
@@ -1289,6 +1811,7 @@ const caseList: CaseItem[] = [
   {
     id: 18,
     date: '2020-04-03',
+    datePublish: '2020-04-03',
     age: 50,
     gender: 1,
     note: '石川県（石川中央保健福祉センター管内）',
@@ -1315,6 +1838,7 @@ const caseList: CaseItem[] = [
   {
     id: 17,
     date: '2020-04-03',
+    datePublish: '2020-04-03',
     age: 50,
     gender: 1,
     note: '石川県（金沢市保健所管内）',
@@ -1341,6 +1865,7 @@ const caseList: CaseItem[] = [
   {
     id: 16,
     date: '2020-04-02',
+    datePublish: '2020-04-02',
     age: 50,
     gender: 1,
     note: '石川県（石川中央保健福祉センター管内）',
@@ -1368,6 +1893,7 @@ const caseList: CaseItem[] = [
   {
     id: 15,
     date: '2020-04-01',
+    datePublish: '2020-04-01',
     age: 50,
     gender: 2,
     note: '石川県（金沢市保健所管内）',
@@ -1387,6 +1913,7 @@ const caseList: CaseItem[] = [
   {
     id: 14,
     date: '2020-04-01',
+    datePublish: '2020-04-01',
     age: 40,
     gender: 1,
     note: '石川県（金沢市保健所管内）',
@@ -1417,6 +1944,7 @@ const caseList: CaseItem[] = [
   {
     id: 13,
     date: '2020-03-31',
+    datePublish: '2020-03-31',
     age: 10,
     gender: 2,
     note: '石川県（金沢市保健所管内）',
@@ -1438,6 +1966,7 @@ const caseList: CaseItem[] = [
   {
     id: 12,
     date: '2020-03-31',
+    datePublish: '2020-03-31',
     age: 40,
     gender: 2,
     note: '石川県（金沢市保健所管内）',
@@ -1462,6 +1991,7 @@ const caseList: CaseItem[] = [
   {
     id: 11,
     date: '2020-03-30',
+    datePublish: '2020-03-30',
     age: 40,
     gender: 1,
     note: '石川県（金沢市保健所管内）',
@@ -1489,6 +2019,7 @@ const caseList: CaseItem[] = [
   {
     id: 10,
     date: '2020-03-30',
+    datePublish: '2020-03-30',
     age: 30,
     gender: 1,
     note: '石川県（金沢市保健所管内）',
@@ -1508,6 +2039,7 @@ const caseList: CaseItem[] = [
   {
     id: 9,
     date: '2020-03-28',
+    datePublish: '2020-03-28',
     age: 20,
     gender: 1,
     note: '石川県（南加賀保健福祉センター管内）',
@@ -1534,6 +2066,7 @@ const caseList: CaseItem[] = [
   {
     id: 8,
     date: '2020-03-20',
+    datePublish: '2020-03-20',
     age: 70,
     gender: 2,
     note: '石川県（石川県保健環境センター）',
@@ -1560,6 +2093,7 @@ const caseList: CaseItem[] = [
   {
     id: 7,
     date: '2020-03-09',
+    datePublish: '2020-03-09',
     age: 70,
     gender: 1,
     note: '石川県（石川県保健環境センター）',
@@ -1586,6 +2120,7 @@ const caseList: CaseItem[] = [
   {
     id: 6,
     date: '2020-02-28',
+    datePublish: '2020-02-28',
     age: 50,
     gender: 1,
     note: '石川県（石川県保健環境センター）',
@@ -1614,6 +2149,7 @@ const caseList: CaseItem[] = [
   {
     id: 5,
     date: '2020-02-27',
+    datePublish: '2020-02-27',
     age: 50,
     gender: 1,
     note: '県外',
@@ -1652,6 +2188,7 @@ const caseList: CaseItem[] = [
   {
     id: 4,
     date: '2020-02-24',
+    datePublish: '2020-02-22',
     age: 60,
     gender: 1,
     city: 'unknown',
@@ -1685,6 +2222,7 @@ const caseList: CaseItem[] = [
   {
     id: 3,
     date: '2020-02-24',
+    datePublish: '2020-02-24',
     age: 50,
     gender: 2,
     city: 'unknown',
@@ -1704,14 +2242,15 @@ const caseList: CaseItem[] = [
   {
     id: 2,
     date: '2020-02-22',
+    datePublish: '2020-02-22',
     age: 10,
     gender: 1,
     city: 'unknown',
     symptoms: [
       {
-        date: '2020-02-26',
+        date: '2020-02-22',
         text:
-          '38.感染者1の同居者（濃厚接触者）として、石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明発熱等の症状はない',
+          '感染者1の同居者（濃厚接触者）として、石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明発熱等の症状はない',
       },
     ],
     contactRelation: [
@@ -1724,6 +2263,7 @@ const caseList: CaseItem[] = [
   {
     id: 1,
     date: '2020-02-21',
+    datePublish: '2020-02-21',
     age: 50,
     gender: 1,
     city: 'unknown',

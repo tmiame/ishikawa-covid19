@@ -1,0 +1,26 @@
+@import '@/styles/import.scss';
+
+.container {
+  position: relative;
+}
+
+.containerInner {
+  padding-left: 8vw;
+  padding-right: 8vw;
+  width: 100%;
+
+  @include FR_MQ_MIN(XL) {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  @include FR_MQ_ONLY(QT) {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
+  @include FR_MQ_ONLY(QS) {
+    padding-left: 4.4vw;
+    padding-right: 4.6vw;
+  }
+}

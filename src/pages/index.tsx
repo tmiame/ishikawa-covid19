@@ -7,6 +7,7 @@ import CardDailyCases from '@/components/cards/DailyCases';
 import DailyMap from '@/components/cards/DailyMap';
 import MapCumulative from '@/components/cards/MapCumulative';
 import Summary from '@/components/cards/Summary';
+import DataView from '@/components/cards/DataView';
 import styles from './index.module.scss';
 
 const Loading = () => <div>Loading</div>;
@@ -27,6 +28,7 @@ const IndexPage = () => (
     </div>
     <Summary />
     <Chart />
+    <DataView />
   </Layout>
 );
 
