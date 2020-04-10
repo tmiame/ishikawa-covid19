@@ -1,0 +1,74 @@
+@charset 'UTF-8';
+
+h1,
+.heading-1 {
+  @include TYPESET('heading', '01');
+
+  font-weight: $font-weight-bold;
+}
+
+h2,
+.heading-2 {
+  @include TYPESET('heading', '02');
+
+  font-weight: $font-weight-bold;
+}
+
+h3,
+.heading-3 {
+  @include TYPESET('heading', '03');
+
+  font-weight: $font-weight-bold;
+}
+
+h4,
+.heading-4 {
+  @include TYPESET('heading', '04');
+
+  font-weight: $font-weight-bold;
+}
+
+h5,
+.heading-5 {
+  @include TYPESET('heading', '05');
+
+  font-weight: $font-weight-bold;
+}
+
+h6,
+.heading-6 {
+  @include TYPESET('heading', '06');
+
+  font-weight: $font-weight-bold;
+}
+
+small,
+.small {
+  font-size: $font-size-small;
+}
+
+b,
+strong,
+.bold {
+  font-weight: $font-weight-bold;
+}
+
+.body-xsmall {
+  @include TYPESET('body-xsmall');
+}
+
+.body-small {
+  @include TYPESET('body-small');
+}
+
+.body-text {
+  @include TYPESET('body-text');
+}
+
+.body-medium {
+  @include TYPESET('body-medium');
+}
+
+.body-large {
+  @include TYPESET('body-large');
+}

@@ -1,0 +1,105 @@
+/*-- Chart --*/
+.c3 svg {
+  font: 10px sans-serif;
+
+  text {
+    color: var(--text-primary);
+    fill: var(--text-primary);
+  }
+}
+
+.c3 path,
+.c3 line {
+  fill: none;
+  stroke: rgba(#000000, 0.1);
+
+  html[dark] & {
+    stroke: rgba(#ffffff, 0.1);
+  }
+}
+
+/*-- Axis --*/
+/*-- Grid --*/
+.c3-grid line {
+  stroke: rgba(#000000, 0.1);
+
+  html[dark] & {
+    stroke: rgba(#ffffff, 0.1);
+  }
+}
+
+.c3-grid text {
+  fill: rgba(#000000, 0.1);
+}
+
+/*-- Text on Chart --*/
+.c3-text.c3-empty {
+  fill: var(--text-secondary);
+  font-size: 2em;
+}
+
+/*-- Line --*/
+.c3-line {
+  stroke-width: 1px;
+}
+
+/*-- Bar --*/
+.c3-bar {
+  stroke: #000000 !important;
+  stroke-width: 0.5 !important;
+
+  html[dark] & {
+    stroke: #000000 !important;
+    stroke-width: 1 !important;
+  }
+}
+
+/*-- Select - Drag --*/
+/*-- Legend --*/
+.c3-legend-item {
+  font-weight: bold;
+}
+
+/*-- Tooltip --*/
+.c3-tooltip-container {
+  z-index: 10;
+}
+
+.c3-tooltip {
+  background-color: var(--map-background-secondary);
+  box-shadow: 0 5px 10px rgba(#000000, 0.2);
+  opacity: 0.9;
+}
+
+.c3-tooltip tr {
+  border: 2px solid var(--map-stroke);
+}
+
+.c3-tooltip th {
+  @include TYPESET('body-small');
+
+  background-color: var(--map-background-active);
+  padding: 2px 10px;
+  color: currentColor;
+}
+
+.c3-tooltip td {
+  @include TYPESET('body-large');
+
+  padding: 3px 10px;
+  background-color: var(--map-background-secondary);
+  border-left: 2px solid var(--map-stroke);
+  font-weight: $font-weight-bold;
+}
+
+.c3-tooltip td > span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+}
+
+/*-- Area --*/
+.c3-area {
+  opacity: 0.1;
+}

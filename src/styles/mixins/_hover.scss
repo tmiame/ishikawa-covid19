@@ -1,0 +1,44 @@
+@charset 'UTF-8';
+
+@mixin FR_HOVER() {
+  // for ie
+  @media all and (-ms-high-contrast: none) {
+    &:hover {
+      @content;
+    }
+  }
+
+  // for pointer device
+  @media (any-pointer: fine) {
+    &:hover {
+      @content;
+    }
+  }
+
+  // for touch deveice
+  @media (any-pointer: coarse) {
+    &:active {
+      @content;
+    }
+  }
+}
+
+// pointer deveice と touch deveiceで処理分ける場合
+@mixin FR_HOVER_POINTER() {
+  // for ie
+  @media all and (-ms-high-contrast: none) {
+    @content;
+  }
+
+  // for pointer device
+  @media (any-pointer: fine) {
+    @content;
+  }
+}
+
+@mixin FR_HOVER_TOUCH() {
+  // for touch deveice
+  @media (any-pointer: coarse) {
+    @content;
+  }
+}

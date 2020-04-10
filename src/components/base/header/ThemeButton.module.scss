@@ -1,0 +1,38 @@
+@import '@/styles/import.scss';
+
+.button {
+  background-color: transparent;
+  box-shadow: none;
+  text-align: left;
+  appearance: none;
+  border: 1 solid transparent;
+  outline: 0;
+  flex-shrink: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: SIZE(40);
+  height: SIZE(40);
+  border-radius: 50%;
+
+  &:focus {
+    outline: none;
+    border-color: #0070c9;
+    box-shadow: 0 0 0 3px rgba(131,192,253,0.5);
+  }
+
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
+
+  html[dark] & {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #ffffff;
+  }
+
+  > svg {
+    width: 1rem;
+    height: 1rem;
+  }
+}

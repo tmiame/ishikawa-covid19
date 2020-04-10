@@ -1,0 +1,247 @@
+@charset 'UTF-8';
+
+// stylelint-disable at-rule-empty-line-before
+
+//
+// Media Queries Mixin
+// ===============================
+//
+
+//
+// FR_MQ_MIN()
+//
+// @example
+// .selector {
+//   @include FR_MQ_MIN(M) { background-color: green; }
+// }
+//
+@mixin FR_MQ_MIN($query) {
+  @if $query == S {
+    @media (min-width: VAR(breakpoint, XS) + 1px) { @content; }
+  }
+  @else if $query == XT {
+    @media (min-width: VAR(breakpoint, S) + 1px) { @content; }
+  }
+  @else if $query == T {
+    @media (min-width: VAR(breakpoint, XT) + 1px) { @content; }
+  }
+  @else if $query == M {
+    @media (min-width: VAR(breakpoint, T) + 1px) { @content; }
+  }
+  @else if $query == L {
+    @media (min-width: VAR(breakpoint, M) + 1px) { @content; }
+  }
+  @else if $query == XL {
+    @media (min-width: VAR(breakpoint, L) + 1px) { @content; }
+  }
+  @else {
+    @media (min-width: $query) { @content; }
+  }
+}
+
+//
+// FR_MQ_MAX()
+//
+// @example
+// .selector {
+//   @include FR_MQ_MAX(M) { background-color: green; }
+// }
+//
+@mixin FR_MQ_MAX($query) {
+  @if $query == XS {
+    @media (max-width: VAR(breakpoint, XS)) { @content; }
+  }
+  @else if $query == S {
+    @media (max-width: VAR(breakpoint, S)) { @content; }
+  }
+  @else if $query == XT {
+    @media (max-width: VAR(breakpoint, XT)) { @content; }
+  }
+  @else if $query == T {
+    @media (max-width: VAR(breakpoint, T)) { @content; }
+  }
+  @else if $query == M {
+    @media (max-width: VAR(breakpoint, M)) { @content; }
+  }
+  @else if $query == L {
+    @media (max-width: VAR(breakpoint, L)) { @content; }
+  }
+  @else if $query == XL {
+    @media (max-width: VAR(breakpoint, XL)) { @content; }
+  }
+  @else {
+    @media (max-width: $query) { @content; }
+  }
+}
+
+//
+// FR_MQ_ONLY()
+//
+// @example
+// .selector {
+//   @include FR_MQ_ONLY(M) { background-color: green; }
+// }
+//
+@mixin FR_MQ_ONLY($query) {
+  @if $query == QS {
+    @media (min-width: 0) and (max-width: VAR(breakpoint, XT)) { @content; }
+  }
+  @else if $query == QT {
+    @media (min-width: VAR(breakpoint, XT) + 1px) and (max-width: VAR(breakpoint, T)) { @content; }
+  }
+  @else if $query == XS {
+    @media (min-width: 0) and (max-width: VAR(breakpoint, XS)) { @content; }
+  }
+  @else if $query == S {
+    @media (min-width: VAR(breakpoint, XS) + 1px) and (max-width: VAR(breakpoint, S)) { @content; }
+  }
+  @else if $query == XT {
+    @media (min-width: VAR(breakpoint, S) + 1px) and (max-width: VAR(breakpoint, XT)) { @content; }
+  }
+  @else if $query == T {
+    @media (min-width: VAR(breakpoint, XT) + 1px) and (max-width: VAR(breakpoint, T)) { @content; }
+  }
+  @else if $query == M {
+    @media (min-width: VAR(breakpoint, T) + 1px) and (max-width: VAR(breakpoint, M)) { @content; }
+  }
+  @else if $query == L {
+    @media (min-width: VAR(breakpoint, M) + 1px) and (max-width: VAR(breakpoint, L)) { @content; }
+  }
+  @else if $query == XL {
+    @media (min-width: VAR(breakpoint, L) + 1px) { @content; }
+  }
+}
+
+//
+// FR_MQ_BETWEEN()
+//
+// @example
+// .selector {
+//   @include FR_MQ_BETWEEN(M, L) { background-color: green; }
+// }
+//
+@mixin FR_MQ_BETWEEN($query-min: null, $query-max: null) {
+  $max: 100%;
+
+  @if $query-max == S {
+    $max: VAR(breakpoint, S);
+  }
+  @else if $query-max == XT {
+    $max: VAR(breakpoint, XT);
+  }
+  @else if $query-max == T {
+    $max: VAR(breakpoint, T);
+  }
+  @else if $query-max == M {
+    $max: VAR(breakpoint, M);
+  }
+  @else if $query-max == L {
+    $max: VAR(breakpoint, L);
+  }
+  @else if $query-max == XL {
+    $max: VAR(breakpoint, XL);
+  }
+
+  @if $query-min == XS {
+    @media (min-width: 0) and (max-width: $max) { @content; }
+  }
+  @else if $query-min == S {
+    @media (min-width: VAR(breakpoint, XS) + 1px) and (max-width: $max) { @content; }
+  }
+  @else if $query-min == XT {
+    @media (min-width: VAR(breakpoint, S) + 1px) and (max-width: $max) { @content; }
+  }
+  @else if $query-min == T {
+    @media (min-width: VAR(breakpoint, XT) + 1px) and (max-width: $max) { @content; }
+  }
+  @else if $query-min == M {
+    @media (min-width: VAR(breakpoint, T) + 1px) and (max-width: $max) { @content; }
+  }
+  @else if $query-min == L {
+    @media (min-width: VAR(breakpoint, M) + 1px) and (max-width: $max) { @content; }
+  }
+  @else if $query-min == XL {
+    @media (min-width: VAR(breakpoint, L) + 1px) and (max-width: $max) { @content; }
+  }
+  @else {
+    @media (min-width: $query-min) and (max-width: $query-max) { @content; }
+  }
+}
+
+//
+// FR_MQ_2X()
+//
+// @example
+// .selector {
+//   @include FR_MQ_2X {
+//     background-color: green;
+//   }
+//   @include FR_MQ_2X('and (min-width: 90vw) and (min-height: 90vw)') {
+//    color: #00ff00;
+//   }
+// }
+//
+@mixin FR_MQ_2X($custom_mq: false) {
+  @if $custom_mq {
+    $mq: #{
+      'screen and (-webkit-min-device-pixel-ratio: 1.5)' +
+      $custom_mq + ','
+      'screen and (min-resolution: 1.5dppx)' +
+      $custom_mq + ','
+      'screen and (min-resolution: 144dpi)' +
+      $custom_mq
+      };
+
+    @media #{$mq} {
+      @content;
+    }
+  }
+
+  @else {
+    $mq: #{
+      'screen and (-webkit-min-device-pixel-ratio: 1.5),' +
+      'screen and (min-resolution: 1.5dppx),' +
+      'screen and (min-resolution: 144dpi)'
+      };
+
+    @media #{$mq} {
+      @content;
+    }
+  }
+}
+
+//
+// FR_MQ_3X()
+//
+// @example
+//
+@mixin FR_MQ_3X($custom_mq: false) {
+  @if $custom_mq {
+    $mq: #{
+      'screen and (-webkit-min-device-pixel-ratio: 2.5)' +
+      $custom_mq + ','
+      'screen and (min-resolution: 2.5dppx)' +
+      $custom_mq + ','
+      'screen and (min-resolution: 216dpi)' +
+      $custom_mq
+      };
+
+    /* autoprefixer: ignore next */
+    @media #{$mq} {
+      @content;
+    }
+  }
+
+  @else {
+    $mq: #{
+      'screen and (-webkit-min-device-pixel-ratio: 2.5),' +
+      'screen and (min-resolution: 2.5dppx),' +
+      'screen and (min-resolution: 216dpi)'
+      };
+
+    /* autoprefixer: ignore next */
+    @media #{$mq} {
+      @content;
+    }
+  }
+}

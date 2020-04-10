@@ -1,0 +1,69 @@
+@charset 'UTF-8';
+
+//
+// variables
+// ===========================================
+//
+
+$VAR_PALETTES: (
+  breakpoint: (
+    XS: 350px,
+    S: 400px,
+    XT: 700px,
+    QS: 700px,
+    T: 920px,
+    QT: 920px,
+    M: 1200px,
+    L: 1580px,
+    XL: 1904px
+  )
+);
+
+@function VAR($var, $tone: default) {
+  @return map-get(map-get($VAR_PALETTES, $var), $tone);
+}
+
+// Sizing Scale 16px base
+$sizeUnit: 0.625rem;
+$sizeUnits: (
+  5: ($sizeUnit * 0.5),
+  10: ($sizeUnit * 1),
+  15: ($sizeUnit * 1.5),
+  20: ($sizeUnit * 2),
+  25: ($sizeUnit * 2.5),
+  30: ($sizeUnit * 3),
+  40: ($sizeUnit * 4),
+  50: ($sizeUnit * 5),
+  60: ($sizeUnit * 6),
+  80: ($sizeUnit * 8),
+  100: ($sizeUnit * 10),
+  120: ($sizeUnit * 12)
+);
+
+@function SIZE($tone: 0) {
+  @return map-get($sizeUnits, $tone);
+}
+
+$font-family-sans-serif:      'Inter',;
+$font-family-sans-serif-jp:   'Noto Sans JP', sans-serif;
+$font-family-base:            $font-family-sans-serif, $font-family-sans-serif-jp;
+
+$font-size-base:              1rem;
+$font-size-small:             80%;
+
+$font-weight-normal:          400;
+$font-weight-medium:          500;
+$font-weight-bold:            700;
+$font-weight-base:            $font-weight-normal;
+
+$line-height-base:            1.75;
+$line-height-lead:            2;
+$line-height-headings:        1.2;
+
+$zindex-dropdown:             1000;
+$zindex-sticky:               1200;
+$zindex-fixed:                1300;
+$zindex-modal-backdrop:       2000;
+$zindex-modal:                2200;
+$zindex-popover:              3000;
+$zindex-tooltip:              4000;

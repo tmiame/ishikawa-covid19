@@ -1,0 +1,93 @@
+@import './import.scss';
+
+//
+// override react-dates
+// ===========================================
+//
+
+.SingleDatePicker.SingleDatePicker__block {
+  display: none;
+}
+
+.SingleDatePicker_picker.SingleDatePicker_picker__fullScreenPortal {
+  @include FR_MQ_MIN(T) {
+    background-color: var(--backdrop);
+  }
+}
+
+.DayPicker {
+  border-radius: 5px;
+}
+
+.DayPicker.DayPicker__withBorder {
+  box-shadow: none;
+}
+
+.DayPickerNavigation__verticalDefault {
+  height: 30vw;
+}
+
+.CalendarDay__selected {
+  background-color: var(--c-primary);
+  border-color: var(--c-primary-active);
+  color: #ffffff;
+
+  @include FR_HOVER {
+    background-color: var(--c-primary-active);
+  }
+}
+
+// NOTE: the order of these styles DO matter
+html[dark] {
+  .SingleDatePicker_picker__fullScreenPortal {
+    background-color: var(--map-background);
+
+    @include FR_MQ_MIN(T) {
+      background-color: rgba(#000000, 0.8);
+    }
+  }
+
+  .DayPicker {
+    background-color: var(--map-background);
+  }
+
+  .CalendarMonth,
+  .CalendarMonthGrid {
+    background-color: var(--map-background);
+  }
+
+  .CalendarMonth_caption {
+    color: var(--text-primary);
+  }
+
+  .CalendarDay__default {
+    background-color: var(--map-background-secondary);
+    color: var(--text-primary);
+    border-color: var(--map-stroke);
+
+    @include FR_HOVER {
+      background-color: var(--map-background-active);
+    }
+  }
+
+  .CalendarDay__blocked_calendar {
+    background-color: var(--map-background-disabled);
+    color: var(--text-disabled);
+    cursor: not-allowed;
+  }
+
+  .CalendarDay__blocked_out_of_range {
+    background-color: var(--map-background);
+    color: var(--text-disabled);
+    cursor: not-allowed;
+  }
+
+  .CalendarDay__selected {
+    background-color: var(--c-primary);
+    color: #ffffff;
+
+    @include FR_HOVER {
+      background-color: var(--c-primary-active);
+    }
+  }
+}

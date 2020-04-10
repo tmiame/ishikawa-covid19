@@ -1,0 +1,22 @@
+@charset 'UTF-8';
+
+@mixin FR_ASPECT_RATIO($width, $height, $content: null) {
+  position: relative;
+
+  &::before {
+    display: block;
+    content: '';
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+
+  @if $content != null {
+    > #{$content} {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}

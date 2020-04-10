@@ -1,0 +1,94 @@
+@charset 'UTF-8';
+
+//
+// app.scss
+// ===========================================
+//
+
+:root {
+  --cf-black: #000000;
+
+  --c-primary: #0088BB;
+  --c-primary-active: rgb(0, 72, 99);
+  --c-secondary: rgb(0, 85, 255);
+  --c-secondary-active: rgb(15, 82, 216);
+
+  --c-red: #dc3545;
+  --c-red-darken-1: #{darken(#dc3545, 4%)};
+  --c-red-darken-2: #{darken(#dc3545, 8%)};
+  --c-red-darken-3: #{darken(#dc3545, 15%)};
+  --c-red-darken-4: #{darken(#dc3545, 30%)};
+  --c-green: #A0E589;
+  --c-green-darken-1: #{darken(#A0E589, 4%)};
+  --c-green-darken-2: #{darken(#A0E589, 8%)};
+  --c-green-darken-3: #{darken(#A0E589, 15%)};
+  --c-green-darken-4: #{darken(#A0E589, 60%)};
+
+  --c-success: #28a745;
+  --c-info: #17a2b8;
+  --c-danger: #dc3545;
+  --c-warning: #ffc107;
+
+  --brand-background-solid: #ffffff;
+  --brand-background-primary: #f9f9f9;
+  --brand-background-secondary: #f3f3f3;
+
+  --backdrop: rgba(50, 50, 50, 0.7);
+
+  --text-primary: #0d0d0d;
+  --text-primary-inverse: #ffffff;
+  --text-secondary: #606060;
+  --text-disabled: #909090;
+
+  --map-background: #E3EFF4;
+  --map-background-secondary: #{darken(#E3EFF4, 2%)};
+  --map-background-active: #{darken(#E3EFF4, 8%)};
+  --map-stroke: #353F4C;
+  --map-stroke-secondary: #353F4C;
+  --map-green: #A0E589;
+  --map-green-active: #{darken(#A0E589, 15%)};
+
+  --map-heat-5: rgb(69, 0, 158);
+  --map-heat-4: #c00;
+  --map-heat-3: #ff5600;
+  --map-heat-2: #ff8c00;
+  --map-heat-1: #e9d160;
+}
+
+html[dark] {
+  --brand-background-solid: rgb(18, 21, 22);
+  --brand-background-primary: rgba(40, 40, 40, 0.98);
+  --brand-background-secondary: rgba(40, 40, 40, 0.95);
+
+  --text-primary: #eeeeee;
+  --text-primary-inverse: #000000;
+  --text-secondary: #aaaaaa;
+  --text-disabled: #717171;
+
+  --c-red: #c02f3e;
+  --c-red-darken-1: #{darken(#c02f3e, 15%)};
+  --c-green: #70a55e;
+  --c-green-darken-1: #{darken(#70a55e, 4%)};
+  --c-green-darken-2: #{darken(#70a55e, 8%)};
+  --c-green-darken-3: #{darken(#70a55e, 15%)};
+  --c-green-darken-4: #{darken(#70a55e, 60%)};
+
+  --c-secondary: rgb(37, 91, 199);
+  --c-secondary-active: rgb(51, 106, 216);
+
+  --map-background: rgb(23, 33, 37);
+  --map-background-secondary: #{lighten(rgb(41, 55, 61), 5%)};
+  --map-background-active: #{darken(rgb(41, 55, 61), 8%)};
+  --map-background-disabled: #{darken(rgb(41, 55, 61), 12%)};
+  --map-stroke: #000000;
+  --map-stroke-secondary: rgb(17, 22, 24);
+  --map-green: #70a55e;
+  --map-green-active: #{darken(#70a55e, 15%)};
+}
+
+@import './import.scss';
+@import './foundation/reboot';
+@import './foundation/typeset';
+@import './parts/react-dates-dark.scss';
+@import './parts/c3.scss';
+@import './utils';

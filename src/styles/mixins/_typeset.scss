@@ -1,0 +1,65 @@
+@charset 'UTF-8';
+
+// stylelint-disable at-rule-empty-line-before
+
+//
+// use: @include TYPESET('body-xsmall')
+// use: @include TYPESET('body-small')
+// use: @include TYPESET('body-text')
+// use: @include TYPESET('body-medium')
+// use: @include TYPESET('body-large')
+// use: @include TYPESET('heading', '01')
+// use: @include TYPESET('heading', '02')
+// use: @include TYPESET('heading', '03')
+// use: @include TYPESET('heading', '04')
+// use: @include TYPESET('heading', '05')
+// use: @include TYPESET('heading', '06')
+//
+
+@mixin TYPESET($fontsize: normal, $tone: '01', $diff: 1) {
+  @if $fontsize == 'body-xsmall' {
+    font-size: ((1rem * 0.8) * $diff);
+    @include FR_MQ_ONLY(QS) { font-size: ((1rem * 0.85) * $diff); }
+  }
+  @else if $fontsize == 'body-small' {
+    font-size: ((1rem * 0.925) * $diff);
+  }
+  @else if $fontsize == 'body-text' {
+    font-size: ((1rem * 1) * $diff);
+  }
+  @else if $fontsize == 'body-medium' {
+    font-size: ((1rem * 1.125) * $diff);
+  }
+  @else if $fontsize == 'body-large' {
+    font-size: ((1rem * 1.25) * $diff);
+  }
+
+  //
+  // Heading
+  //
+  @else if $fontsize == 'heading' and $tone == '06' {
+    font-size: ((1rem * 1.25) * $diff);
+  }
+  @else if $fontsize == 'heading' and $tone == '05' {
+    font-size: ((1rem * 1.25) * $diff);
+  }
+  @else if $fontsize == 'heading' and $tone == '04' {
+    font-size: ((1rem * 1.25) * $diff);
+  }
+  @else if $fontsize == 'heading' and $tone == '03' {
+    font-size: ((1rem * 1.5) * $diff);
+  }
+  @else if $fontsize == 'heading' and $tone == '02' {
+    font-size: ((1rem * 1.5) * $diff);
+  }
+  @else if $fontsize == 'heading' and $tone == '01' {
+    font-size: ((1rem * 2.25) * $diff);
+  }
+
+  //
+  // Line-height
+  //
+  @if $fontsize == 'heading' {
+    line-height: $line-height-headings;
+  }
+}

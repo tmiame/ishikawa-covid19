@@ -1,0 +1,48 @@
+@import '@/styles/import.scss';
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: SIZE(15);
+  padding-left: 6vw;
+  padding-right: 6vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include FR_MQ_ONLY(QT) {
+    padding: 2vw 3vw;
+  }
+
+  @include FR_MQ_ONLY(QS) {
+    padding: 2vw 5vw;
+  }
+}
+
+.headerLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #0088BB;
+
+  html[dark] & {
+    fill: mix(#0088BB, #ffffff, 70%);
+  }
+}
+
+.headerLogoImage {
+  width: SIZE(60);
+  margin-right: SIZE(10);
+}
+
+.headerLogoText {
+  font-size: 0.8rem;
+  font-weight: $font-weight-medium;
+  line-height: 1.65;
+
+  > span {
+    display: block;
+  }
+}
