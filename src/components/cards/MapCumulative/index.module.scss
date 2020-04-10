@@ -1,0 +1,23 @@
+@import '@/styles/import.scss';
+
+.layout {
+  position: relative;
+}
+
+.layout .map {
+  overflow: hidden;
+  background-color: var(--map-background);
+  border-radius: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 5% 0;
+  height: 6rem;
+}
+
+.headerTitle {
+  line-height: 1;
+}

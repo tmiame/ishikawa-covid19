@@ -1,0 +1,55 @@
+@import '@/styles/import.scss';
+
+.layout {
+  position: relative;
+  padding-bottom: SIZE(100);
+}
+
+.layout .map {
+  position: relative;
+
+  @include FR_MQ_MIN(T) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: SIZE(30);
+    padding-bottom: SIZE(30);
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+
+  @include FR_MQ_ONLY(QT) {
+    padding: SIZE(20) 3vw;
+  }
+
+  @include FR_MQ_ONLY(QS) {
+    padding: SIZE(20) 5vw;
+  }
+}
+
+.layout .mapItem {
+  position: relative;
+
+  @include FR_MQ_MIN(T) {
+    width: calc(50% - #{SIZE(15)});
+    margin-left: SIZE(30);
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+
+  @include FR_MQ_ONLY(QT) {
+    width: calc(50% - #{SIZE(10)});
+    margin-left: SIZE(20);
+  }
+
+  @include FR_MQ_ONLY(QS) {
+    width: 100%;
+    margin-top: SIZE(20);
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+}

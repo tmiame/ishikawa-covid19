@@ -6,14 +6,31 @@ type defaultContextData = {
 };
 
 const defaultContextData = {
-  dark: false,
+  dark: true,
   toggle: (): void => {
     return;
   },
 };
 
 const ThemeContext = React.createContext(defaultContextData);
+
 const useTheme = (): defaultContextData => React.useContext(ThemeContext);
+
+const supportsDarkMode = () => window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+const addDarkModeStyle = () => {
+  console.log('addDarkModeStyle');
+  document.documentElement.setAttribute('dark', '');
+  document.documentElement.classList.add('is-dark');
+  document.body.style.backgroundColor = 'rgb(18, 21, 22)';
+};
+
+const removeDarkModeStyle = () => {
+  console.log('removeDarkModeStyle');
+  document.documentElement.removeAttribute('dark');
+  document.documentElement.classList.remove('is-dark');
+  document.body.style.backgroundColor = '';
+};
 
 const useEffectDarkMode = (): [
   { dark: boolean; hasThemeMounted: boolean },
@@ -28,16 +45,14 @@ const useEffectDarkMode = (): [
     dark: false,
     hasThemeMounted: false,
   });
+
   React.useEffect(() => {
     const lsDark = localStorage.getItem('dark') === 'true';
-    const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
-    if (lsDark || darkModeMediaQuery.matches) {
-      document.documentElement.setAttribute('dark', '');
-      document.documentElement.classList.add('is-dark');
+    if (lsDark || supportsDarkMode) {
+      addDarkModeStyle();
     } else {
-      document.documentElement.removeAttribute('dark');
-      document.documentElement.classList.remove('is-dark');
+      removeDarkModeStyle();
     }
     setThemeState({ ...themeState, dark: lsDark, hasThemeMounted: true });
   }, []);
@@ -45,22 +60,20 @@ const useEffectDarkMode = (): [
   return [themeState, setThemeState];
 };
 
-const ThemeProvider: React.FC = ({ children }): JSX.Element => {
+const ThemeProvider: React.FC = ({ children }) => {
   const [themeState, setThemeState] = useEffectDarkMode();
 
   if (!themeState.hasThemeMounted) {
     return <div />;
   }
 
-  const toggle = (): void => {
+  const toggle = () => {
     const dark = !themeState.dark;
     localStorage.setItem('dark', JSON.stringify(dark));
     if (dark) {
-      document.documentElement.setAttribute('dark', '');
-      document.documentElement.classList.add('is-dark');
+      addDarkModeStyle();
     } else {
-      document.documentElement.removeAttribute('dark');
-      document.documentElement.classList.remove('is-dark');
+      removeDarkModeStyle();
     }
     setThemeState({ ...themeState, dark });
   };

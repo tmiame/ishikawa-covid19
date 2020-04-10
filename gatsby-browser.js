@@ -5,4 +5,13 @@
  */
 
 // You can delete this file if you're not using it
-import '@/styles/global.scss';
+import React from 'react';
+
+import { ThemeProvider } from '@/plugins/theme/ThemeContext';
+
+// eslint-disable-next-line
+export const wrapRootElement = ({ element }) => (
+  <ThemeProvider>
+    {element}
+  </ThemeProvider>
+);

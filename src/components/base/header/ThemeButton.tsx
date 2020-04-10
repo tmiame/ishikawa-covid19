@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './ThemeButton.module.scss';
 import carbonIconStyles from '@/styles/modules/carbonIcon.module.scss';
 import { useTheme } from '@/plugins/theme/ThemeContext';

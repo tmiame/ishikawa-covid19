@@ -1,3 +1,5 @@
+declare module '*.scss';
+
 interface SymptomsItem {
   date: string;
   text: string;

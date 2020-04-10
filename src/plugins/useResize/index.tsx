@@ -11,7 +11,7 @@ export const MQ_TRIGGER = {
 };
 
 export default function useResize() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(0);
 
   function handleWindowChange() {
     setWindowWidth(window.innerWidth);

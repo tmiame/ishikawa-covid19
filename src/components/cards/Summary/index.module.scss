@@ -1,0 +1,146 @@
+@import '@/styles/import.scss';
+
+.wrapper {
+  position: relative;
+  margin-top: SIZE(10);
+  margin-bottom: SIZE(30);
+}
+
+.wrapperInner {
+  padding-left: 6vw;
+  padding-right: 6vw;
+  width: 100%;
+
+  @include FR_MQ_ONLY(QT) {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
+  @include FR_MQ_ONLY(QS) {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+.block_heading {
+  position: absolute;
+  left: SIZE(30);
+  top: SIZE(30);
+  z-index: 10;
+  color: #ffffff;
+}
+
+.block_heading_title {
+  @include TYPESET('heading', '04');
+}
+
+.block {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+
+  @include FR_MQ_MIN(M) {
+    max-height: 400px;
+
+    &::before {
+      display: block;
+      content: '';
+      width: 100%;
+      padding-top: ((1 / 5) * 100%);
+    }
+  }
+
+  @include FR_MQ_ONLY(QT) {
+    height: 15vw;
+    min-height: SIZE(120);
+  }
+
+  @include FR_MQ_ONLY(QS) {
+    height: (100vw / 1.618);
+  }
+}
+
+.hospitalized {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: ((66 / 72 ) * 100%);
+  background-color: var(--c-red);
+  background-color: rgb(175, 18, 23);
+  border-right: 4px solid var(--brand-background-solid);
+}
+
+.hospitalized_heading {
+  position: absolute;
+  left: SIZE(20);
+  bottom: SIZE(20);
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.discharged {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: ((6 / 72) * 100%);
+  background-color: var(--c-green);
+}
+
+.discharged_heading {
+  position: absolute;
+  left: SIZE(10);
+  bottom: SIZE(20);
+  white-space: nowrap;
+  color: var(--c-green-darken-4);
+
+  @include FR_MQ_ONLY(QS) {
+    text-align: right;
+    left: auto;
+    right: calc(100% + #{SIZE(20)});
+    color: #ffffff;
+  }
+}
+
+.heading_title {
+  @include TYPESET('body-small');
+
+  font-weight: $font-weight-bold;
+  letter-spacing: 0.05em;
+  padding-left: 0.2em;
+
+  @include FR_MQ_ONLY(QS) {
+    @include TYPESET('body-text');
+  }
+}
+
+.hospitalized_heading .heading_text {
+  font-size: 4.25vw;
+  font-weight: $font-weight-bold;
+  line-height: 0.9;
+  letter-spacing: -0.025em;
+
+  small {
+    font-size: 35%;
+  }
+
+  @include FR_MQ_ONLY(QS) {
+    font-size: 25vw;
+  }
+}
+
+.discharged_heading .heading_text {
+  font-size: 4.25vw;
+  font-weight: $font-weight-bold;
+  line-height: 0.9;
+  letter-spacing: -0.025em;
+
+  small {
+    font-size: 35%;
+  }
+
+  @include FR_MQ_ONLY(QS) {
+    font-size: 10vw;
+  }
+}

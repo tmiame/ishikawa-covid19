@@ -1,0 +1,89 @@
+@import '@/styles/import.scss';
+
+.wrapper {
+  position: relative;
+}
+
+.wrapperInner {
+  padding-top: SIZE(30);
+  padding-bottom: SIZE(30);
+  padding-left: 6vw;
+  padding-right: 6vw;
+  max-width: 100%;
+  margin: 0 auto;
+  width: 50%;
+
+  @include FR_MQ_ONLY(QT) {
+    padding: SIZE(20) 3vw;
+  }
+
+  @include FR_MQ_ONLY(QS) {
+    padding: SIZE(20) 5vw;
+  }
+}
+
+.heading {
+  @include TYPESET('body-small');
+
+  font-weight: $font-weight-medium;
+  margin-bottom: SIZE(30);
+  display: flex;
+  align-items: center;
+  color: var(--text-secondary);
+  line-height: 1;
+}
+
+.dataList {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.dataList_item {
+  padding: SIZE(20);
+  position: relative;
+  width: calc(50% - #{SIZE(10)});
+  background-color: var(--brand-background-secondary);
+  margin-left: SIZE(10);
+  margin-top: SIZE(10);
+  border-radius: 0.5rem;
+
+  &:nth-of-type(-n+2) {
+    margin-top: 0;
+  }
+
+  &:nth-of-type(2n+1) {
+    margin-left: 0;
+  }
+}
+
+.dataList_item_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dataList_item_name {
+  @include TYPESET('body-large');
+
+  line-height: 1;
+  margin-top: SIZE(20);
+
+  strong {
+    font-size: 175%;
+  }
+}
+
+.dataList_item_id {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 300%;
+  line-height: 0.9;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.025em;
+  color: #999999;
+}
