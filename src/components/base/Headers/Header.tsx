@@ -5,7 +5,7 @@ import containerStyles from '@/styles/modules/container.module.scss';
 import ThemeButton from './ThemeButton';
 import { useTheme } from '@/plugins/theme/ThemeContext';
 
-const GlobalHeader = (): JSX.Element => {
+const Header = () => {
   const themeState = useTheme();
   return (
     <div className={containerStyles.container}>
@@ -18,7 +18,7 @@ const GlobalHeader = (): JSX.Element => {
           </svg>
           <div className={styles.headerLogoText}>
             <span>新型コロナウイルス</span>
-            <span>石川県感染状況</span>
+            <span>石川県の感染状況</span>
           </div>
         </Link>
         <ThemeButton />
@@ -27,4 +27,4 @@ const GlobalHeader = (): JSX.Element => {
   );
 };
 
-export default GlobalHeader;
+export default Header;

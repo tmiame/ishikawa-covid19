@@ -60,7 +60,7 @@ const Chart: React.FC<{ className: string }> = ({ className = '' }) => {
       c3.generate({
         bindto: chartEl.current,
         size: {
-          height: mqMinT ? 480 : 300,
+          height: mqMinT ? 480 : 360,
         },
         padding: {
           top: 25,

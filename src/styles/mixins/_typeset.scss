@@ -19,7 +19,6 @@
 @mixin TYPESET($fontsize: normal, $tone: '01', $diff: 1) {
   @if $fontsize == 'body-xsmall' {
     font-size: ((1rem * 0.8) * $diff);
-    @include FR_MQ_ONLY(QS) { font-size: ((1rem * 0.85) * $diff); }
   }
   @else if $fontsize == 'body-small' {
     font-size: ((1rem * 0.925) * $diff);
