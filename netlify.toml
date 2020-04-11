@@ -1,6 +1,6 @@
 [build]
-  publish = "out/"
-  command = "npm run export"
+  publish = "public/"
+  command = "npm run build"
   environment = { ENV = "netlify" }
 
 [[headers]]
