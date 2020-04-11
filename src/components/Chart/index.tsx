@@ -8,8 +8,9 @@ import c3, { ChartAPI } from 'c3';
 import containerStyles from '@/styles/modules/container.module.scss';
 import styles from './index.module.scss';
 import { getCases } from '@/plugins/useCityCases';
+import { useMqMin } from '@/plugins/useResize';
 
-const Chart = (): JSX.Element => {
+const Chart = ({ className }) => {
   const allCases = [...getCases()].sort((a, b) => {
     if (a.date < b.date) return -1;
     if (a.date > b.date) return 1;
@@ -52,13 +53,14 @@ const Chart = (): JSX.Element => {
 
   const chartEl = useRef(null);
   const [chart, setChart] = useState<ChartAPI | null>(null);
+  const mqMinT = useMqMin('T');
 
   useEffect(() => {
     setChart(
       c3.generate({
         bindto: chartEl.current,
         size: {
-          height: 480,
+          height: mqMinT ? 480 : 300,
         },
         padding: {
           top: 25,
@@ -116,6 +118,7 @@ const Chart = (): JSX.Element => {
               rotate: 90,
               multiline: false,
             },
+            extent: [5, 10],
           },
           y: {
             label: '新規',
@@ -148,13 +151,15 @@ const Chart = (): JSX.Element => {
         },
       }),
     );
-  }, [chartEl]);
+  }, [chartEl, mqMinT]);
 
   return (
-    <div className={containerStyles.container}>
+    <div className={`${className} ${containerStyles.container}`}>
       <div className={containerStyles.containerInner}>
         <div className={styles.block}>
-          <h2 className={styles.block_heading}>感染者の推移</h2>
+          <h2 className={styles.block_heading} onClick={() => chart?.unzoom()}>
+            感染者の推移
+          </h2>
           <div className={styles.block_map}>
             <div ref={chartEl}></div>
           </div>

@@ -4,23 +4,6 @@
   position: relative;
 }
 
-.wrapperInner {
-  padding-top: SIZE(30);
-  padding-bottom: SIZE(30);
-  padding-left: 6vw;
-  padding-right: 6vw;
-  max-width: 100%;
-  margin: 0 auto;
-
-  @include FR_MQ_ONLY(QT) {
-    padding: SIZE(20) 3vw;
-  }
-
-  @include FR_MQ_ONLY(QS) {
-    padding: SIZE(20) 5vw;
-  }
-}
-
 .heading {
   @include TYPESET('body-small');
 

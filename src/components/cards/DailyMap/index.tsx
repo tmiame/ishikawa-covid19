@@ -8,8 +8,6 @@ import { getCases, getCaseDataLastUpdateTime } from '@/plugins/useCityCases';
 import { useMqMin } from '@/plugins/useResize';
 import { Calendar32 } from '@carbon/icons-react';
 
-moment.locale('ja');
-
 type Props = {
   className?: string;
 };

@@ -1,0 +1,11 @@
+@import '@/styles/import.scss';
+
+.footer {
+  padding-top: SIZE(100);
+  padding-bottom: SIZE(100);
+  text-align: center;
+
+  @include FR_MQ_ONLY(QS) {
+    @include TYPESET('body-small');
+  }
+}

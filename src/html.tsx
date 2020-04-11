@@ -14,7 +14,10 @@ export default function HTML(props: {
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="preconnect dns-prefetch" href="https://firebaseinstallations.googleapis.com" />
+        <link rel="preconnect dns-prefetch" href="https://www.googletagmanager.com" />
         {props.headComponents}
+        {process.env.ENV === 'staging' && <meta name="robots" content="noindex" />}
       </head>
       <body {...props.bodyAttributes}>
         <script

@@ -5,19 +5,20 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: SIZE(15);
-  padding-left: 6vw;
-  padding-right: 6vw;
+  padding-top: SIZE(15);
+  padding-bottom: SIZE(15);
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @include FR_MQ_ONLY(QT) {
-    padding: 2vw 3vw;
+    padding-top: SIZE(20);
+    padding-bottom: SIZE(20);
   }
 
   @include FR_MQ_ONLY(QS) {
-    padding: 2vw 5vw;
+    padding-top: SIZE(20);
+    padding-bottom: SIZE(20);
   }
 }
 

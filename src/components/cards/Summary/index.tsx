@@ -6,7 +6,7 @@ import containerStyles from '@/styles/modules/container.module.scss';
 import styles from './index.module.scss';
 import { getLastSummaryUpdateUpdateDateTime, getLastSummary } from '@/plugins/summaryData';
 
-const MainSummary = () => {
+const MainSummary = ({ className }) => {
   const updateTime = getLastSummaryUpdateUpdateDateTime();
   const lastSummaryData = getLastSummary();
 
@@ -19,7 +19,7 @@ const MainSummary = () => {
   };
 
   return (
-    <div className={containerStyles.container}>
+    <div className={`${className} ${containerStyles.container}`}>
       <div className={containerStyles.containerInner}>
         <div className={styles.block}>
           <header className={styles.block_heading}>

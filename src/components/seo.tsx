@@ -1,36 +1,46 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import siteMetadata from '@/data/siteMetadata';
-
+import '../../static/ogp.png';
 interface Props {
+  top: boolean;
   description?: string;
   lang?: string;
   meta?: { name: string; content: string }[];
   title?: string;
 }
 
-const SEO: React.FC<Props> = ({ description = '', lang = 'ja', meta = [], title = '' }) => {
+const SEO: React.FC<Props> = ({ top = false, description = '', lang = 'ja', meta = [], title = '' }) => {
+  const metaTitle = top ? siteMetadata.title : `${title} | ${siteMetadata.title}`;
   const metaDescription = description || siteMetadata.description;
+  const metaOgp = 'http://ishikawa-covid19.web.app/ogp.png';
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title ? title : siteMetadata.title}
-      titleTemplate={`%s | ${siteMetadata.title}`}
+      title={metaTitle}
       meta={[
         {
           name: `description`,
           content: metaDescription,
         },
         {
+          name: `canonical`,
+          content: 'http://ishikawa-covid19.web.app/',
+        },
+        {
           property: `og:title`,
-          content: title,
+          content: metaTitle,
         },
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:image`,
+          content: metaOgp,
         },
         {
           property: `og:type`,
@@ -46,7 +56,7 @@ const SEO: React.FC<Props> = ({ description = '', lang = 'ja', meta = [], title 
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: metaTitle,
         },
         {
           name: `twitter:description`,

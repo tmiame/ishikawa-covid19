@@ -3,12 +3,13 @@ import Loadable from 'react-loadable';
 import Layout from '@/components/layout';
 import SEO from '@/components/seo';
 import Header from '@/components/base/header/Header';
+import Footer from '@/components/base/Footer';
 import CardDailyCases from '@/components/cards/DailyCases';
 import DailyMap from '@/components/cards/DailyMap';
 import MapCumulative from '@/components/cards/MapCumulative';
 import Summary from '@/components/cards/Summary';
-import DataView from '@/components/cards/DataView';
 import styles from './index.module.scss';
+import containerStyles from '@/styles/modules/container.module.scss';
 
 const Loading = () => <div>Loading</div>;
 
@@ -19,16 +20,20 @@ const Chart = Loadable({
 
 const IndexPage = () => (
   <Layout>
-    <SEO />
+    <SEO top />
     <Header />
-    <CardDailyCases />
-    <div className={styles.map}>
-      <DailyMap className={styles.mapItem} />
-      <MapCumulative className={styles.mapItem} />
+    <div className={styles.home}>
+      <CardDailyCases className={styles.sectionDailyCases} />
+      <div className={containerStyles.container}>
+        <div className={`${containerStyles.containerInner} ${styles.map}`}>
+          <DailyMap className={styles.mapItem} />
+          <MapCumulative className={styles.mapItem} />
+        </div>
+      </div>
+      <Summary className={styles.sectionSummary} />
+      <Chart className={styles.sectionChart} />
     </div>
-    <Summary />
-    <Chart />
-    <DataView />
+    <Footer />
   </Layout>
 );
 

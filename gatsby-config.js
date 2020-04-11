@@ -14,13 +14,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: '&#x1f9a0;新型コロナウイルス石川県の感染状況',
-        short_name: '&#x1f9a0;石川県状況',
+        name: '🦠新型コロナウイルス石川県の感染状況',
+        short_name: '🦠石川県の状況',
         start_url: '/',
         background_color: '#0088bb',
         theme_color: '#0088bb',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png',
+        icon: 'src/images/icon.png',
       },
     },
     {

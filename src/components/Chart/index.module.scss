@@ -16,6 +16,7 @@
 
 .block_map {
   margin-bottom: -(SIZE(10));
+  padding: 0 SIZE(10);
 
   @include FR_MQ_MIN(T) {
     padding: 0 SIZE(30);
