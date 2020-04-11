@@ -10,7 +10,7 @@ import styles from './index.module.scss';
 import { getCases } from '@/plugins/caseData';
 import { useMqMin } from '@/plugins/useResize';
 
-const Chart = ({ className }) => {
+const Chart: React.FC<{ className: string }> = ({ className = '' }) => {
   const allCases = [...getCases()].sort((a, b) => {
     if (a.date < b.date) return -1;
     if (a.date > b.date) return 1;

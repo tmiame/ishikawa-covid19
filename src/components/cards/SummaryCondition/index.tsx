@@ -1,12 +1,13 @@
 /**
  * 治療中・退院者カード
  */
+
 import React from 'react';
 import containerStyles from '@/styles/modules/container.module.scss';
 import styles from './index.module.scss';
-import { getLastSummaryUpdateUpdateDateTime, getLastSummary } from '@/plugins/summaryData';
+import { getLastSummaryUpdateUpdateDateTime, getLastSummary } from '@/plugins/conditionData';
 
-const MainSummary = ({ className }) => {
+const MainSummary: React.FC<{ className: string }> = ({ className = '' }) => {
   const updateTime = getLastSummaryUpdateUpdateDateTime();
   const lastSummaryData = getLastSummary();
 

@@ -21,6 +21,7 @@ const DailyCases: React.FC<{ className: string }> = ({ className = '' }) => {
         <div className={styles.heading}>
           <span>{`${updateTime.format('YYYY年M月D日')}更新 ${updateTime.fromNow()}`} </span>
           <p className="body-xsmall">※各項目に更新日がないものは上記の更新時時点のデータ</p>
+          <p className="body-xsmall">※感染日の基準は陽性判明日</p>
         </div>
         <div className={styles.cardList}>
           <div className={styles.card}>

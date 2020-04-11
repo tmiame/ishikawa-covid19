@@ -31,14 +31,26 @@
   }
 }
 
-.sectionDailyCases {
+.sectionSummaryTestPositive {
   margin-bottom: SIZE(40);
+
+  @include FR_MQ_ONLY(QS) {
+    margin-bottom: SIZE(20);
+  }
 }
 
-.sectionSummary {
+.sectionSummaryCondition {
   margin-top: SIZE(40);
+
+  @include FR_MQ_ONLY(QS) {
+    margin-top: SIZE(20);
+  }
 }
 
-.sectionChart {
+.sectionChartTestPositive {
   margin-top: SIZE(40);
+
+  @include FR_MQ_ONLY(QS) {
+    margin-top: SIZE(20);
+  }
 }

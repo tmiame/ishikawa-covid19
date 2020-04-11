@@ -1,5 +1,5 @@
 import moment, { Moment } from 'moment';
-import summaryData from '@/data/summary';
+import conditionData from '@/data/condition';
 
 export function getLastSummary(): {
   date: string;
@@ -7,7 +7,7 @@ export function getLastSummary(): {
   discharged: number;
   all: number;
 } {
-  const [summary] = summaryData;
+  const [summary] = conditionData;
   return {
     ...summary,
     all: summary.hospitalized + summary.discharged,
