@@ -1,4 +1,4 @@
-name: NodeCI_deploy
+name: production deploy
 
 on:
   push:

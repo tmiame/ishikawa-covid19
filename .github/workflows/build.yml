@@ -1,4 +1,4 @@
-name: NodeCI_build
+name: build check
 
 on:
   push:
