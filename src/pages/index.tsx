@@ -2,7 +2,7 @@ import React from 'react';
 import Loadable from 'react-loadable';
 import Layout from '@/components/layout';
 import SEO from '@/components/seo';
-import Header from '@/components/base/header/Header';
+import Header from '@/components/base/Header';
 import Footer from '@/components/base/Footer';
 import SummaryTestPositive from '@/components/cards/SummaryTestPositive';
 import SummaryCondition from '@/components/cards/SummaryCondition';

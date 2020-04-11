@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import styles from './Header.module.scss';
+import styles from './index.module.scss';
 import containerStyles from '@/styles/modules/container.module.scss';
 import ThemeButton from './ThemeButton';
 import { useTheme } from '@/plugins/theme/ThemeContext';
