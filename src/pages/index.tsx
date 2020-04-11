@@ -4,17 +4,17 @@ import Layout from '@/components/layout';
 import SEO from '@/components/seo';
 import Header from '@/components/base/header/Header';
 import Footer from '@/components/base/Footer';
-import CardDailyCases from '@/components/cards/DailyCases';
-import DailyMap from '@/components/cards/DailyMap';
-import MapCumulative from '@/components/cards/MapCumulative';
+import DailyCases from '@/components/cards/DailyCases';
+import CityMapNew from '@/components/cards/CityMapNew';
+import CityMapTotal from '@/components/cards/CityMapTotal';
 import Summary from '@/components/cards/Summary';
 import styles from './index.module.scss';
 import containerStyles from '@/styles/modules/container.module.scss';
 
 const Loading = () => <div>Loading</div>;
 
-const Chart = Loadable({
-  loader: () => import('@/components/Chart'),
+const ChartTestedPositive = Loadable({
+  loader: () => import('@/components/cards/ChartTestedPositive'),
   loading: Loading,
 });
 
@@ -23,15 +23,15 @@ const IndexPage = () => (
     <SEO top />
     <Header />
     <div className={styles.home}>
-      <CardDailyCases className={styles.sectionDailyCases} />
+      <DailyCases className={styles.sectionDailyCases} />
       <div className={containerStyles.container}>
         <div className={`${containerStyles.containerInner} ${styles.map}`}>
-          <DailyMap className={styles.mapItem} />
-          <MapCumulative className={styles.mapItem} />
+          <CityMapNew className={styles.mapItem} />
+          <CityMapTotal className={styles.mapItem} />
         </div>
       </div>
       <Summary className={styles.sectionSummary} />
-      <Chart className={styles.sectionChart} />
+      <ChartTestedPositive className={styles.sectionChart} />
     </div>
     <Footer />
   </Layout>

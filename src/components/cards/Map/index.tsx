@@ -5,7 +5,7 @@
 import React, { useState, useEffect } from 'react';
 import { Moment } from 'moment';
 import ReactTooltip from 'react-tooltip';
-import { getCityDateDayCases, getCases, getCityCases } from '@/plugins/useCityCases';
+import { getCityDateDayCases, getCases, getCityCases } from '@/plugins/caseData';
 import { city, CityItemType } from '@/constants/city';
 import pathData from './svgIshikawaPath';
 import styles from './index.module.scss';

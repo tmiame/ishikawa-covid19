@@ -7,7 +7,7 @@ import 'd3';
 import c3, { ChartAPI } from 'c3';
 import containerStyles from '@/styles/modules/container.module.scss';
 import styles from './index.module.scss';
-import { getCases } from '@/plugins/useCityCases';
+import { getCases } from '@/plugins/caseData';
 import { useMqMin } from '@/plugins/useResize';
 
 const Chart = ({ className }) => {

@@ -1,14 +1,14 @@
 /**
- * 検査陽性者の状況のカード
+ * 感染者の状況(一日・週間・累計)
  */
 
 import React from 'react';
 import moment from 'moment';
 import containerStyles from '@/styles/modules/container.module.scss';
 import styles from './index.module.scss';
-import { getCases, getBetweenCases, getCaseDataLastUpdateTime } from '@/plugins/useCityCases';
+import { getCases, getBetweenCases, getCaseDataLastUpdateTime } from '@/plugins/caseData';
 
-const DailyCases = ({ className }) => {
+const DailyCases: React.FC<{ className: string }> = ({ className = '' }) => {
   const updateTime = getCaseDataLastUpdateTime();
   const todayCases = getCases(updateTime);
   const yesterdayCases = getCases(moment(updateTime).subtract(1, 'day'));
@@ -24,28 +24,28 @@ const DailyCases = ({ className }) => {
         </div>
         <div className={styles.cardList}>
           <div className={styles.card}>
-            <h3 className={styles.title}>本日の陽性者数</h3>
+            <h3 className={styles.title}>本日の感染者</h3>
             <p className={`${styles.number} ${styles.numberIs01}`}>
               {todayCases.length}
               <span>人</span>
             </p>
           </div>
           <div className={styles.card}>
-            <h3 className={styles.title}>前日の陽性者数</h3>
+            <h3 className={styles.title}>前日の感染者</h3>
             <p className={styles.number}>
               {yesterdayCases.length}
               <span>人</span>
             </p>
           </div>
           <div className={styles.card}>
-            <h3 className={styles.title}>過去7日間の陽性者数</h3>
+            <h3 className={styles.title}>過去7日間の感染者</h3>
             <p className={styles.number}>
               {weekCases.length}
               <span>人</span>
             </p>
           </div>
           <div className={styles.card}>
-            <h3 className={styles.title}>累計陽性者数</h3>
+            <h3 className={styles.title}>累計感染者</h3>
             <p className={`${styles.number} ${styles.numberIs04}`}>
               {allCases.length}
               <span>人</span>

@@ -2,7 +2,7 @@ import React from 'react';
 import moment from 'moment';
 import styles from './index.module.scss';
 import Map from '@/components/cards/Map';
-import { getCases, getCaseDataLastUpdateTime } from '@/plugins/useCityCases';
+import { getCases, getCaseDataLastUpdateTime } from '@/plugins/caseData';
 
 type Props = {
   className?: string;

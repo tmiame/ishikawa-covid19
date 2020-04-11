@@ -4,7 +4,7 @@ import moment, { Moment } from 'moment';
 import styles from './index.module.scss';
 import carbonIconStyles from '@/styles/modules/carbonIcon.module.scss';
 import Map from '@/components/cards/Map';
-import { getCases, getCaseDataLastUpdateTime } from '@/plugins/useCityCases';
+import { getCases, getCaseDataLastUpdateTime } from '@/plugins/caseData';
 import { useMqMin } from '@/plugins/useResize';
 import { Calendar32 } from '@carbon/icons-react';
 
@@ -16,7 +16,6 @@ const DailyMap: React.FC<Props> = ({ className = '' }) => {
   const lastUpdateTime = getCaseDataLastUpdateTime();
   const [singleDate, setSingleDate] = useState<Moment>(lastUpdateTime);
   const [focused, setFocused] = useState<boolean | null>(false);
-  const [toolbar, setToolbar] = useState(false);
   const mqMinT = useMqMin('T');
 
   function checkCase(day: Moment | undefined) {
@@ -73,8 +72,6 @@ const DailyMap: React.FC<Props> = ({ className = '' }) => {
               placeholder="日付を選択"
               monthFormat="YYYY年M月"
               id="your_unique_id"
-              // calendarInfoPosition="top"
-              // renderCalendarInfo={() => <h1>Hello</h1>}
             />
           )}
         </div>
