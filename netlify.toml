@@ -1,7 +1,7 @@
 [build]
   publish = "out/"
   command = "npm run export"
-  environment = { ENV = "staging" }
+  environment = { ENV = "netlify" }
 
 [[headers]]
   for = "/*"

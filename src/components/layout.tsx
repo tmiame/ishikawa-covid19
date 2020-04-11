@@ -12,7 +12,7 @@ import 'moment/locale/ja';
 import 'c3/c3.css';
 import '@/styles/global.scss';
 
-if (process.env.ENV !== 'staging' && typeof window !== 'undefined') {
+if (process.env.ENV !== 'netlify' && typeof window !== 'undefined') {
   require('@/plugins/firebase/initialize');
 }
 

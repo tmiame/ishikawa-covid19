@@ -17,7 +17,7 @@ export default function HTML(props: {
         <link rel="preconnect dns-prefetch" href="https://firebaseinstallations.googleapis.com" />
         <link rel="preconnect dns-prefetch" href="https://www.googletagmanager.com" />
         {props.headComponents}
-        {process.env.ENV === 'staging' && <meta name="robots" content="noindex" />}
+        {process.env.ENV === 'netlify' && <meta name="robots" content="noindex" />}
       </head>
       <body {...props.bodyAttributes}>
         <script
