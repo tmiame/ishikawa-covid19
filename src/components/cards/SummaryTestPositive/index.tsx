@@ -3,10 +3,26 @@
  */
 
 import React from 'react';
-import moment from 'moment';
+import moment, { Moment } from 'moment';
 import containerStyles from '@/styles/modules/container.module.scss';
 import styles from './index.module.scss';
 import { getCases, getBetweenCases, getCaseDataLastUpdateTime } from '@/plugins/caseData';
+
+const diffLabel = (date: Moment = moment()) => {
+  const today = moment().set({ hour: 23, minute: 59 });
+  const update = moment(date).set({ hour: 23, minute: 59 });
+  const diffDays = today.diff(date, 'days');
+
+  if (diffDays === 0) {
+    return '今日';
+  } else if (diffDays === 1) {
+    return '昨日';
+  } else if (diffDays === 2) {
+    return '一昨日';
+  }
+
+  return update.format('M月D日(ddd)');
+};
 
 const DailyCases: React.FC<{ className: string }> = ({ className = '' }) => {
   const updateTime = getCaseDataLastUpdateTime();
@@ -25,14 +41,14 @@ const DailyCases: React.FC<{ className: string }> = ({ className = '' }) => {
         </div>
         <div className={styles.cardList}>
           <div className={styles.card}>
-            <h3 className={styles.title}>本日の感染者</h3>
+            <h3 className={styles.title}>{diffLabel(updateTime)}の感染者</h3>
             <p className={`${styles.number} ${styles.numberIs01}`}>
               {todayCases.length}
               <span>人</span>
             </p>
           </div>
           <div className={styles.card}>
-            <h3 className={styles.title}>前日の感染者</h3>
+            <h3 className={styles.title}>{diffLabel(updateTime.subtract(1, 'day'))}の感染者</h3>
             <p className={styles.number}>
               {yesterdayCases.length}
               <span>人</span>
