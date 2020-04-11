@@ -7,11 +7,14 @@
 
 :root {
   --cf-black: #000000;
+  --cf-white: #ffffff;
 
   --c-primary: #0088BB;
   --c-primary-active: rgb(0, 72, 99);
   --c-secondary: rgb(0, 85, 255);
   --c-secondary-active: rgb(15, 82, 216);
+
+  --c-border: #{rgba(#000000, 0.15)};
 
   --c-red: #dc3545;
   --c-red-darken-1: #{darken(#dc3545, 4%)};
@@ -64,6 +67,8 @@ html[dark] {
   --text-primary-inverse: #000000;
   --text-secondary: #aaaaaa;
   --text-disabled: #717171;
+
+  --c-border: #{rgba(#ffffff, 0.1)};
 
   --c-red: #c02f3e;
   --c-red-darken-1: #{darken(#c02f3e, 15%)};

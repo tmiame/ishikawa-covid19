@@ -29,7 +29,10 @@ export default function HTML(props: {
               document.documentElement.classList.add('is-dark');
               document.body.style.backgroundColor = 'rgb(18, 21, 22)'
             }
-        `,
+            window.ontouchstart = function() {};
+            window.addEventListener('touchstart', function() {}, true);
+            window.addEventListener('touchstart', function() {}, false);
+`,
           }}
         />
         {props.preBodyComponents}

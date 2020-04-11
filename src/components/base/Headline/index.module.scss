@@ -1,0 +1,11 @@
+@import '@/styles/import.scss';
+
+.headline {
+  h2 {
+    line-height: 1;
+  }
+
+  p {
+    margin-top: SIZE(5);
+  }
+}

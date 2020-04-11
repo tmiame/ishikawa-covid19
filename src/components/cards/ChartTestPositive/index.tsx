@@ -5,7 +5,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import 'd3';
 import c3, { ChartAPI } from 'c3';
-import containerStyles from '@/styles/modules/container.module.scss';
 import styles from './index.module.scss';
 import { getCases } from '@/plugins/caseData';
 import { useMqMin } from '@/plugins/useResize';
@@ -60,7 +59,7 @@ const Chart: React.FC<{ className: string }> = ({ className = '' }) => {
       c3.generate({
         bindto: chartEl.current,
         size: {
-          height: mqMinT ? 480 : 360,
+          height: mqMinT ? 480 : 380,
         },
         padding: {
           top: 25,
@@ -154,15 +153,13 @@ const Chart: React.FC<{ className: string }> = ({ className = '' }) => {
   }, [chartEl, mqMinT]);
 
   return (
-    <div className={`${className} ${containerStyles.container}`}>
-      <div className={containerStyles.containerInner}>
-        <div className={styles.block}>
-          <h2 className={styles.block_heading} onClick={() => chart?.unzoom()}>
-            感染者の推移
-          </h2>
-          <div className={styles.block_map}>
-            <div ref={chartEl}></div>
-          </div>
+    <div className={className}>
+      <div className={styles.block}>
+        <h2 className={styles.block_heading} onClick={() => chart?.unzoom()}>
+          感染者の推移
+        </h2>
+        <div className={styles.block_map}>
+          <div ref={chartEl}></div>
         </div>
       </div>
     </div>

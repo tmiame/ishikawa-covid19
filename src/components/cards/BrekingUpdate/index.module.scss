@@ -1,0 +1,24 @@
+@import '@/styles/import.scss';
+
+.wrapper {
+  position: relative;
+  border-top: 1px solid var(--c-border);
+  border-bottom: 1px solid var(--c-border);
+  padding-top: SIZE(40);
+  padding-bottom: SIZE(40);
+}
+
+.newItem {
+  margin-top: SIZE(5);
+
+  a {
+    display: inline;
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--text-secondary);
+    -webkit-touch-callout: none;
+
+    @include FR_HOVER {
+      opacity: 0.6;
+    }
+  }
+}

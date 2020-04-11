@@ -1,5 +1,14 @@
 @import '@/styles/import.scss';
 
+.home {
+  margin-top: SIZE(40);
+}
+
+.headline_caution {
+  margin-top: SIZE(10);
+  opacity: 0.8;
+}
+
 .map {
   @include FR_MQ_MIN(T) {
     display: flex;
@@ -32,10 +41,11 @@
 }
 
 .sectionSummaryTestPositive {
+  margin-top: SIZE(40);
   margin-bottom: SIZE(40);
 
   @include FR_MQ_ONLY(QS) {
-    margin-bottom: SIZE(20);
+    margin-bottom: SIZE(30);
   }
 }
 
