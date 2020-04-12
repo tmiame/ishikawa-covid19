@@ -1,14 +1,18 @@
 name: data deploy
 
-on: [push]
+on:
+  schedule:
+    - cron: '*/10 * * * *'
 
 jobs:
-  build_and_test:
+  data_deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: npm install, build, and test
+        with:
+          ref: staging
+      - name: npm install and build
         run: |
           cd tool/data
           npm ci
@@ -18,8 +22,12 @@ jobs:
           CI: true
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v2
-        uses:
-          branch: date-bot/dev
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 🦠BOT; UPDATE DATA
+          title: 🦠BOT; UPDATE DATA
+          branch: date-bot/staging
+          branch-suffix: short-commit-hash
       - name: Check outputs
         run: |
           echo "Pull Request Number - ${{ env.PULL_REQUEST_NUMBER }}"
