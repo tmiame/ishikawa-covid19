@@ -1,8 +1,6 @@
 name: data deploy
 
-on:
-  schedule:
-    - cron: '*/5 * * * *'
+on: [push]
 
 jobs:
   build_and_test:
