@@ -8,6 +8,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          ref: dev
+          path: dev
       - name: npm install, build, and test
         run: |
           cd tool/data
@@ -19,6 +22,8 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v2
         uses:
+          path: dev
+          base: dev
           branch: date-bot/dev
       - name: Check outputs
         run: |
