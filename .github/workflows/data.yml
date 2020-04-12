@@ -22,7 +22,8 @@ jobs:
         uses: peter-evans/create-pull-request@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          path: dev
+          commit-message: 🦠BOT; UPDATE DATA
+          title: 🦠BOT; UPDATE DATA to development
           base: dev
           branch: date-bot/dev
       - name: Check outputs
