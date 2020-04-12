@@ -1,6 +1,9 @@
 name: data deploy
 
 on: [push]
+on:
+  schedule:
+    - cron: '0 */1 * * *'
 
 jobs:
   build_and_test:
@@ -24,7 +27,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: 🦠BOT; UPDATE DATA
           title: 🦠BOT; UPDATE DATA to development
-          base: dev
           branch: date-bot/dev
           branch-suffix: short-commit-hash
       - name: Check outputs
