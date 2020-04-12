@@ -3,7 +3,7 @@ name: data deploy
 on: [push]
 on:
   schedule:
-    - cron: '0 */1 * * *'
+    - cron: '5 * * * *'
 
 jobs:
   build_and_test:
