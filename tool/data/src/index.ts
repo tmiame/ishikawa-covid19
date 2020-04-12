@@ -60,7 +60,6 @@ const runPuppeteer = async () => {
   const result = formatData(datas);
 
   const toJsonData = {
-    test: Date.now(),
     lastUpdateDateTime: result[0].date,
     items: result,
   };

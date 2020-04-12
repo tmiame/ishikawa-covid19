@@ -1,16 +1,18 @@
 name: data deploy
 
-on: [push]
+on:
+  schedule:
+    - cron: '*/10 * * * *'
 
 jobs:
-  build_and_test:
+  data_deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
-          ref: dev
-      - name: npm install, build, and test
+          ref: staging
+      - name: npm install and build
         run: |
           cd tool/data
           npm ci
@@ -23,8 +25,8 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: 🦠BOT; UPDATE DATA
-          title: 🦠BOT; UPDATE DATA to development
-          branch: date-bot/dev
+          title: 🦠BOT; UPDATE DATA
+          branch: date-bot/staging
           branch-suffix: short-commit-hash
       - name: Check outputs
         run: |
