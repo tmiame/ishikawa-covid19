@@ -24,7 +24,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git commit -m "ci: UPDATE DATA" -a | exit 0
       - name: Push changes
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/feature/bot'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
