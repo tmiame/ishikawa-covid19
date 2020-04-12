@@ -1,0 +1,30 @@
+name: data deploy
+
+on: [push]
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: npm install, build, and test
+        run: |
+          cd tool/data
+          npm ci
+          npm run ci --if-present
+          cp -rf build/data/* ../../src/
+        env:
+          CI: true
+      - name: Commit files
+        run: |
+          echo ${{ github.ref }}
+          git add .
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "ci: UPDATE DATA" -a | exit 0
+      - name: Push changes
+        if: github.ref == 'refs/heads/staging'
+        uses: ad-m/github-push-action@staging
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
