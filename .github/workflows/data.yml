@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          ref: feature/bot
       - name: npm install, build, and test
         run: |
           cd tool/data
@@ -26,3 +28,9 @@ jobs:
       - name: Push changes
         run: |
           git push https://tmiame:${{ secrets.GITHUB_TOKEN }}@github.com/tmiame/ishikawa-covid19.git
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: BOT; UPDATE DATA
+          title: BOT; UPDATE DATA to feature/bot
