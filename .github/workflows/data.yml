@@ -22,7 +22,7 @@ jobs:
           git add .
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git commit -m "ci: UPDATE DATA" -a | exit 0
+          git commit -m "BOT: 🦠UPDATE DATA" -a | exit 0
       - name: Push changes
         run: |
           git push https://tmiame:${{ secrets.GITHUB_TOKEN }}@github.com/tmiame/ishikawa-covid19.git

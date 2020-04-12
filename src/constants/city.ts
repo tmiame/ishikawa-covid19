@@ -45,7 +45,7 @@ export const city = {
   },
   uchinada: {
     id: 'uchinada',
-    name: '内灘市',
+    name: '内灘町',
   },
   kanazawa: {
     id: 'kanazawa',

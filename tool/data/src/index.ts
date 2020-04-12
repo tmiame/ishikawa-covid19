@@ -27,17 +27,29 @@ const runPuppeteer = async () => {
   const selector = '#tmp_contents > *';
   const datas = await page.evaluate((selector) => {
     const contents = Array.from(document.querySelectorAll(selector));
-    let tableAfter = false;
 
+    let tableAfter = false;
     for (let i = 0; i < contents.length; i++) {
       const el = contents[i];
       if (!tableAfter) el.parentNode.removeChild(el);
       if (el.tagName === 'TABLE') tableAfter = true;
     }
 
-    const caseList: HTMLElement[] = Array.from(document.querySelectorAll(selector));
+    const mainContent: Element[] = Array.from(document.querySelectorAll(selector));
 
-    return caseList.map((caseItem) => ({
+    const formatContent = [...mainContent].reduce<Element[]>((acc, current) => {
+      if (current.tagName === 'DIV') {
+        for (const childrenEl of current.children) {
+          acc.push(childrenEl);
+        }
+        return acc;
+      }
+
+      acc.push(current);
+      return acc;
+    }, []);
+
+    return formatContent.map((caseItem) => ({
       tagName: caseItem.tagName,
       textContent: (caseItem.textContent || '').replace(/\n+/g, '<br>').replace(/\s+/g, ''),
     }));
@@ -45,11 +57,18 @@ const runPuppeteer = async () => {
 
   await browser.close();
 
+  const result = formatData(datas);
+
+  const toJsonData = {
+    lastUpdateDateTime: result[0].date,
+    items: result,
+  };
+
   try {
     const dirPath = path.join(__dirname, '/data');
     const filePath = path.join(dirPath, '/list.json');
     fs.mkdirSync(dirPath, { recursive: true });
-    fs.writeFileSync(filePath, JSON.stringify(formatData(datas), null, 2));
+    fs.writeFileSync(filePath, JSON.stringify(toJsonData, null, 2));
   } catch (err) {
     console.error(err);
   }
@@ -57,4 +76,4 @@ const runPuppeteer = async () => {
   return datas;
 };
 
-runPuppeteer().then(console.log);
+runPuppeteer();

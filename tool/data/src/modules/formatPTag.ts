@@ -89,21 +89,21 @@ export function formatPTagCity(text: string) {
         cityName = 'shika';
         break;
       case '中能登町':
-        cityName = 'suzu';
+        cityName = 'nakanoto';
         break;
       case '羽咋市':
-        cityName = 'suzu';
+        cityName = 'hakui';
         break;
       case '宝達志水町':
-        cityName = 'suzu';
+        cityName = 'hodatsushimizu';
         break;
       case 'かほく市':
-        cityName = 'suzu';
+        cityName = 'kahoku';
         break;
       case '津幡町':
-        cityName = 'suzu';
+        cityName = 'tsubata';
         break;
-      case '内灘市':
+      case '内灘町':
         cityName = 'uchinada';
         break;
       case '金沢市':

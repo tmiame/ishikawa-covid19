@@ -16,7 +16,7 @@ const casesGender: [string, number | null][] = [
 const casesCity: [string, string | null][] = [
   ['(3)居住地：石川県(金沢市)', 'kanazawa'],
   ['(3)居住地:石川県(金沢市)', 'kanazawa'],
-  ['(3)居住地:石川県(山田市)', 'unknown'],
+  ['(3)居住地：石川県(内灘町)', 'uchinada'],
   ['(3)居住地 県外', 'kengai'],
   ['(3)居住地  石川県（金沢市保健所管内）', 'unknown'],
   ['(3)居住地  石川県', 'unknown'],
@@ -28,7 +28,7 @@ const casesSymptoms: [string, {} | null][] = [
     [
       {
         type: 'date',
-        text: '2020-02-16',
+        text: '2020-02-16T00:00:00+09:00',
       },
       {
         type: 'text',
@@ -41,7 +41,7 @@ const casesSymptoms: [string, {} | null][] = [
     [
       {
         type: 'date',
-        text: '2020-02-22',
+        text: '2020-02-22T00:00:00+09:00',
       },
       {
         type: 'text',

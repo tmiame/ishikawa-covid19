@@ -5,11 +5,11 @@ import formatH3Tag from './formatH3Tag';
 import { formatPTagAge, formatPTagJob, formatPTagCity, formatPTagGender, formatPTagSymptomsItems } from './formatPTag';
 
 type CaseItem = {
-  id?: number;
+  id: number;
   date?: string;
-  datePublish?: string;
+  datePublish: string;
+  note: string[];
   age?: number;
-  note?: string[];
   gender?: number;
   city?: string;
   job?: string;
@@ -17,101 +17,95 @@ type CaseItem = {
   contactRelation?: { id: number; text: string }[];
 };
 
-type DayItem = {
-  date: string;
-  list: CaseItem[];
-};
+type Contents = {
+  tagName: string;
+  textContent: string;
+}[];
 
-export const formatData = (contents: { tagName: string; textContent: string }[]) => {
-  const dayByDayData = contents.reduce<DayItem[]>((result, el) => {
-    const text = zenkakuToHankaku(el.textContent);
+export const formatData = (contents: Contents) => {
+  const publishGroup: string[] = [];
+  const result: CaseItem[] = [];
 
-    //
-    // pタグ
-    //
-    if (el.tagName === 'P') {
-      const caseDetail: CaseItem = {};
-      const notes = [];
-      const label = checkLabel(text);
+  contents.forEach((row) => {
+    const text = zenkakuToHankaku(row.textContent);
 
-      switch (label) {
-        case 'age': {
-          const { age, note } = formatPTagAge(text);
-          caseDetail.age = age;
-          if (note) {
-            notes.push(note);
+    switch (row.tagName) {
+      case 'H2': {
+        publishGroup.push(formatH2Tag(text));
+        break;
+      }
+      case 'H3': {
+        const datePublish = publishGroup[publishGroup.length - 1];
+        const { id } = formatH3Tag(text);
+
+        result.push({
+          id,
+          note: [],
+          datePublish,
+        });
+        break;
+      }
+      case 'P': {
+        const curentDayItem = result[result.length - 1];
+        const label = checkLabel(text);
+        switch (label) {
+          case 'age': {
+            const { age, note } = formatPTagAge(text);
+            curentDayItem.age = age;
+            if (note) {
+              curentDayItem.note = [...curentDayItem.note, ...note];
+            }
+            break;
           }
-          break;
-        }
-        case 'gender': {
-          caseDetail.gender = formatPTagGender(text);
-          break;
-        }
-        case 'city': {
-          const { city, note } = formatPTagCity(text);
-          caseDetail.city = city;
-          if (note) {
-            notes.push(note);
+          case 'gender': {
+            curentDayItem.gender = formatPTagGender(text);
+            break;
           }
-          break;
+          case 'city': {
+            const { city, note } = formatPTagCity(text);
+            curentDayItem.city = city;
+            if (note) {
+              curentDayItem.note = [...curentDayItem.note, note];
+            }
+            break;
+          }
+          case 'job': {
+            const { job } = formatPTagJob(text);
+            curentDayItem.job = job;
+            break;
+          }
+          default: {
+            const currentSymptoms = curentDayItem.symptoms || [];
+            const symptomsItems = formatPTagSymptomsItems(text);
+            curentDayItem.symptoms = [...currentSymptoms, ...symptomsItems];
+            break;
+          }
         }
-        case 'job': {
-          const { job } = formatPTagJob(text);
-          caseDetail.job = job;
-          break;
-        }
-        default: {
-          const currentList = result[result.length - 1].list;
-          const lastSymptoms = currentList[currentList.length - 1].symptoms || [];
-          const symptomsItems = formatPTagSymptomsItems(text);
-          caseDetail.symptoms = [...lastSymptoms, ...symptomsItems];
-          break;
-        }
+        break;
       }
 
-      const currentList = result[result.length - 1].list;
-      currentList[currentList.length - 1] = {
-        ...currentList[currentList.length - 1],
-        ...caseDetail,
-      };
+      default: {
+        break;
+      }
     }
+  });
 
-    //
-    // h2タグ
-    //
-    else if (el.tagName === 'H2') {
-      result.push({
-        date: formatH2Tag(text),
-        list: [],
-      });
-    }
-
-    //
-    // h3タグ
-    //
-    else if (el.tagName === 'H3') {
-      const { id } = formatH3Tag(text);
-      result[result.length - 1].list.push({
-        id,
-      });
-    }
-
-    return result;
-  }, []);
-
-  const getDate = (listItem: CaseItem) => {
-    const symptoms = listItem.symptoms || [];
+  // 症状欄の陽性判定日を取得する
+  const getItemTestPositiveDate = (caseItem: CaseItem) => {
+    const symptoms = caseItem.symptoms || [];
     return [...symptoms].reverse().find((symptomsItem) => symptomsItem.type === 'date')?.text;
   };
 
-  return dayByDayData.reduce<CaseItem[]>((acc, current) => {
-    return [
-      ...acc,
-      ...current.list.map((listItem) => ({
-        ...listItem,
-        datePublish: current.date,
-        date: getDate(listItem),
-      })),
-    ];
-  }, []);
+  return result.map((item) => {
+    const itemDate = getItemTestPositiveDate(item);
+
+    if (!itemDate) {
+      throw new Error('Invaild CaseItem data');
+    }
+
+    return {
+      ...item,
+      date: getItemTestPositiveDate(item),
+    };
+  });
 };
