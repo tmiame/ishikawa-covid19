@@ -41,7 +41,7 @@ const IndexPage = () => {
               <p className="body-xsmall">
                 ※県の発表資料が更新され次第更新。各項目に更新日がない場合は上記の更新日時点のデータ。
               </p>
-              <p className="body-xsmall">※感染日は陽性判定日基準</p>
+              <p className="body-xsmall">※感染日は公表日基準</p>
             </div>
             <div className={styles.home}>
               <SummaryTestPositive className={styles.sectionSummaryTestPositive} />
