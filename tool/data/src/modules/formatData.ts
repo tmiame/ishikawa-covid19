@@ -6,8 +6,8 @@ import { formatPTagAge, formatPTagJob, formatPTagCity, formatPTagGender, formatP
 
 type CaseItem = {
   id: number;
-  date?: string;
-  datePublish: string;
+  date: string;
+  dateTestPositive: string;
   note: string[];
   age?: number;
   gender?: number;
@@ -35,13 +35,14 @@ export const formatData = (contents: Contents) => {
         break;
       }
       case 'H3': {
-        const datePublish = publishGroup[publishGroup.length - 1];
+        const date = publishGroup[publishGroup.length - 1];
         const { id } = formatH3Tag(text);
 
         result.push({
           id,
           note: [],
-          datePublish,
+          date,
+          dateTestPositive: date,
         });
         break;
       }
@@ -105,7 +106,7 @@ export const formatData = (contents: Contents) => {
 
     return {
       ...item,
-      date: getItemTestPositiveDate(item),
+      dateTestPositive: getItemTestPositiveDate(item),
     };
   });
 };

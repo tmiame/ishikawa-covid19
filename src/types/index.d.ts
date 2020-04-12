@@ -23,7 +23,7 @@ declare module '@/data/list.json' {
 interface CaseItem {
   id: number;
   date: string;
-  datePublish?: string;
+  dateTestPositive: string;
   age: number;
   gender: number;
   city:
