@@ -1,5 +1,4 @@
 declare module '*.scss';
-
 interface SymptomsItem {
   date: string;
   text: string;
@@ -10,10 +9,21 @@ interface ContactRelationItem {
   text: string;
 }
 
+declare module '@/data/list.json' {
+  interface CaseData {
+    lastUpdateDateTime: string;
+    items: CaseItem[];
+  }
+
+  const data: CaseData;
+
+  export default data;
+}
+
 interface CaseItem {
   id: number;
   date: string;
-  datePublish?: string;
+  dateTestPositive: string;
   age: number;
   gender: number;
   city:
