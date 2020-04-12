@@ -1,0 +1,4003 @@
+[
+  {
+    "id": 104,
+    "age": 90,
+    "gender": 2,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-02"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱、咳"
+      },
+      {
+        "type": "text",
+        "text": "県内のB医療機関を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-06"
+      },
+      {
+        "type": "text",
+        "text": "県内のB医療機関を再度受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-10"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-11"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-11",
+    "date": "2020-04-11"
+  },
+  {
+    "id": 103,
+    "age": 60,
+    "gender": 2,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-02"
+      },
+      {
+        "type": "text",
+        "text": "37～38度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-10"
+      },
+      {
+        "type": "text",
+        "text": "県内のA医療機関受診、肺炎と診断"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-11"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-11",
+    "date": "2020-04-11"
+  },
+  {
+    "id": 102,
+    "age": 60,
+    "gender": 1,
+    "city": "suzu",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "感染者64の濃厚接触者として、在宅にて健康観察"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-11"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-11",
+    "date": "2020-04-11"
+  },
+  {
+    "id": 101,
+    "age": 30,
+    "gender": 2,
+    "city": "unknown",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "感染者56の濃厚接触者として、在宅にて健康観察"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-11"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-11",
+    "date": "2020-04-11"
+  },
+  {
+    "id": 100,
+    "age": 40,
+    "gender": 2,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "感染者56の濃厚接触者として、在宅にて健康観察"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-11"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-11",
+    "date": "2020-04-11"
+  },
+  {
+    "id": 99,
+    "age": 50,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "感染者56の濃厚接触者として、在宅にて健康観察"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-11"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-11",
+    "date": "2020-04-11"
+  },
+  {
+    "id": 98,
+    "age": 50,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "感染者56の濃厚接触者として、在宅にて健康観察"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-11"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-11",
+    "date": "2020-04-11"
+  },
+  {
+    "id": 97,
+    "age": 50,
+    "gender": 1,
+    "city": "nonoichi",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "感染者56の濃厚接触者として、在宅にて健康観察"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-11"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-11",
+    "date": "2020-04-11"
+  },
+  {
+    "id": 96,
+    "age": 30,
+    "gender": 1,
+    "city": "suzu",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "感染者56の濃厚接触者として、在宅にて健康観察"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-11"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-11",
+    "date": "2020-04-11"
+  },
+  {
+    "id": 95,
+    "age": 60,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-09"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-10"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診し、肺炎と診断"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-11",
+    "date": "2020-04-10"
+  },
+  {
+    "id": 94,
+    "age": 80,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-09"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱、肺炎と診断"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-10"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-11",
+    "date": "2020-04-10"
+  },
+  {
+    "id": 93,
+    "age": 80,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "感染者50、51の濃厚接触者として、在宅にて健康観察"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-10"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-11",
+    "date": "2020-04-10"
+  },
+  {
+    "id": 92,
+    "age": 50,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-05"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱、咳、頭痛"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "県内のD医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-09"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談のうえ、PCR検査の実施を決定"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-10"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-10",
+    "date": "2020-04-10"
+  },
+  {
+    "id": 91,
+    "age": 40,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱、咳"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "県内のC医療機関受診"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-09"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-10"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-10",
+    "date": "2020-04-10"
+  },
+  {
+    "id": 90,
+    "age": 50,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "咳"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-09"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-10"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-10",
+    "date": "2020-04-10"
+  },
+  {
+    "id": 89,
+    "age": 50,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱、咳、全身倦怠感"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-09"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診、肺炎と診断"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-10"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-10",
+    "date": "2020-04-10"
+  },
+  {
+    "id": 88,
+    "age": 50,
+    "gender": 2,
+    "city": "hakusan",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-05"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱、咳"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-09"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-10"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-10",
+    "date": "2020-04-10"
+  },
+  {
+    "id": 87,
+    "age": 30,
+    "gender": 2,
+    "city": "unknown",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-04"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱、咳、鼻閉、味覚障害"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-09"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-10"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-10",
+    "date": "2020-04-10"
+  },
+  {
+    "id": 86,
+    "age": 50,
+    "gender": 1,
+    "city": "komatsu",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-04"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "県内のB医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-09"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診し、肺炎と診断"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-10"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-10",
+    "date": "2020-04-10"
+  },
+  {
+    "id": 85,
+    "age": 60,
+    "gender": 1,
+    "city": "suzu",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱、全身倦怠感"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-09"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診し、肺炎と診断"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性を判明"
+      }
+    ],
+    "datePublish": "2020-04-10",
+    "date": "2020-04-09"
+  },
+  {
+    "id": 84,
+    "age": 60,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-09"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-10",
+    "date": "2020-04-09"
+  },
+  {
+    "id": 83,
+    "age": 70,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-01"
+      },
+      {
+        "type": "text",
+        "text": "39度台の発熱"
+      },
+      {
+        "type": "text",
+        "text": "県内A医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-05"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-09"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに再度相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-10",
+    "date": "2020-04-09"
+  },
+  {
+    "id": 82,
+    "age": 30,
+    "gender": 2,
+    "city": "suzu",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-09"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-10",
+    "date": "2020-04-09"
+  },
+  {
+    "id": 81,
+    "age": 30,
+    "gender": 1,
+    "city": "suzu",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-09"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-10",
+    "date": "2020-04-09"
+  },
+  {
+    "id": 80,
+    "age": 40,
+    "gender": 2,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "感染者47の濃厚接触者として、在宅にて健康観察"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-10"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-10",
+    "date": "2020-04-10"
+  },
+  {
+    "id": 79,
+    "age": 50,
+    "gender": 2,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "感染者50の濃厚接触者として、在宅にて健康観察"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-10"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-10",
+    "date": "2020-04-10"
+  },
+  {
+    "id": 78,
+    "age": 50,
+    "gender": 2,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "感染者50の濃厚接触者として、在宅にて健康観察"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-10"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-10",
+    "date": "2020-04-10"
+  },
+  {
+    "id": 77,
+    "age": 10,
+    "gender": 2,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "感染者66の同居者として、在宅にて健康観察"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-09"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-10",
+    "date": "2020-04-09"
+  },
+  {
+    "id": 76,
+    "age": 60,
+    "gender": 2,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "感染者66の同居者として、在宅にて健康観察"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-09"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-10",
+    "date": "2020-04-09"
+  },
+  {
+    "id": 75,
+    "age": 40,
+    "gender": 2,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "感染者66の同居者として、在宅にて健康観察"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-09"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-10",
+    "date": "2020-04-09"
+  },
+  {
+    "id": 74,
+    "age": 50,
+    "gender": 2,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "感染者61の濃厚接触者として、在宅にて健康観察"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-09"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-10",
+    "date": "2020-04-09"
+  },
+  {
+    "id": 73,
+    "age": 0,
+    "gender": 1,
+    "city": "suzu",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "感染者61の同居者として、在宅にて健康観察"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-09"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-10",
+    "date": "2020-04-09"
+  },
+  {
+    "id": 72,
+    "age": 30,
+    "gender": 1,
+    "city": "komatsu",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱、咳"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診し、肺炎と診断"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-09"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-09",
+    "date": "2020-04-09"
+  },
+  {
+    "id": 71,
+    "age": 40,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-06"
+      },
+      {
+        "type": "text",
+        "text": "県内のE医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診し、肺炎と診断"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-09"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-09",
+    "date": "2020-04-09"
+  },
+  {
+    "id": 70,
+    "age": 50,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱"
+      },
+      {
+        "type": "text",
+        "text": "県内のD医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-06"
+      },
+      {
+        "type": "text",
+        "text": "県内のD医療機関再度受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "県内のD医療機関を再度受診し、肺炎と診断"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談のうえ、PCR検査実施を決定"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-09"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-09",
+    "date": "2020-04-09"
+  },
+  {
+    "id": 69,
+    "age": 30,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱、全身倦怠感"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-04"
+      },
+      {
+        "type": "text",
+        "text": "県内のC医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-09"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-09",
+    "date": "2020-04-09"
+  },
+  {
+    "id": 68,
+    "age": 40,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-01"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-02"
+      },
+      {
+        "type": "text",
+        "text": "県内のB医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-06"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を再度受診し、肺炎と診断"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-09",
+    "date": "2020-04-08"
+  },
+  {
+    "id": 67,
+    "age": 40,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-30"
+      },
+      {
+        "type": "text",
+        "text": "39度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-01"
+      },
+      {
+        "type": "text",
+        "text": "県内のA医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-06"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診し、肺炎と診断"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-09",
+    "date": "2020-04-08"
+  },
+  {
+    "id": 66,
+    "age": 40,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-01"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱、咳"
+      },
+      {
+        "type": "text",
+        "text": "県内のH医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-06"
+      },
+      {
+        "type": "text",
+        "text": "県内のI医療機関を受診し、肺炎と診断"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-08",
+    "date": "2020-04-08"
+  },
+  {
+    "id": 65,
+    "age": 30,
+    "gender": 1,
+    "city": "komatsu",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-29"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-08",
+    "date": "2020-04-08"
+  },
+  {
+    "id": 64,
+    "age": 40,
+    "gender": 1,
+    "city": "suzu",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-01"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱、咳、全身倦怠感"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "県内のG医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-06"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診し、肺炎と診断"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-08",
+    "date": "2020-04-08"
+  },
+  {
+    "id": 63,
+    "age": 40,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-06"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-08",
+    "date": "2020-04-08"
+  },
+  {
+    "id": 62,
+    "age": 50,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-01"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱、全身倦怠感"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-06"
+      },
+      {
+        "type": "text",
+        "text": "県内のF医療機関受診"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診し、肺炎と診断"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-08",
+    "date": "2020-04-08"
+  },
+  {
+    "id": 61,
+    "age": 30,
+    "gender": 2,
+    "city": "suzu",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "39度台の発熱、咳、咽頭痛、全身倦怠感"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-06"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診し、肺炎と診断"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-08",
+    "date": "2020-04-08"
+  },
+  {
+    "id": 60,
+    "age": 40,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-01"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱"
+      },
+      {
+        "type": "text",
+        "text": "県内のE医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-06"
+      },
+      {
+        "type": "text",
+        "text": "県内のE医療機関を再度受診し、肺炎と診断"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-08",
+    "date": "2020-04-08"
+  },
+  {
+    "id": 59,
+    "age": 40,
+    "gender": 1,
+    "city": "hakusan",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-01"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-06"
+      },
+      {
+        "type": "text",
+        "text": "県内のD医療機関受診"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-08",
+    "date": "2020-04-08"
+  },
+  {
+    "id": 58,
+    "age": 70,
+    "gender": 2,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-05"
+      },
+      {
+        "type": "text",
+        "text": "感染者39の同居者として、在宅にて健康観察"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-08"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-08",
+    "date": "2020-04-08"
+  },
+  {
+    "id": 57,
+    "age": 20,
+    "gender": 2,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-27"
+      },
+      {
+        "type": "text",
+        "text": "発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-05"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-06"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-08",
+    "date": "2020-04-07"
+  },
+  {
+    "id": 56,
+    "age": 40,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-31"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱、全身倦怠感、関節痛"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-01"
+      },
+      {
+        "type": "text",
+        "text": "県内のB医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-06"
+      },
+      {
+        "type": "text",
+        "text": "県内のC医療機関を受診し、肺炎と診断"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-08",
+    "date": "2020-04-07"
+  },
+  {
+    "id": 55,
+    "age": 60,
+    "gender": 2,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-06"
+      },
+      {
+        "type": "text",
+        "text": "肺炎と診断"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談のうえ、PCR検査実施を決定"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-08",
+    "date": "2020-04-07"
+  },
+  {
+    "id": 54,
+    "age": 30,
+    "gender": 1,
+    "city": "nonoichi",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-05"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談のうえ、PCR検査実施を決定"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-08",
+    "date": "2020-04-07"
+  },
+  {
+    "id": 53,
+    "age": 40,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-02"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "県内のA医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-05"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談のうえ、PCR検査実施を決定"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-08",
+    "date": "2020-04-07"
+  },
+  {
+    "id": 52,
+    "age": 30,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-05"
+      },
+      {
+        "type": "text",
+        "text": "気管支炎"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-06"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談のうえ、PCR検査実施を決定"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-08",
+    "date": "2020-04-07"
+  },
+  {
+    "id": 51,
+    "age": 30,
+    "gender": 2,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱"
+      },
+      {
+        "type": "text",
+        "text": "県内のG医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-06"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-07",
+    "date": "2020-04-07"
+  },
+  {
+    "id": 50,
+    "age": 50,
+    "gender": 2,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-30"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱、全身倦怠感"
+      },
+      {
+        "type": "text",
+        "text": "県内のE医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-01"
+      },
+      {
+        "type": "text",
+        "text": "県内のE医療機関再度受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-02"
+      },
+      {
+        "type": "text",
+        "text": "県内のF医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-06"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-07",
+    "date": "2020-04-07"
+  },
+  {
+    "id": 49,
+    "age": 50,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-04"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱"
+      },
+      {
+        "type": "text",
+        "text": "県内のD医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-05"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-06"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-07",
+    "date": "2020-04-07"
+  },
+  {
+    "id": 48,
+    "age": 60,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-31"
+      },
+      {
+        "type": "text",
+        "text": "嗄声（声のかすれ）、県内のC医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-01"
+      },
+      {
+        "type": "text",
+        "text": "県内のC医療機関再度受診、38度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "県内のC医療機関再度受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-04"
+      },
+      {
+        "type": "text",
+        "text": "県内のC医療機関を再度受診し、肺炎と診断"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-06"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-07",
+    "date": "2020-04-07"
+  },
+  {
+    "id": 47,
+    "age": 60,
+    "gender": 1,
+    "city": "hakusan",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-30"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-04"
+      },
+      {
+        "type": "text",
+        "text": "県内のA医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-05"
+      },
+      {
+        "type": "text",
+        "text": "県内のB医療機関受診"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診し、肺炎と診断"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-07",
+    "date": "2020-04-07"
+  },
+  {
+    "id": 46,
+    "age": 60,
+    "gender": 2,
+    "city": "kawakita",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-05"
+      },
+      {
+        "type": "text",
+        "text": "感染者40の同居者として、在宅にて健康観察"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-07"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-07",
+    "date": "2020-04-07"
+  },
+  {
+    "id": 45,
+    "age": 20,
+    "gender": 1,
+    "city": "nonoichi",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-30"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-31"
+      },
+      {
+        "type": "text",
+        "text": "県内のA医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-06"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-06",
+    "date": "2020-04-06"
+  },
+  {
+    "id": 44,
+    "age": 40,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-04"
+      },
+      {
+        "type": "text",
+        "text": "感染者32の同居者として、在宅にて健康観察"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-06"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-06",
+    "date": "2020-04-06"
+  },
+  {
+    "id": 43,
+    "age": 60,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-30"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱、咽頭痛"
+      },
+      {
+        "type": "text",
+        "text": "県内のJ医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "県内のJ医療機関再度受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-04"
+      },
+      {
+        "type": "text",
+        "text": "県内のJ医療機関再度受診"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-05"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-05",
+    "date": "2020-04-05"
+  },
+  {
+    "id": 42,
+    "age": 60,
+    "gender": 2,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-01"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱、咽頭痛"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-05"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-05",
+    "date": "2020-04-05"
+  },
+  {
+    "id": 41,
+    "age": 60,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-31"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱、咳、味覚障害"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-05"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-05",
+    "date": "2020-04-05"
+  },
+  {
+    "id": 40,
+    "age": 60,
+    "gender": 1,
+    "city": "kawakita",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-28"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱、咽頭痛"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-30"
+      },
+      {
+        "type": "text",
+        "text": "県内のH医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-31"
+      },
+      {
+        "type": "text",
+        "text": "県内のI医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-05"
+      },
+      {
+        "type": "text",
+        "text": "県内のI医療機関を再度受診し、肺炎と診断"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談のうえ、PCR検査実施を決定"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-05",
+    "date": "2020-04-05"
+  },
+  {
+    "id": 39,
+    "age": 70,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-28"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱、全身倦怠感"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-01"
+      },
+      {
+        "type": "text",
+        "text": "県内のF医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-04"
+      },
+      {
+        "type": "text",
+        "text": "県内のG医療機関を受診し、肺炎と診断"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談のうえ、PCR検査実施を決定"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-05"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-05",
+    "date": "2020-04-05"
+  },
+  {
+    "id": 38,
+    "age": 60,
+    "gender": 1,
+    "city": "suzu",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-30"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-04"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-05"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-05",
+    "date": "2020-04-05"
+  },
+  {
+    "id": 37,
+    "age": 40,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-28"
+      },
+      {
+        "type": "text",
+        "text": "39度台の発熱、全身倦怠感、味覚障害"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-30"
+      },
+      {
+        "type": "text",
+        "text": "県内のB医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-02"
+      },
+      {
+        "type": "text",
+        "text": "県内のC医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-04"
+      },
+      {
+        "type": "text",
+        "text": "県内のD医療機関を受診"
+      },
+      {
+        "type": "text",
+        "text": "県内のE医療機関を受診し、肺炎と診断"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談のうえ、PCR検査実施を決定"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-05"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-05",
+    "date": "2020-04-05"
+  },
+  {
+    "id": 36,
+    "age": 40,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-30"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱、咳、全身倦怠感"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-31"
+      },
+      {
+        "type": "text",
+        "text": "県内のA医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "県内のA医療機関を再度受診し、肺炎と診断"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-04"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-05"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性が判明"
+      }
+    ],
+    "datePublish": "2020-04-05",
+    "date": "2020-04-05"
+  },
+  {
+    "id": 35,
+    "age": 40,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-04"
+      },
+      {
+        "type": "text",
+        "text": "感染者27の同居者として、在宅にて健康観察"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-05"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-05",
+    "date": "2020-04-05"
+  },
+  {
+    "id": 34,
+    "age": 40,
+    "gender": 2,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-04"
+      },
+      {
+        "type": "text",
+        "text": "感染者26の同居者として、在宅にて健康観察"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-05"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-05",
+    "date": "2020-04-05"
+  },
+  {
+    "id": 33,
+    "age": 50,
+    "gender": 2,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "感染者23の同居者として、在宅にて健康観察"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-05"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-05",
+    "date": "2020-04-05"
+  },
+  {
+    "id": 32,
+    "age": 60,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-04"
+      },
+      {
+        "type": "text",
+        "text": "県内のG医療機関を受診し、肺炎と診断"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談のうえ、PCR検査実施を決定"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-04",
+    "date": "2020-04-04"
+  },
+  {
+    "id": 31,
+    "age": 60,
+    "gender": 2,
+    "city": "nonoichi",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-25"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱、咳、食欲不振"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-30"
+      },
+      {
+        "type": "text",
+        "text": "県内のF医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "県内のF医療機関再度受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-04"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-04",
+    "date": "2020-04-04"
+  },
+  {
+    "id": 30,
+    "age": 50,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-23"
+      },
+      {
+        "type": "text",
+        "text": "39度台の発熱、咳、悪寒"
+      },
+      {
+        "type": "text",
+        "text": "県内のD医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-26"
+      },
+      {
+        "type": "text",
+        "text": "県内のD医療機関再度受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "県内のE医療機関を受診し、肺炎と診断"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-04"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-04",
+    "date": "2020-04-04"
+  },
+  {
+    "id": 29,
+    "age": 60,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-27"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-31"
+      },
+      {
+        "type": "text",
+        "text": "県内のC医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "県内のC医療機関再度受診"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診し、肺炎と診断"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-04"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-04",
+    "date": "2020-04-04"
+  },
+  {
+    "id": 28,
+    "age": 30,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-27"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-30"
+      },
+      {
+        "type": "text",
+        "text": "県内のB医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-02"
+      },
+      {
+        "type": "text",
+        "text": "県内のB医療機関を再度受診し、肺炎と診断"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "県内のB医療機関再度受診"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談のうえ、PCR検査実施を決定"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-04"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-04",
+    "date": "2020-04-04"
+  },
+  {
+    "id": 27,
+    "age": 10,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-02"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱、頭痛、筋肉痛、咳"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "県内のA医療機関受診"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談のうえ、PCR検査実施を決定"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-04"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-04",
+    "date": "2020-04-04"
+  },
+  {
+    "id": 26,
+    "age": 50,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-02"
+      },
+      {
+        "type": "text",
+        "text": "感染者16の職場の同僚として、在宅にて健康観察"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-04"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-04",
+    "date": "2020-04-04"
+  },
+  {
+    "id": 25,
+    "age": 50,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-02"
+      },
+      {
+        "type": "text",
+        "text": "感染者16の職場の同僚として、在宅にて健康観察"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-04"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-04",
+    "date": "2020-04-04"
+  },
+  {
+    "id": 24,
+    "age": 20,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-28"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-02"
+      },
+      {
+        "type": "text",
+        "text": "県内のC医療機関受診"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談のうえ、PCR検査実施を決定"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-03",
+    "date": "2020-04-03"
+  },
+  {
+    "id": 23,
+    "age": 50,
+    "gender": 1,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-28"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-30"
+      },
+      {
+        "type": "text",
+        "text": "県内のA医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-02"
+      },
+      {
+        "type": "text",
+        "text": "県内のB医療機関を受診し、肺炎と診断"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談のうえ、PCR検査実施を決定"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-03",
+    "date": "2020-04-03"
+  },
+  {
+    "id": 22,
+    "age": 50,
+    "gender": 2,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "感染者17の同居者として、石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-03",
+    "date": "2020-04-03"
+  },
+  {
+    "id": 21,
+    "age": 70,
+    "gender": 2,
+    "city": "kanazawa",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "感染者15の同居者として、石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-03",
+    "date": "2020-04-03"
+  },
+  {
+    "id": 20,
+    "age": 50,
+    "gender": 1,
+    "city": "unknown",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-25"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱"
+      },
+      {
+        "type": "text",
+        "text": "県内のE医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-26"
+      },
+      {
+        "type": "text",
+        "text": "県内のE医療機関再度受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-01"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-02"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診、肺炎と診断"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-03",
+    "date": "2020-04-03"
+  },
+  {
+    "id": 19,
+    "age": 60,
+    "gender": 1,
+    "city": "unknown",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-25"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱、咽頭痛、咳"
+      },
+      {
+        "type": "text",
+        "text": "県内のC医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-27"
+      },
+      {
+        "type": "text",
+        "text": "県内のC医療機関再度受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-02"
+      },
+      {
+        "type": "text",
+        "text": "県内のD医療機関を受診し、肺炎と診断"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談のうえ、PCR検査実施を決定"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-03",
+    "date": "2020-04-03"
+  },
+  {
+    "id": 18,
+    "age": 50,
+    "gender": 1,
+    "city": "unknown",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-30"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-31"
+      },
+      {
+        "type": "text",
+        "text": "県内のB医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-02"
+      },
+      {
+        "type": "text",
+        "text": "県内のB医療機関再度受診"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診、肺炎と診断"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-03",
+    "date": "2020-04-03"
+  },
+  {
+    "id": 17,
+    "age": 50,
+    "gender": 1,
+    "city": "unknown",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-28"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱、咳、倦怠感"
+      },
+      {
+        "type": "text",
+        "text": "県内のA医療機関受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-01"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-02"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診、肺炎と診断"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-03"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-03",
+    "date": "2020-04-03"
+  },
+  {
+    "id": 16,
+    "age": 50,
+    "gender": 1,
+    "city": "unknown",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-27"
+      },
+      {
+        "type": "text",
+        "text": "体調不良を訴え早退"
+      },
+      {
+        "type": "text",
+        "text": "県内のA医療機関受診"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱、咽頭痛、頭痛、味覚障害"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-29"
+      },
+      {
+        "type": "text",
+        "text": "県内のA医療機関再度受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-30"
+      },
+      {
+        "type": "text",
+        "text": "県内のA医療機関再度受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-02"
+      },
+      {
+        "type": "text",
+        "text": "県内のA医療機関再度受診"
+      },
+      {
+        "type": "text",
+        "text": "肺炎と診断され、入院"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談のうえ、PCR検査実施を決定"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-02",
+    "date": "2020-04-02"
+  },
+  {
+    "id": 15,
+    "age": 50,
+    "gender": 2,
+    "city": "unknown",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-28"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-01"
+      },
+      {
+        "type": "text",
+        "text": "発熱、全身倦怠感"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診、肺炎と診断"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-01",
+    "date": "2020-04-01"
+  },
+  {
+    "id": 14,
+    "age": 40,
+    "gender": 1,
+    "city": "unknown",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-24"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱、咳、全身倦怠感"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-26"
+      },
+      {
+        "type": "text",
+        "text": "県内のA医療機関を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-28"
+      },
+      {
+        "type": "text",
+        "text": "県内のB医療機関を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-31"
+      },
+      {
+        "type": "text",
+        "text": "県内のC医療機関を受診、肺炎と診断され入院"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談のうえ、PCR検査実施を決定"
+      },
+      {
+        "type": "date",
+        "text": "2020-04-01"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-04-01",
+    "date": "2020-04-01"
+  },
+  {
+    "id": 13,
+    "age": 10,
+    "gender": 2,
+    "city": "unknown",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-31"
+      },
+      {
+        "type": "text",
+        "text": "感染者11の同居者として、石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      },
+      {
+        "type": "text",
+        "text": "発熱等の症状はない"
+      }
+    ],
+    "datePublish": "2020-03-31",
+    "date": "2020-03-31"
+  },
+  {
+    "id": 12,
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-28"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-31"
+      },
+      {
+        "type": "text",
+        "text": "感染者11の同居者として、石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "age": 40,
+    "gender": 2,
+    "city": "unknown",
+    "datePublish": "2020-03-31",
+    "date": "2020-03-31"
+  },
+  {
+    "id": 11,
+    "age": 40,
+    "gender": 1,
+    "city": "unknown",
+    "symptoms": [],
+    "datePublish": "2020-03-30"
+  },
+  {
+    "id": 10,
+    "age": 30,
+    "gender": 1,
+    "city": "unknown",
+    "symptoms": [],
+    "datePublish": "2020-03-30"
+  },
+  {
+    "id": 9,
+    "age": 20,
+    "gender": 1,
+    "city": "unknown",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-22"
+      },
+      {
+        "type": "text",
+        "text": "鼻閉、味覚・嗅覚障害"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-24"
+      },
+      {
+        "type": "text",
+        "text": "県外の医療機関を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-27"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "text",
+        "text": "37度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-28"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-03-28",
+    "date": "2020-03-28"
+  },
+  {
+    "id": 8,
+    "age": 70,
+    "gender": 2,
+    "city": "unknown",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-09"
+      },
+      {
+        "type": "text",
+        "text": "感染者7の同居者（濃厚接触者）として、健康観察開始"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-19"
+      },
+      {
+        "type": "text",
+        "text": "発熱・咳"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診し、入院"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-20"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-03-20",
+    "date": "2020-03-20"
+  },
+  {
+    "id": 7,
+    "age": 70,
+    "gender": 1,
+    "city": "unknown",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-03-05"
+      },
+      {
+        "type": "text",
+        "text": "発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-07"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-08"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を再度受診、肺炎と診断"
+      },
+      {
+        "type": "date",
+        "text": "2020-03-09"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-03-09",
+    "date": "2020-03-09"
+  },
+  {
+    "id": 6,
+    "age": 50,
+    "gender": 1,
+    "city": "unknown",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-02-25"
+      },
+      {
+        "type": "text",
+        "text": "在宅（健康観察中）※感染者4、5のパリ出張同行者"
+      },
+      {
+        "type": "date",
+        "text": "2020-02-28"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-02-28",
+    "date": "2020-02-28"
+  },
+  {
+    "id": 5,
+    "age": 50,
+    "gender": 1,
+    "city": "kengai",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-02-16"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱"
+      },
+      {
+        "type": "date",
+        "text": "2020-02-17"
+      },
+      {
+        "type": "text",
+        "text": "県外のA医療機関を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-02-22"
+      },
+      {
+        "type": "text",
+        "text": "県外のB医療機関を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-02-24"
+      },
+      {
+        "type": "text",
+        "text": "石川県に来県"
+      },
+      {
+        "type": "date",
+        "text": "2020-02-25"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談"
+      },
+      {
+        "type": "date",
+        "text": "2020-02-26"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来を受診、肺炎と診断"
+      },
+      {
+        "type": "text",
+        "text": "PCR検査実施を決定"
+      },
+      {
+        "type": "date",
+        "text": "2020-02-27"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-02-27",
+    "date": "2020-02-27"
+  },
+  {
+    "id": 3,
+    "age": 50,
+    "gender": 2,
+    "city": "unknown",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-02-24"
+      },
+      {
+        "type": "text",
+        "text": "感染者1の濃厚接触者として、石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-02-24",
+    "date": "2020-02-24"
+  },
+  {
+    "id": 4,
+    "age": 60,
+    "gender": 1,
+    "city": "unknown",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-02-16"
+      },
+      {
+        "type": "text",
+        "text": "38度台の発熱、咽頭痛"
+      },
+      {
+        "type": "date",
+        "text": "2020-02-17"
+      },
+      {
+        "type": "text",
+        "text": "県内のA医療機関、B医療機関を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-02-19"
+      },
+      {
+        "type": "text",
+        "text": "県内のC医療機関を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-02-22"
+      },
+      {
+        "type": "text",
+        "text": "県内のC医療機関を再度受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-02-23"
+      },
+      {
+        "type": "text",
+        "text": "県内のD医療機関を受診、肺炎と診断され入院"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談、PCR検査実施を決定"
+      },
+      {
+        "type": "date",
+        "text": "2020-02-24"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-02-24",
+    "date": "2020-02-24"
+  },
+  {
+    "id": 2,
+    "age": 10,
+    "gender": 1,
+    "city": "unknown",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-02-22"
+      },
+      {
+        "type": "text",
+        "text": "感染者1の同居者（濃厚接触者）として、石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      },
+      {
+        "type": "text",
+        "text": "発熱等の症状はない"
+      }
+    ],
+    "datePublish": "2020-02-22",
+    "date": "2020-02-22"
+  },
+  {
+    "id": 1,
+    "age": 50,
+    "gender": 1,
+    "city": "unknown",
+    "job": "石川県職員（産業創出支援機構）",
+    "symptoms": [
+      {
+        "type": "date",
+        "text": "2020-02-16"
+      },
+      {
+        "type": "text",
+        "text": "38.3度の発熱、県内のA医療機関を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-02-17"
+      },
+      {
+        "type": "text",
+        "text": "発熱継続、県内のB医療機関を受診"
+      },
+      {
+        "type": "text",
+        "text": "解熱剤にて、一旦解熱した後、再度発熱"
+      },
+      {
+        "type": "text",
+        "text": "C医療機関を受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-02-19"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターに相談の上、県内のB医療機関を再度受診"
+      },
+      {
+        "type": "date",
+        "text": "2020-02-20"
+      },
+      {
+        "type": "text",
+        "text": "倦怠感あり、県内のD医療機関を受診し、肺炎と診断"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者相談センターへ本人より再度相談あり、受診調整"
+      },
+      {
+        "type": "text",
+        "text": "帰国者・接触者外来受診後、入院"
+      },
+      {
+        "type": "date",
+        "text": "2020-02-21"
+      },
+      {
+        "type": "text",
+        "text": "石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明"
+      }
+    ],
+    "datePublish": "2020-02-21",
+    "date": "2020-02-21"
+  }
+]
