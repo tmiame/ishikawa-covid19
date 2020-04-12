@@ -2,7 +2,7 @@ name: data deploy
 
 on:
   schedule:
-    - cron: 8 * * * *
+    - cron: '*/10 * * * *'
 
 jobs:
   build_and_test:
