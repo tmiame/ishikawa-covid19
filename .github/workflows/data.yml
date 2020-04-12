@@ -21,7 +21,7 @@ jobs:
           CI: true
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v2
-        uses:
+        with:
           path: dev
           base: dev
           branch: date-bot/dev
