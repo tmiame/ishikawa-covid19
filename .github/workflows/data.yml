@@ -13,7 +13,7 @@ jobs:
           cd tool/data
           npm ci
           npm run ci --if-present
-          cp -rf build/data/* ../../src/
+          cp -rf build/data/* ../../src/data/
         env:
           CI: true
       - name: Commit files
