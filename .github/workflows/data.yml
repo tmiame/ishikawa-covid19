@@ -26,6 +26,7 @@ jobs:
           title: 🦠BOT; UPDATE DATA to development
           base: dev
           branch: date-bot/dev
+          branch-suffix: short-commit-hash
       - name: Check outputs
         run: |
           echo "Pull Request Number - ${{ env.PULL_REQUEST_NUMBER }}"
