@@ -1,7 +1,33 @@
-import fs = require('fs');
 import path = require('path');
 import puppeteer = require('puppeteer');
+import { promises as fs } from 'fs';
 import { formatData } from './modules/formatData';
+import { formatSummary } from './modules/formatSummary';
+
+interface ConditionList {
+  date: string;
+  list: {
+    name: string;
+    total: number;
+    hospitalized: number;
+    discharged: number;
+  }[];
+}
+
+interface ConditionContent {
+  lastUpdateDateTime: string;
+  items: ConditionList[];
+}
+
+const getFileCondition = async (filePath = '') => {
+  try {
+    await fs.access(filePath);
+    const fileCondition: ConditionContent = JSON.parse(await fs.readFile(filePath, 'utf8'));
+    return fileCondition;
+  } catch {
+    return null;
+  }
+};
 
 const runPuppeteer = async () => {
   const browser = await puppeteer.launch({ args: ['--no-sandbox', '--unhandled-rejections=strict'] });
@@ -11,7 +37,7 @@ const runPuppeteer = async () => {
   await page.setRequestInterception(true);
 
   page.on('request', (req) => {
-    if (req.resourceType() === 'image' || req.url().includes('ewbc/ptspk_loader.js')) {
+    if (['image', 'stylesheet', 'font', 'script'].includes(req.resourceType())) {
       req.abort();
     } else {
       req.continue();
@@ -20,55 +46,67 @@ const runPuppeteer = async () => {
 
   await page.goto('https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html');
 
-  //
-  // 必要な要素のみ取得
-  // - 改行コードは<br>タグに空白は削除
-  //
   const selector = '#tmp_contents > *';
-  const datas = await page.evaluate((selector) => {
-    const contents = Array.from(document.querySelectorAll(selector));
 
-    let tableAfter = false;
-    for (let i = 0; i < contents.length; i++) {
-      const el = contents[i];
-      if (!tableAfter) el.parentNode.removeChild(el);
-      if (el.tagName === 'TABLE') tableAfter = true;
-    }
+  const datas = await page.evaluate((selector) => {
+    const contents: Element[] = Array.from(document.querySelectorAll(selector));
+
+    const conditionContent = contents.find((el) => {
+      el.parentNode?.removeChild(el);
+      return el.tagName === 'TABLE';
+    });
 
     const mainContent: Element[] = Array.from(document.querySelectorAll(selector));
 
-    const formatContent = [...mainContent].reduce<Element[]>((acc, current) => {
-      if (current.tagName === 'DIV') {
-        for (const childrenEl of current.children) {
-          acc.push(childrenEl);
-        }
-        return acc;
-      }
-
-      acc.push(current);
-      return acc;
+    const caseContent = mainContent.reduce<Element[]>((acc, current) => {
+      return current.tagName === 'DIV' ? [...acc, ...current.children] : [...acc, current];
     }, []);
 
-    return formatContent.map((caseItem) => ({
-      tagName: caseItem.tagName,
-      textContent: (caseItem.textContent || '').replace(/\n+/g, '<br>').replace(/\s+/g, ''),
-    }));
+    return {
+      summary: conditionContent?.textContent?.split(/\n/) ?? [],
+      caseList: caseContent.map((caseItem) => ({
+        tagName: caseItem.tagName,
+        textContent: (caseItem.textContent || '').replace(/\n+/g, '<br>').replace(/\s+/g, ''),
+      })),
+    };
   }, selector);
 
   await browser.close();
 
-  const result = formatData(datas);
+  const summary = formatSummary(datas.summary);
+  const caseList = formatData(datas.caseList);
 
   const toJsonData = {
-    lastUpdateDateTime: result[0].date,
-    items: result,
+    lastUpdateDateTime: caseList[0].date,
+    items: caseList,
+  };
+
+  const toJsonConditionData = {
+    lastUpdateDateTime: caseList[0].date,
+    items: summary,
   };
 
   try {
     const dirPath = path.join(__dirname, '/data');
     const filePath = path.join(dirPath, '/list.json');
-    fs.mkdirSync(dirPath, { recursive: true });
-    fs.writeFileSync(filePath, JSON.stringify(toJsonData, null, 2));
+    await fs.mkdir(dirPath, { recursive: true });
+    await fs.writeFile(filePath, JSON.stringify(toJsonData, null, 2));
+
+    const filePathCondition = path.join(dirPath, '/conditions.json');
+    const fileCondition = await getFileCondition(filePathCondition);
+    if (!fileCondition) {
+      await fs.writeFile(filePathCondition, JSON.stringify(toJsonConditionData, null, 2));
+      return;
+    }
+    if (fileCondition.lastUpdateDateTime === toJsonConditionData.lastUpdateDateTime) {
+      return 'No Update Page';
+    }
+    fileCondition.lastUpdateDateTime = toJsonConditionData.lastUpdateDateTime;
+    fileCondition.items = [
+      { date: toJsonConditionData.lastUpdateDateTime, list: toJsonConditionData.items },
+      ...fileCondition.items,
+    ];
+    await fs.writeFile(filePathCondition, JSON.stringify(fileCondition, null, 2));
   } catch (err) {
     console.error(err);
   }
