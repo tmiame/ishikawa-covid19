@@ -47,6 +47,9 @@ export const formatData = (contents: Contents) => {
         break;
       }
       case 'P': {
+        if (!result.length) {
+          break;
+        }
         const curentDayItem = result[result.length - 1];
         const label = checkLabel(text);
         switch (label) {
