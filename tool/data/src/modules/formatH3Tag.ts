@@ -1,3 +1,5 @@
+import { parseNumber, findContactRelations } from './utils';
+
 export default function formatH3Tag(text: string) {
   const [name, ...args] = text.split('※').map((str) => str.trim());
 
@@ -5,33 +7,21 @@ export default function formatH3Tag(text: string) {
     throw new Error('Invaild h3 format:name');
   }
 
-  const id = parseInt(name.replace(/[^0-9\\.]/g, ''));
+  const id = parseNumber(name);
 
   if (!id) {
     throw new Error('Invaild h3 format:id');
   }
 
-  // const contactRelations: { id: number; text: string }[] = args.map((str) => {
-  //   const match = str.match(/(\d+(?:[、|と])*?)/g);
-  //   // const match = str.match(/^感染者(?:[、|と](\d+))+?(?:の)(.*)?/i);
+  const refs = args.reduce<{ id: number; text: string }[]>((acc, str) => {
+    const match = findContactRelations(str);
 
-  //   if (!match) {
-  //     return {
-  //       id: 10,
-  //       text: '',
-  //     };
-  //   }
-
-  //   console.log('match', match);
-  //   return {
-  //     id,
-  //     text: '',
-  //   };
-  // });
+    return !match ? acc : [...acc, ...match];
+  }, []);
 
   return {
     id,
     name,
-    // contactRelations,
+    refs,
   };
 }

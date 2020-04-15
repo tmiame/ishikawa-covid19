@@ -2,7 +2,7 @@ import { parseNumber } from './utils';
 
 type Contents = string[];
 
-export const formatSummary = (contents: Contents) => {
+export const formatConditionList = (contents: Contents) => {
   return contents
     .map((text) => text.replace(/\s+/g, ''))
     .filter((text) => text)
@@ -25,7 +25,20 @@ export const formatSummary = (contents: Contents) => {
     .map((split) => ({
       name: split[0],
       total: parseNumber(split[1]),
-      hospitalized: parseNumber(split[2]),
-      discharged: parseNumber(split[3]),
+      discharged: parseNumber(split[2]),
+      hospitalized: parseNumber(split[3]),
     }));
+};
+
+export const formatCondition = (contents: Contents) => {
+  const list = formatConditionList(contents);
+  const lastItemIndex = list.length - 1;
+  const { total, discharged, hospitalized } = list[lastItemIndex];
+
+  return {
+    total,
+    hospitalized,
+    discharged,
+    list,
+  };
 };
