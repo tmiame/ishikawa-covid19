@@ -1,17 +1,5 @@
 @import '@/styles/import.scss';
 
-.wrapper {
-  position: relative;
-}
-
-.heading {
-  @include TYPESET('body-small');
-
-  font-weight: $font-weight-medium;
-  margin-bottom: SIZE(30);
-  color: var(--text-secondary);
-}
-
 .cardList {
   display: flex;
   justify-content: space-between;
@@ -29,6 +17,18 @@
   justify-content: space-between;
   align-items: flex-start;
 
+  @include FR_MQ_MIN(T) {
+    width: (45% / 2);
+
+    &:nth-child(-n+3) {
+      width: (55% / 3);
+    }
+
+    &:nth-child(3) {
+      margin-right: 2%;
+    }
+  }
+
   @include FR_MQ_ONLY(QS) {
     width: 50%;
     margin-top: SIZE(20);
@@ -36,30 +36,38 @@
     &:nth-child(-n+2) {
       margin-top: 0;
     }
+
+    &:nth-child(3) {
+      display: none;
+    }
   }
 }
 
 .title {
   @include TYPESET('body-small');
 
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-medium;
   line-height: 1;
   margin-bottom: SIZE(10);
 }
 
 .number {
-  font-size: 8vw;
+  font-size: 8.5vw;
   font-weight: bold;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.08em;
   line-height: 1;
+  white-space: nowrap;
 
   @include FR_MQ_ONLY(QS) {
     font-size: 18vw;
   }
 
   span {
-    font-size: 35%;
+    font-size: 30%;
     font-weight: bold;
-    margin-left: 0.1em;
   }
+}
+
+.numberIsDead {
+  opacity: 0.35;
 }

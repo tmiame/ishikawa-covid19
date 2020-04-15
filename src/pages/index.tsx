@@ -12,7 +12,7 @@ import CityMapNew from '@/components/cards/CityMapNew';
 import CityMapTotal from '@/components/cards/CityMapTotal';
 import styles from './index.module.scss';
 import containerStyles from '@/styles/modules/container.module.scss';
-import { getCaseDataLastUpdateTime } from '@/plugins/caseData';
+import { getLastSummaryUpdateUpdateDateTime } from '@/plugins/conditionData';
 
 const Loading = () => <div>Loading</div>;
 
@@ -22,7 +22,7 @@ const ChartTestPositive = Loadable({
 });
 
 const IndexPage = () => {
-  const updateTime = getCaseDataLastUpdateTime();
+  const updateTime = getLastSummaryUpdateUpdateDateTime();
 
   return (
     <Layout>
