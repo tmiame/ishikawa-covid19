@@ -1,17 +1,8 @@
 import moment, { Moment } from 'moment';
-import conditionData from '@/data/condition';
+import conditionData from '@/data/condition.json';
 
-export function getLastSummary(): {
-  date: string;
-  hospitalized: number;
-  discharged: number;
-  all: number;
-} {
-  const [summary] = conditionData;
-  return {
-    ...summary,
-    all: summary.hospitalized + summary.discharged,
-  };
+export function getLastSummary() {
+  return conditionData.items[0];
 }
 
 export function getLastSummaryUpdateUpdateDateTime(): Moment {

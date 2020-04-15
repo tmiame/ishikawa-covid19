@@ -29,10 +29,12 @@ const casesSymptoms: [string, {} | null][] = [
       {
         type: 'date',
         text: '2020-02-16T00:00:00+09:00',
+        refs: [],
       },
       {
         type: 'text',
         text: '38.3度の発熱、県内のA医療機関を受診',
+        refs: [],
       },
     ],
   ],
@@ -42,15 +44,23 @@ const casesSymptoms: [string, {} | null][] = [
       {
         type: 'date',
         text: '2020-02-22T00:00:00+09:00',
+        refs: [],
       },
       {
         type: 'text',
         text:
           '感染者1の同居者（濃厚接触者）として、石川県保健環境センターにおいて、PCR検査を実施したところ、陽性と判明',
+        refs: [
+          {
+            id: 1,
+            text: '1の同居者（濃厚接触者）',
+          },
+        ],
       },
       {
         type: 'text',
         text: '発熱等の症状はない',
+        refs: [],
       },
     ],
   ],

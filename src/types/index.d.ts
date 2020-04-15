@@ -20,6 +20,17 @@ declare module '@/data/list.json' {
   export default data;
 }
 
+declare module '@/data/condition.json' {
+  interface ConditionData {
+    lastUpdateDateTime: string;
+    items: ConditionItem[];
+  }
+
+  const data: ConditionData;
+
+  export default data;
+}
+
 interface CaseItem {
   id: number;
   date: string;
@@ -51,6 +62,21 @@ interface CaseItem {
   note?: string;
   symptoms?: SymptomsItem[];
   contactRelation?: ContactRelationItem[];
+}
+
+interface ConditionItem {
+  date: string;
+  total: number;
+  hospitalized: number;
+  discharged: number;
+  list: ConditionDayItem[];
+}
+
+interface ConditionDayItem {
+  name: string;
+  total: number;
+  hospitalized: number;
+  discharged: number;
 }
 
 declare namespace NodeJS {

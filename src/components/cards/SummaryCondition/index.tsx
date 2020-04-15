@@ -11,11 +11,11 @@ const MainSummary: React.FC<{ className: string }> = ({ className = '' }) => {
   const lastSummaryData = getLastSummary();
 
   const styleDischarged = {
-    width: `${(lastSummaryData.discharged / lastSummaryData.all) * 100}%`,
+    width: `${(lastSummaryData.discharged / lastSummaryData.total) * 100}%`,
   };
 
   const styleHospitalized = {
-    width: `${(lastSummaryData.hospitalized / lastSummaryData.all) * 100}%`,
+    width: `${(lastSummaryData.hospitalized / lastSummaryData.total) * 100}%`,
   };
 
   return (

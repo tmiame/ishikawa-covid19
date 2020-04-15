@@ -13,7 +13,7 @@ type CaseItem = {
   gender?: number;
   city?: string;
   job?: string;
-  symptoms?: { type: string; text: string }[];
+  symptoms: { type: string; text: string }[];
   contactRelation?: { id: number; text: string }[];
 };
 
@@ -43,6 +43,7 @@ export const formatData = (contents: Contents) => {
           note: [],
           date,
           dateTestPositive: date,
+          symptoms: [],
         });
         break;
       }
@@ -79,7 +80,7 @@ export const formatData = (contents: Contents) => {
             break;
           }
           default: {
-            const currentSymptoms = curentDayItem.symptoms || [];
+            const currentSymptoms = curentDayItem.symptoms ?? [];
             const symptomsItems = formatPTagSymptomsItems(text);
             curentDayItem.symptoms = [...currentSymptoms, ...symptomsItems];
             break;
