@@ -1,0 +1,41 @@
+{
+  "lastUpdateDateTime": "2020-04-15T00:00:00+09:00",
+  "items": [
+    {
+      "id": 4,
+      "date": "2020-04-15T00:00:00+09:00",
+      "dateTestPositive": "2020-04-15T00:00:00+09:00",
+      "age": 60,
+      "gender": 1,
+      "city": "kanazawa",
+      "symptoms": []
+    },
+    {
+      "id": 3,
+      "date": "2020-04-14T00:00:00+09:00",
+      "dateTestPositive": "2020-04-14T00:00:00+09:00",
+      "age": 70,
+      "gender": 1,
+      "city": "hakusan",
+      "symptoms": []
+    },
+    {
+      "id": 2,
+      "date": "2020-04-14T00:00:00+09:00",
+      "dateTestPositive": "2020-04-14T00:00:00+09:00",
+      "age": 70,
+      "gender": 1,
+      "city": "kanazawa",
+      "symptoms": []
+    },
+    {
+      "id": 1,
+      "date": "2020-04-14T00:00:00+09:00",
+      "dateTestPositive": "2020-04-14T00:00:00+09:00",
+      "age": 60,
+      "gender": 1,
+      "city": "kanazawa",
+      "symptoms": []
+    },
+  ]
+}

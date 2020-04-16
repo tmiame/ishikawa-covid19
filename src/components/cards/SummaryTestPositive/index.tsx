@@ -19,6 +19,12 @@ const DailyCases: React.FC<{ className: string }> = ({ className = '' }) => {
     <div className={className}>
       <div className={styles.cardList}>
         <div className={styles.card}>
+          <h3 className={styles.title}>死亡者</h3>
+          <p className={`${styles.number} ${styles.numberIsDead}`}>
+            4<span>人</span>
+          </p>
+        </div>
+        <div className={styles.card}>
           <h3 className={styles.title}>{dateFromNowLabel(updateTime)}の感染者</h3>
           <p className={`${styles.number} ${styles.numberIs01}`}>
             {todayCases.length}

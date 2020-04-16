@@ -1,4 +1,5 @@
 import checkStringJpDate from './checkStringJpDate';
+import { findContactRelations } from './utils';
 
 /**
  * 年代取得
@@ -153,17 +154,20 @@ export function formatPTagSymptomsItems(text: string) {
 
   return breakLines.map((line) => {
     const date = checkStringJpDate(line);
+    const refs = findContactRelations(line);
 
     if (date) {
       return {
         type: 'date',
         text: date,
+        refs: refs ?? [],
       };
     }
 
     return {
       type: 'text',
       text: line,
+      refs: refs ?? [],
     };
   });
 }

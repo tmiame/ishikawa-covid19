@@ -1,0 +1,407 @@
+{
+  "lastUpdateDateTime": "2020-04-15T13:34:22.000Z",
+  "items": [
+    {
+      "date": "2020-04-15T13:34:22.000Z",
+      "total": 140,
+      "hospitalized": 129,
+      "discharged": 11,
+      "list": [
+        {
+          "name": "金沢市",
+          "total": 93,
+          "discharged": 6,
+          "hospitalized": 87
+        },
+        {
+          "name": "七尾市",
+          "total": 0,
+          "discharged": 0,
+          "hospitalized": 0
+        },
+        {
+          "name": "小松市",
+          "total": 5,
+          "discharged": 1,
+          "hospitalized": 4
+        },
+        {
+          "name": "輪島市",
+          "total": 0,
+          "discharged": 0,
+          "hospitalized": 0
+        },
+        {
+          "name": "珠洲市",
+          "total": 0,
+          "discharged": 0,
+          "hospitalized": 0
+        },
+        {
+          "name": "加賀市",
+          "total": 0,
+          "discharged": 0,
+          "hospitalized": 0
+        },
+        {
+          "name": "羽咋市",
+          "total": 1,
+          "discharged": 0,
+          "hospitalized": 1
+        },
+        {
+          "name": "かほく市",
+          "total": 5,
+          "discharged": 0,
+          "hospitalized": 5
+        },
+        {
+          "name": "白山市",
+          "total": 12,
+          "discharged": 2,
+          "hospitalized": 10
+        },
+        {
+          "name": "能美市",
+          "total": 1,
+          "discharged": 1,
+          "hospitalized": 0
+        },
+        {
+          "name": "野々市市",
+          "total": 12,
+          "discharged": 0,
+          "hospitalized": 12
+        },
+        {
+          "name": "川北町",
+          "total": 2,
+          "discharged": 0,
+          "hospitalized": 2
+        },
+        {
+          "name": "津幡町",
+          "total": 3,
+          "discharged": 0,
+          "hospitalized": 3
+        },
+        {
+          "name": "志賀町",
+          "total": 0,
+          "discharged": 0,
+          "hospitalized": 0
+        },
+        {
+          "name": "内灘町",
+          "total": 4,
+          "discharged": 0,
+          "hospitalized": 4
+        },
+        {
+          "name": "宝達志水町",
+          "total": 0,
+          "discharged": 0,
+          "hospitalized": 0
+        },
+        {
+          "name": "中能登町",
+          "total": 1,
+          "discharged": 0,
+          "hospitalized": 1
+        },
+        {
+          "name": "穴水町",
+          "total": 0,
+          "discharged": 0,
+          "hospitalized": 0
+        },
+        {
+          "name": "能登町",
+          "total": 0,
+          "discharged": 0,
+          "hospitalized": 0
+        },
+        {
+          "name": "県外",
+          "total": 1,
+          "discharged": 1,
+          "hospitalized": 0
+        },
+        {
+          "name": "計",
+          "total": 140,
+          "discharged": 11,
+          "hospitalized": 129
+        }
+      ]
+    },
+    {
+      "date": "2020-04-14T13:34:22.000Z",
+      "total": 131,
+      "hospitalized": 10,
+      "discharged": 121,
+      "list": [
+        {
+          "name": "金沢市",
+          "total": 88,
+          "hospitalized": 5,
+          "discharged": 83
+        },
+        {
+          "name": "七尾市",
+          "total": 0,
+          "hospitalized": 0,
+          "discharged": 0
+        },
+        {
+          "name": "小松市",
+          "total": 5,
+          "hospitalized": 1,
+          "discharged": 4
+        },
+        {
+          "name": "輪島市",
+          "total": 0,
+          "hospitalized": 0,
+          "discharged": 0
+        },
+        {
+          "name": "珠洲市",
+          "total": 0,
+          "hospitalized": 0,
+          "discharged": 0
+        },
+        {
+          "name": "加賀市",
+          "total": 0,
+          "hospitalized": 0,
+          "discharged": 0
+        },
+        {
+          "name": "羽咋市",
+          "total": 1,
+          "hospitalized": 0,
+          "discharged": 1
+        },
+        {
+          "name": "かほく市",
+          "total": 5,
+          "hospitalized": 0,
+          "discharged": 5
+        },
+        {
+          "name": "白山市",
+          "total": 11,
+          "hospitalized": 2,
+          "discharged": 9
+        },
+        {
+          "name": "能美市",
+          "total": 1,
+          "hospitalized": 1,
+          "discharged": 0
+        },
+        {
+          "name": "野々市市",
+          "total": 10,
+          "hospitalized": 0,
+          "discharged": 10
+        },
+        {
+          "name": "川北町",
+          "total": 2,
+          "hospitalized": 0,
+          "discharged": 2
+        },
+        {
+          "name": "津幡町",
+          "total": 3,
+          "hospitalized": 0,
+          "discharged": 3
+        },
+        {
+          "name": "志賀町",
+          "total": 0,
+          "hospitalized": 0,
+          "discharged": 0
+        },
+        {
+          "name": "内灘町",
+          "total": 3,
+          "hospitalized": 0,
+          "discharged": 3
+        },
+        {
+          "name": "宝達志水町",
+          "total": 0,
+          "hospitalized": 0,
+          "discharged": 0
+        },
+        {
+          "name": "中能登町",
+          "total": 1,
+          "hospitalized": 0,
+          "discharged": 1
+        },
+        {
+          "name": "穴水町",
+          "total": 0,
+          "hospitalized": 0,
+          "discharged": 0
+        },
+        {
+          "name": "能登町",
+          "total": 0,
+          "hospitalized": 0,
+          "discharged": 0
+        },
+        {
+          "name": "県外",
+          "total": 1,
+          "hospitalized": 1,
+          "discharged": 0
+        },
+        {
+          "name": "計",
+          "total": 131,
+          "hospitalized": 10,
+          "discharged": 121
+        }
+      ]
+    },
+    {
+      "date": "2020-04-13T13:34:22.000Z",
+      "total": 121,
+      "hospitalized": 7,
+      "discharged": 114,
+      "list": [
+        {
+          "name": "金沢市",
+          "total": 83,
+          "hospitalized": 3,
+          "discharged": 80
+        },
+        {
+          "name": "七尾市",
+          "total": 0,
+          "hospitalized": 0,
+          "discharged": 0
+        },
+        {
+          "name": "小松市",
+          "total": 5,
+          "hospitalized": 1,
+          "discharged": 4
+        },
+        {
+          "name": "輪島市",
+          "total": 0,
+          "hospitalized": 0,
+          "discharged": 0
+        },
+        {
+          "name": "珠洲市",
+          "total": 0,
+          "hospitalized": 0,
+          "discharged": 0
+        },
+        {
+          "name": "加賀市",
+          "total": 0,
+          "hospitalized": 0,
+          "discharged": 0
+        },
+        {
+          "name": "羽咋市",
+          "total": 1,
+          "hospitalized": 0,
+          "discharged": 1
+        },
+        {
+          "name": "かほく市",
+          "total": 5,
+          "hospitalized": 0,
+          "discharged": 5
+        },
+        {
+          "name": "白山市",
+          "total": 8,
+          "hospitalized": 1,
+          "discharged": 7
+        },
+        {
+          "name": "能美市",
+          "total": 1,
+          "hospitalized": 1,
+          "discharged": 0
+        },
+        {
+          "name": "野々市市",
+          "total": 8,
+          "hospitalized": 0,
+          "discharged": 8
+        },
+        {
+          "name": "川北町",
+          "total": 2,
+          "hospitalized": 0,
+          "discharged": 2
+        },
+        {
+          "name": "津幡町",
+          "total": 3,
+          "hospitalized": 0,
+          "discharged": 3
+        },
+        {
+          "name": "志賀町",
+          "total": 0,
+          "hospitalized": 0,
+          "discharged": 0
+        },
+        {
+          "name": "内灘町",
+          "total": 3,
+          "hospitalized": 0,
+          "discharged": 3
+        },
+        {
+          "name": "宝達志水町",
+          "total": 0,
+          "hospitalized": 0,
+          "discharged": 0
+        },
+        {
+          "name": "中能登町",
+          "total": 1,
+          "hospitalized": 0,
+          "discharged": 1
+        },
+        {
+          "name": "穴水町",
+          "total": 0,
+          "hospitalized": 0,
+          "discharged": 0
+        },
+        {
+          "name": "能登町",
+          "total": 0,
+          "hospitalized": 0,
+          "discharged": 0
+        },
+        {
+          "name": "県外",
+          "total": 1,
+          "hospitalized": 1,
+          "discharged": 0
+        },
+        {
+          "name": "計",
+          "total": 121,
+          "hospitalized": 7,
+          "discharged": 114
+        }
+      ]
+    }
+  ]
+}
