@@ -5,11 +5,11 @@
 import React from 'react';
 import moment from 'moment';
 import styles from './index.module.scss';
-import { getCases, getCaseDataLastUpdateTime } from '@/plugins/caseData';
+import { getCases, getCasesLatestDateTime } from '@/plugins/caseData';
 import { city } from '@/constants/city';
 
 const DailyCases = (): JSX.Element => {
-  const updateTime = getCaseDataLastUpdateTime();
+  const updateTime = getCasesLatestDateTime();
   const allCases = getCases();
 
   return (

@@ -1,6 +1,8 @@
-/*-- Chart --*/
+// Chart
 .c3 svg {
-  font: 10px sans-serif;
+  max-width: 100%;
+  font-size: 10px;
+  font-weight: $font-weight-bold;
 
   text {
     color: var(--text-primary);
@@ -8,27 +10,24 @@
   }
 }
 
-.c3-axis-y-label,
-.c3-axis-y2-label {
+.c3 .c3-axis-y-label,
+.c3 .c3-axis-y2-label {
   font-size: 12px;
-  font-weight: bold;
-  line-height: 2;
+  font-weight: $font-weight-base;
   letter-spacing: 0.1em;
 
   @include FR_MQ_ONLY(QS) {
     font-size: 10px;
-    font-weight: $font-weight-medium;
   }
 }
 
-.c3-axis .tick {
-  font-size: 11px;
-  font-weight: bold;
-  letter-spacing: -0.015em;
+.c3 .c3-axis .tick {
+  font-size: 10px;
+  font-weight: $font-weight-bold;
+  letter-spacing: -0.025em;
 
   @include FR_MQ_ONLY(QS) {
     font-size: 10px;
-    font-weight: $font-weight-medium;
   }
 }
 
@@ -42,9 +41,9 @@
   }
 }
 
-/*-- Axis --*/
-/*-- Grid --*/
-.c3-grid line {
+// Axis
+// Grid
+.c3 .c3-grid line {
   stroke: rgba(#000000, 0.1);
 
   html[dark] & {
@@ -52,23 +51,23 @@
   }
 }
 
-.c3-grid text {
+.c3 .c3-grid text {
   fill: rgba(#000000, 0.1);
 }
 
-/*-- Text on Chart --*/
-.c3-text.c3-empty {
+// Text on Chart
+.c3 .c3-text.c3-empty {
   fill: var(--text-secondary);
   font-size: 2em;
 }
 
-/*-- Line --*/
-.c3-line {
-  stroke-width: 1px;
+// Line
+.c3 .c3-line {
+  stroke-width: 2px;
 }
 
-/*-- Bar --*/
-.c3-bar {
+// Bar
+.c3 .c3-bar {
   stroke: #000000 !important;
   stroke-width: 0.5 !important;
 
@@ -78,52 +77,63 @@
   }
 }
 
-/*-- Select - Drag --*/
-/*-- Legend --*/
-.c3-legend-item {
+// Select - Drag
+// Legend
+.c3 .c3-legend-item {
   font-weight: bold;
 }
 
-/*-- Tooltip --*/
-.c3-tooltip-container {
+// Tooltip
+.c3 .c3-tooltip-container {
   z-index: 10;
 }
 
-.c3-tooltip {
+.c3 .c3-tooltip {
   background-color: var(--map-background-secondary);
-  box-shadow: 0 5px 10px rgba(#000000, 0.2);
-  opacity: 0.9;
+  box-shadow: 0 10px 20px rgba(#000000, 0.15);
+  opacity: 0.95;
+  border-radius: 2px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.c3-tooltip tr {
-  border: 2px solid var(--map-stroke);
+.c3 .c3-tooltip tr {
+  border: 1px solid var(--map-stroke);
 }
 
-.c3-tooltip th {
-  @include TYPESET('body-small');
+.c3 .c3-tooltip th {
+  @include TYPESET('body-medium');
 
   background-color: var(--map-background-active);
-  padding: 2px 10px;
+  padding: 0.2em;
   color: currentColor;
-}
-
-.c3-tooltip td {
-  @include TYPESET('body-large');
-
-  padding: 3px 10px;
-  background-color: var(--map-background-secondary);
-  border-left: 2px solid var(--map-stroke);
+  text-align: center;
   font-weight: $font-weight-bold;
 }
 
-.c3-tooltip td > span {
+.c3 .c3-tooltip td {
+  @include TYPESET('body-xsmall');
+
+  padding: 0.2em 0.8em;
+  background-color: var(--map-background-secondary);
+  border-left: 1px solid var(--map-stroke);
+  font-weight: $font-weight-bold;
+
+  &:last-child {
+    text-align: center;
+    font-size: 150%;
+    line-height: 1.2;
+  }
+}
+
+.c3 .c3-tooltip td > span {
   display: inline-block;
   width: 10px;
   height: 10px;
-  margin-right: 6px;
+  margin-right: 0.5em;
 }
 
-/*-- Area --*/
-.c3-area {
-  opacity: 0.1;
+// Area
+.c3 .c3-area {
+  opacity: 0.1 !important;
 }

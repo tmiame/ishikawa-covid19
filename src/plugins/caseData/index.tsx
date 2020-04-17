@@ -22,13 +22,6 @@ export function getCityDateDayCases(city: CityType, date: Moment | null = null):
 }
 
 /**
- * データの最終更新日
- */
-export function getCaseDataLastUpdateTime(): Moment {
-  return moment(caseData.lastUpdateDateTime);
-}
-
-/**
  * 特定の曜日の陽性者を取得
  */
 export function getCases(date: Moment | null = null): CaseItem[] {
@@ -47,4 +40,19 @@ export function getBetweenCases(minDate: Moment, maxDate: Moment): CaseItem[] {
   return caseData.items.filter((caseItem: CaseItem) => {
     return moment(caseItem.date).isBetween(minDate, maxDate, 'day');
   });
+}
+
+/**
+ * 一番新しい感染者発生日
+ */
+export function getCasesLatestDateTime(): Moment {
+  const cases = getCases();
+  return moment(cases[0].date);
+}
+
+/**
+ * データの最終更新日
+ */
+export function getCaseDataLastUpdateTime(): Moment {
+  return moment(caseData.lastUpdateDateTime);
 }

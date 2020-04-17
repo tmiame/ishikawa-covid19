@@ -1,20 +1,11 @@
 import path = require('path');
 import puppeteer = require('puppeteer');
-import moment = require('moment');
 import { promises as fs } from 'fs';
 import { formatData } from './modules/formatData';
 import { formatCondition } from './modules/formatSummary';
 import { getTime } from './modules/utils';
-import { ConditionContent } from './types';
-
-const getConditionFile = async (filePath = ''): Promise<ConditionContent | null> => {
-  try {
-    await fs.access(filePath);
-    return JSON.parse(await fs.readFile(filePath, 'utf8'));
-  } catch {
-    return null;
-  }
-};
+import { writeCondition } from './modules/writeCondition';
+import { writeCaseList } from './modules/writeCaseList';
 
 const runPuppeteer = async () => {
   const browserOptions = { args: ['--no-sandbox', '--unhandled-rejections=strict'] };
@@ -30,11 +21,14 @@ const runPuppeteer = async () => {
     }
   });
 
-  await page.goto('https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html');
+  const options = {
+    selector: '#tmp_contents > *',
+    url: 'https://www.pref.ishikawa.lg.jp/kansen/coronakennai.html',
+  };
 
-  const selector = '#tmp_contents > *';
+  await page.goto(options.url);
 
-  const datas = await page.evaluate((selector) => {
+  const datas = await page.evaluate(({ selector }) => {
     const contents: Element[] = Array.from(document.querySelectorAll(selector));
 
     const conditionContent = contents.find((el) => {
@@ -49,59 +43,33 @@ const runPuppeteer = async () => {
     }, []);
 
     return {
-      summary: conditionContent?.textContent?.split(/\n/) ?? [],
+      condition: conditionContent?.textContent?.split(/\n/) ?? [],
       caseList: caseContent.map((caseItem) => ({
         tagName: caseItem.tagName,
         textContent: (caseItem.textContent || '').replace(/\n+/g, '<br>').replace(/\s+/g, ''),
       })),
     };
-  }, selector);
+  }, options);
 
   await browser.close();
 
   const updateTime = getTime();
   const caseList = formatData(datas.caseList);
-  const { total, hospitalized, discharged, list } = formatCondition(datas.summary);
-
-  const toJsonData = {
-    lastUpdateDateTime: updateTime,
-    items: caseList,
-  };
-
-  const toJsonConditionData = {
-    lastUpdateDateTime: updateTime,
-    total,
-    hospitalized,
-    discharged,
-    list,
-  };
+  const condition = formatCondition(datas.condition);
 
   try {
     const dirPath = path.join(__dirname, '/data');
-    const filePath = path.join(dirPath, '/list.json');
     await fs.mkdir(dirPath, { recursive: true });
-    await fs.writeFile(filePath, JSON.stringify(toJsonData, null, 2));
 
-    const filePathCondition = path.join(dirPath, '/conditions.json');
-    let fileCondition = await getConditionFile(filePathCondition);
-    if (!fileCondition) {
-      fileCondition = {
-        lastUpdateDateTime: toJsonConditionData.lastUpdateDateTime,
-        items: [{ date: toJsonConditionData.lastUpdateDateTime, total, hospitalized, discharged, list }],
-      };
-      await fs.writeFile(filePathCondition, JSON.stringify(fileCondition, null, 2));
-      return;
-    }
-    if (moment(fileCondition.lastUpdateDateTime).isSame(moment(toJsonConditionData.lastUpdateDateTime), 'day')) {
-      return 'No Update Page';
-    }
+    const listPath = path.join(dirPath, '/list.json');
+    await writeCaseList(listPath, updateTime, caseList);
 
-    fileCondition.lastUpdateDateTime = toJsonConditionData.lastUpdateDateTime;
-    fileCondition.items = [
-      { date: toJsonConditionData.lastUpdateDateTime, total, hospitalized, discharged, list },
-      ...fileCondition.items,
-    ];
-    await fs.writeFile(filePathCondition, JSON.stringify(fileCondition, null, 2));
+    const conditionPath = path.join(dirPath, '/condition.json');
+    const conditionData = {
+      date: updateTime,
+      ...condition,
+    };
+    await writeCondition(conditionPath, conditionData);
   } catch (err) {
     console.error(err);
   }

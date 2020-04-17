@@ -2,18 +2,18 @@
  * 感染者の状況(一日・週間・累計)
  */
 
-import React from 'react';
+import React, { useMemo } from 'react';
 import moment from 'moment';
 import styles from './index.module.scss';
-import { getCases, getBetweenCases, getCaseDataLastUpdateTime } from '@/plugins/caseData';
+import { getCases, getBetweenCases, getCasesLatestDateTime } from '@/plugins/caseData';
 import dateFromNowLabel from '@/utils/dateFromNowLabel';
 
 const DailyCases: React.FC<{ className: string }> = ({ className = '' }) => {
-  const updateTime = getCaseDataLastUpdateTime();
-  const todayCases = getCases(updateTime);
-  const yesterdayCases = getCases(moment(updateTime).subtract(1, 'day'));
-  const weekCases = getBetweenCases(moment(updateTime).subtract(6, 'day'), updateTime);
-  const allCases = getCases();
+  const updateTime = useMemo(() => getCasesLatestDateTime(), []);
+  const todayCases = useMemo(() => getCases(updateTime), [updateTime]);
+  const yesterdayCases = useMemo(() => getCases(moment(updateTime).subtract(1, 'day')), [updateTime]);
+  const weekCases = useMemo(() => getBetweenCases(moment(updateTime).subtract(6, 'day'), updateTime), [updateTime]);
+  const allCases = useMemo(() => getCases(), []);
 
   return (
     <div className={className}>

@@ -67,6 +67,7 @@ interface CaseItem {
 interface ConditionItem {
   date: string;
   total: number;
+  dead: number;
   hospitalized: number;
   discharged: number;
   list: ConditionDayItem[];
@@ -75,6 +76,7 @@ interface ConditionItem {
 interface ConditionDayItem {
   name: string;
   total: number;
+  dead: number;
   hospitalized: number;
   discharged: number;
 }

@@ -28,32 +28,64 @@ export default function useResize() {
   return windowWidth;
 }
 
+export function useWindowSize() {
+  const isClient = typeof window === 'object';
+
+  function getSize() {
+    return {
+      width: isClient ? window.innerWidth : undefined,
+      height: isClient ? window.innerHeight : undefined,
+    };
+  }
+
+  const [windowSize, setWindowSize] = useState(getSize);
+
+  useEffect(() => {
+    if (!isClient) {
+      return;
+    }
+
+    function handleResize() {
+      setWindowSize(getSize());
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  return windowSize;
+}
+
 export function useMqMin(trigger: 'S' | 'XT' | 'T' | 'M' | 'L' | 'XL') {
-  const windowWidth = useResize();
+  const size = useWindowSize();
 
   function getBreakpoint() {
+    if (!size.width) {
+      return false;
+    }
+
     if (trigger === 'S') {
-      return windowWidth > MQ_TRIGGER.XS;
+      return size.width > MQ_TRIGGER.XS;
     } else if (trigger === 'XT') {
-      return windowWidth > MQ_TRIGGER.S;
+      return size.width > MQ_TRIGGER.S;
     } else if (trigger === 'T') {
-      return windowWidth > MQ_TRIGGER.XT;
+      return size.width > MQ_TRIGGER.XT;
     } else if (trigger === 'M') {
-      return windowWidth > MQ_TRIGGER.T;
+      return size.width > MQ_TRIGGER.T;
     } else if (trigger === 'L') {
-      return windowWidth > MQ_TRIGGER.M;
+      return size.width > MQ_TRIGGER.M;
     } else if (trigger === 'XL') {
-      return windowWidth > MQ_TRIGGER.L;
+      return size.width > MQ_TRIGGER.L;
     }
 
     return false;
   }
 
-  const [breakpoint, setbreakpoint] = useState(getBreakpoint());
+  const [breakpoint, setBreakpoint] = useState(getBreakpoint);
 
   useEffect(() => {
-    setbreakpoint(getBreakpoint());
-  }, [windowWidth]);
+    setBreakpoint(getBreakpoint);
+  }, [size]);
 
   return breakpoint;
 }

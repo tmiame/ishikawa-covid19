@@ -4,7 +4,7 @@ import moment, { Moment } from 'moment';
 import styles from './index.module.scss';
 import carbonIconStyles from '@/styles/modules/carbonIcon.module.scss';
 import Map from '@/components/cards/Map';
-import { getCases, getCaseDataLastUpdateTime } from '@/plugins/caseData';
+import { getCases, getCasesLatestDateTime } from '@/plugins/caseData';
 import { useMqMin } from '@/plugins/useResize';
 import { Calendar32 } from '@carbon/icons-react';
 
@@ -13,7 +13,7 @@ type Props = {
 };
 
 const DailyMap: React.FC<Props> = ({ className = '' }) => {
-  const lastUpdateTime = getCaseDataLastUpdateTime();
+  const lastUpdateTime = getCasesLatestDateTime();
   const [singleDate, setSingleDate] = useState<Moment>(lastUpdateTime);
   const [focused, setFocused] = useState<boolean | null>(false);
   const mqMinT = useMqMin('T');
