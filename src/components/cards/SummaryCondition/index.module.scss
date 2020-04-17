@@ -1,13 +1,5 @@
 @import '@/styles/import.scss';
 
-.block_heading {
-  position: absolute;
-  left: SIZE(25);
-  top: SIZE(25);
-  z-index: 10;
-  color: #ffffff;
-}
-
 .block {
   position: relative;
   overflow: hidden;
@@ -35,85 +27,100 @@
   }
 }
 
-.hospitalized {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 50%;
-  background-color: var(--c-red);
-  background-color: rgb(175, 18, 23);
-  border-right: 4px solid var(--brand-background-solid);
-}
-
-.hospitalized_heading {
+.block_heading {
   position: absolute;
   left: SIZE(25);
-  bottom: SIZE(20);
+  top: SIZE(25);
+  z-index: 10;
   color: #ffffff;
-  white-space: nowrap;
 }
 
-.discharged {
+.block_bar {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 0;
-  width: 50%;
-  background-color: var(--c-green);
 }
 
-.discharged_heading {
-  position: absolute;
-  left: SIZE(10);
-  bottom: SIZE(20);
-  white-space: nowrap;
-  color: var(--c-green-darken-4);
+.is-hospitalized {
+  background-color: var(--map-background);
+  left: 0;
+  // background-color: rgb(175, 18, 23);
+  // background-color: var(--color-red);
+}
 
-  @include FR_MQ_ONLY(QS) {
-    text-align: right;
-    left: auto;
-    right: calc(100% + #{SIZE(20)});
-    color: #ffffff;
+.is-discharged {
+  right: 0;
+  background-color: var(--map-background);
+  background-color: var(--color-green);
+}
+
+.is-dead {
+  right: 0;
+  background-color: var(--color-purple);
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #000000;
+    z-index: 2;
+  }
+
+  &::before { right: 100%; }
+  &::after { left: 100%; }
+}
+
+.count_wrapper {
+  position: absolute;
+  left: SIZE(25);
+  right: SIZE(25);
+  bottom: SIZE(25);
+  z-index: 2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.count {
+  margin-right: SIZE(25);
+  color: #ffffff;
+
+  &[data-type='dead'] {
+    margin-left: auto;
+  }
+
+  &[data-type='discharged'] {
+    margin-right: 0;
   }
 }
 
-.heading_title {
+.count_title {
   @include TYPESET('body-text');
 
   font-weight: $font-weight-medium;
-  letter-spacing: 0.1em;
   padding-left: 0.1em;
   line-height: 2;
 }
 
-.hospitalized_heading .heading_text {
-  font-size: 6rem;
+.count_text {
+  font-size: 4rem;
   font-weight: $font-weight-bold;
-  line-height: 0.9;
-  letter-spacing: -0.05em;
-  margin-left: -0.025em;
+  line-height: 0.975;
+  letter-spacing: -0.07em;
+  margin-left: -0.05em;
 
   small {
-    font-size: 35%;
+    font-size: 1.5rem;
   }
 
   @include FR_MQ_ONLY(QS) {
     font-size: 25vw;
   }
-}
 
-.discharged_heading .heading_text {
-  font-size: 4.25vw;
-  font-weight: $font-weight-bold;
-  line-height: 0.9;
-  letter-spacing: -0.025em;
-
-  small {
-    font-size: 35%;
-  }
-
-  @include FR_MQ_ONLY(QS) {
-    font-size: 10vw;
+  [data-type='hospitalized'] & {
+    font-size: 6rem;
   }
 }

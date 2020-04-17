@@ -2,14 +2,14 @@ import React from 'react';
 import moment from 'moment';
 import styles from './index.module.scss';
 import Map from '@/components/cards/Map';
-import { getCases, getCaseDataLastUpdateTime } from '@/plugins/caseData';
+import { getCases, getCasesLatestDateTime } from '@/plugins/caseData';
 
 type Props = {
   className?: string;
 };
 
 const DailyMap: React.FC<Props> = ({ className = '' }) => {
-  const updateTime = getCaseDataLastUpdateTime();
+  const updateTime = getCasesLatestDateTime();
   const allCases = getCases();
   const firstCase = allCases[allCases.length - 1];
   const firstCaseTime = firstCase.date;
