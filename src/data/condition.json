@@ -1,19 +1,19 @@
 {
-  "lastUpdateDateTime": "2020-04-17T15:23:45.000Z",
+  "lastUpdateDateTime": "2020-04-19T04:34:48.000Z",
   "items": [
     {
-      "date": "2020-04-17T15:23:45.000Z",
-      "total": 160,
-      "discharged": 10,
+      "date": "2020-04-19T04:34:48.000Z",
+      "total": 173,
+      "discharged": 11,
       "dead": 4,
-      "hospitalized": 146,
+      "hospitalized": 158,
       "list": [
         {
           "name": "金沢市",
-          "total": 106,
+          "total": 113,
           "discharged": 5,
           "dead": 3,
-          "hospitalized": 98
+          "hospitalized": 105
         },
         {
           "name": "七尾市",
@@ -24,10 +24,10 @@
         },
         {
           "name": "小松市",
-          "total": 5,
-          "discharged": 1,
+          "total": 8,
+          "discharged": 2,
           "dead": 0,
-          "hospitalized": 4
+          "hospitalized": 6
         },
         {
           "name": "輪島市",
@@ -45,10 +45,10 @@
         },
         {
           "name": "加賀市",
-          "total": 0,
+          "total": 1,
           "discharged": 0,
           "dead": 0,
-          "hospitalized": 0
+          "hospitalized": 1
         },
         {
           "name": "羽咋市",
@@ -87,10 +87,10 @@
         },
         {
           "name": "川北町",
-          "total": 2,
+          "total": 3,
           "discharged": 0,
           "dead": 0,
-          "hospitalized": 2
+          "hospitalized": 3
         },
         {
           "name": "津幡町",
@@ -108,10 +108,10 @@
         },
         {
           "name": "内灘町",
-          "total": 4,
+          "total": 5,
           "discharged": 0,
           "dead": 0,
-          "hospitalized": 4
+          "hospitalized": 5
         },
         {
           "name": "宝達志水町",
@@ -150,10 +150,10 @@
         },
         {
           "name": "計",
-          "total": 160,
-          "discharged": 10,
+          "total": 173,
+          "discharged": 11,
           "dead": 4,
-          "hospitalized": 146
+          "hospitalized": 158
         }
       ]
     }
