@@ -11,7 +11,7 @@
     "cp-data-dev": "node build/index.js && cp -rf build/data/* ../../src/data/",
     "start": "npm run clean && npm run ts:dev",
     "build": "npm run clean && npm run ts:build",
-    "ci": "run build && npm run data-to-json",
+    "ci": "npm run build && npm run data-to-json",
     "test": "jest",
     "test:dev": "jest --watch"
   },
