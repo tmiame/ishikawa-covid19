@@ -25,16 +25,16 @@ export const writeCondition = async (filePath = '', data: ConditionList) => {
     return;
   }
 
-  const newData = {
-    lastUpdateDateTime: data.date,
-    items: [data, ...file.items],
-  };
-
   const isNotUpdate = util.isDeepStrictEqual(file.items[0].list, data.list);
 
   if (isNotUpdate) {
     return 'No Update Page';
   }
+
+  const newData = {
+    lastUpdateDateTime: data.date,
+    items: [data, ...file.items],
+  };
 
   await fs.writeFile(filePath, JSON.stringify(newData, null, 2));
 };

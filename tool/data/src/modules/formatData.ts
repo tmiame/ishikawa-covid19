@@ -36,11 +36,11 @@ export const formatData = (contents: Contents) => {
       }
       case 'H3': {
         const date = publishGroup[publishGroup.length - 1];
-        const { id } = formatH3Tag(text);
+        const { id, notes } = formatH3Tag(text);
 
         result.push({
           id,
-          note: [],
+          note: notes,
           date,
           dateTestPositive: date,
           symptoms: [],
