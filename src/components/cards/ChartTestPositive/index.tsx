@@ -11,7 +11,7 @@ import { getCases } from '@/plugins/caseData';
 import { useMqMin } from '@/plugins/useResize';
 
 const getAllCases = () => {
-  return getCases().sort((a, b) => {
+  return [...getCases()].sort((a, b) => {
     if (a.date < b.date) return -1;
     if (a.date > b.date) return 1;
     return 0;

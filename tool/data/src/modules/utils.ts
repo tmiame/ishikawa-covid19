@@ -1,3 +1,5 @@
+import moment = require('moment-timezone');
+
 export const parseNumber = (str = '') => parseInt(str.replace(/[^0-9\\.]/g, ''));
 
 export const findContactRelations = (str = '') => {
@@ -17,9 +19,8 @@ export const findContactRelations = (str = '') => {
 };
 
 export const getTime = () => {
-  const updateTime = new Date().toLocaleString('en-US', {
-    timeZone: 'Asia/Tokyo',
-  });
+  const now = new Date();
+  const tz = moment(now).tz('Asia/Tokyo');
 
-  return new Date(updateTime).toJSON();
+  return tz.format();
 };

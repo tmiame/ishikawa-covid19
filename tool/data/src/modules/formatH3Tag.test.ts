@@ -9,12 +9,34 @@ const cases: [
       id: number;
       text: string;
     }[];
+    notes: string[];
   },
 ][] = [
-  ['感染者52', { id: 52, name: '感染者52', refs: [] }],
-  ['感染者2', { id: 2, name: '感染者2', refs: [] }],
-  ['感染者2', { id: 2, name: '感染者2', refs: [] }],
-  ['感染者2', { id: 2, name: '感染者2', refs: [] }],
+  ['感染者52', { id: 52, name: '感染者52', refs: [], notes: [] }],
+  ['感染者2', { id: 2, name: '感染者2', refs: [], notes: [] }],
+  [
+    '感染者2 ※感染者150の同居者',
+    {
+      id: 2,
+      name: '感染者2',
+      notes: [],
+      refs: [
+        {
+          id: 150,
+          text: '150の同居者',
+        },
+      ],
+    },
+  ],
+  [
+    '感染者2 ※加賀東芝関係',
+    {
+      id: 2,
+      name: '感染者2',
+      refs: [],
+      notes: ['加賀東芝関係'],
+    },
+  ],
 ];
 
 describe('check <h3> tag', () => {
