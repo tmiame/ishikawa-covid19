@@ -4,11 +4,10 @@
 
 import React from 'react';
 import styles from './index.module.scss';
-import { getLastSummaryUpdateUpdateDateTime, getLastSummary } from '@/plugins/conditionData';
+import { getLastConditionItem } from '@/plugins/conditionData';
 
 const MainSummary: React.FC<{ className: string }> = ({ className = '' }) => {
-  const updateTime = getLastSummaryUpdateUpdateDateTime();
-  const latestData = getLastSummary();
+  const latestData = getLastConditionItem();
 
   const styleDischarged = {
     width: `${(latestData.discharged / latestData.total) * 100}%`,
@@ -27,7 +26,6 @@ const MainSummary: React.FC<{ className: string }> = ({ className = '' }) => {
     <div className={`${styles.block} ${className}`}>
       <header className={styles.block_heading}>
         <h2 className="heading-4">感染者の状態</h2>
-        <p className="body-xsmall">{`${updateTime.format('YYYY年M月D日')}更新 ${updateTime.fromNow()}`}</p>
       </header>
 
       <div className={[styles.block_bar, styles.isHospitalized].join(' ')} style={styleHospitalized}></div>
