@@ -1,5 +1,5 @@
 export default function checkLabel(text: string) {
-  const isLabel = text.match(/^[(|（][0-9][）|)]/);
+  const isLabel = text.match(/^[(|（]\d+[）|)]/);
 
   if (!isLabel) {
     return null;
