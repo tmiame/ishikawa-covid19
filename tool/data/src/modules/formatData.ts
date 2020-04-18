@@ -14,7 +14,7 @@ type CaseItem = {
   city?: string;
   job?: string;
   symptoms: { type: string; text: string }[];
-  contactRelation?: { id: number; text: string }[];
+  refs?: { id: number; text: string }[];
 };
 
 type Contents = {

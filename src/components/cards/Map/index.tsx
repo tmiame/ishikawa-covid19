@@ -5,7 +5,7 @@
 import React, { useState, useEffect } from 'react';
 import { Moment } from 'moment';
 import ReactTooltip from 'react-tooltip';
-import { getCityDateDayCases, getCases, getCityCases } from '@/plugins/caseData';
+import { getCityDayCases, getCases, getCityCases } from '@/plugins/caseData';
 import { city, CityItemType } from '@/constants/city';
 import pathData from './svgIshikawaPath';
 import styles from './index.module.scss';
@@ -30,7 +30,7 @@ const pathColor = (number = 0): string => {
 const Map: React.FC<Props> = ({ className = '', date }) => {
   const [mapData, setMapData] = useState(
     Object.values(city).map((cityItem: CityItemType) => {
-      const cases = date ? getCityDateDayCases(cityItem.id, date) : getCityCases(cityItem.id);
+      const cases = date ? getCityDayCases(cityItem.id, date) : getCityCases(cityItem.id);
       return {
         ...cityItem,
         cases: cases,
@@ -40,7 +40,7 @@ const Map: React.FC<Props> = ({ className = '', date }) => {
   );
 
   const getOtherCases = (key: 'unknown' | 'kengai', date?: Moment) => {
-    return date ? getCityDateDayCases(key, date) : getCityCases(key);
+    return date ? getCityDayCases(key, date) : getCityCases(key);
   };
 
   const [otherCases, setOtherCases] = useState({
@@ -59,7 +59,7 @@ const Map: React.FC<Props> = ({ className = '', date }) => {
       mapData.map((cityItem) => {
         return {
           ...cityItem,
-          cases: getCityDateDayCases(cityItem.id, date),
+          cases: getCityDayCases(cityItem.id, date),
         };
       }),
     );

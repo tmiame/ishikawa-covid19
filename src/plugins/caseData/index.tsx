@@ -1,49 +1,70 @@
 import moment, { Moment } from 'moment';
 import { CityType } from '@/constants/city';
 import caseData from '@/data/list.json';
+import caseMergeData from '@/data/list-custom';
+
+/**
+ * Botで取得したデータにカスタムデータを付け加える
+ */
+const data = caseData.items.map(
+  (item): CaseItem => {
+    const mergeData = caseMergeData.find((margeItem) => margeItem.id === item.id);
+
+    if (!mergeData) {
+      return item;
+    }
+
+    return {
+      ...item,
+      source: mergeData.source ?? undefined,
+      city: mergeData.city ?? item.city,
+      refs: mergeData.refs && item.refs ? [...item.refs, ...mergeData.refs] : item.refs,
+      note: mergeData.note && item.note ? [...item.note, ...mergeData.note] : item.note,
+    };
+  },
+);
 
 /**
  * 累計の陽性者を取得
- *
- * @param {CityType} city
  */
-export function getCityCases(city: CityType): CaseItem[] {
-  return caseData.items.filter((caseItem: CaseItem) => caseItem.city === city);
+export function getCityCases(city: CityType) {
+  return data.filter((caseItem) => caseItem.city === city);
 }
 
 /**
- * 特定の曜日の曜日の陽性者を取得
+ * 市町村の特定日の陽性者を取得
  */
-export function getCityDateDayCases(city: CityType, date: Moment | null = null): CaseItem[] {
-  const targetDate = !date ? moment() : moment(date);
-  return caseData.items.filter((caseItem: CaseItem) => {
+export function getCityDayCases(city: CityType, date: Moment | null = null) {
+  const targetDate = date ?? moment();
+
+  return data.filter((caseItem) => {
     return caseItem.city === city && moment(caseItem.date).isSame(targetDate, 'day');
   });
 }
 
 /**
- * 特定の曜日の陽性者を取得
+ * すべてもしくは特定日の陽性者を取得
  */
-export function getCases(date: Moment | null = null): CaseItem[] {
+export function getCases(date: Moment | null = null) {
   if (!date) {
-    return caseData.items;
+    return data;
   }
-  return caseData.items.filter((caseItem: CaseItem) => {
+  return data.filter((caseItem) => {
     return moment(caseItem.date).isSame(moment(date), 'day');
   });
 }
 
 /**
- * 特定の曜日の陽性者を取得
+ * 指定期間の陽性者を取得
  */
-export function getBetweenCases(minDate: Moment, maxDate: Moment): CaseItem[] {
-  return caseData.items.filter((caseItem: CaseItem) => {
+export function getBetweenCases(minDate: Moment, maxDate: Moment) {
+  return data.filter((caseItem) => {
     return moment(caseItem.date).isBetween(minDate, maxDate, 'day');
   });
 }
 
 /**
- * 一番新しい感染者発生日
+ * 一番新しい感染者の感染日を取得する
  */
 export function getCasesLatestDateTime(): Moment {
   const cases = getCases();
@@ -51,7 +72,7 @@ export function getCasesLatestDateTime(): Moment {
 }
 
 /**
- * データの最終更新日
+ * 感染者データ最終更新日を取得する
  */
 export function getCaseDataLastUpdateTime(): Moment {
   return moment(caseData.lastUpdateDateTime);

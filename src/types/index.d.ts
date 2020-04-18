@@ -4,7 +4,7 @@ interface SymptomsItem {
   text: string;
 }
 
-interface ContactRelationItem {
+interface RefItem {
   id: number;
   text: string;
 }
@@ -12,7 +12,7 @@ interface ContactRelationItem {
 declare module '@/data/list.json' {
   interface CaseData {
     lastUpdateDateTime: string;
-    items: CaseItem[];
+    items: CaseItemBot[];
   }
 
   const data: CaseData;
@@ -31,7 +31,7 @@ declare module '@/data/condition.json' {
   export default data;
 }
 
-interface CaseItem {
+interface CaseItemBot {
   id: number;
   date: string;
   dateTestPositive: string;
@@ -59,10 +59,44 @@ interface CaseItem {
     | 'kaga'
     | 'unknown'
     | 'kengai';
-  note?: string;
+  note?: string[];
   symptoms?: SymptomsItem[];
-  contactRelation?: ContactRelationItem[];
+  refs?: RefItem[];
 }
+interface CaseItemCustom {
+  id: number;
+  city:
+    | 'suzu'
+    | 'wajima'
+    | 'noto'
+    | 'anamizu'
+    | 'nanao'
+    | 'shika'
+    | 'nakanoto'
+    | 'hakui'
+    | 'hodatsushimizu'
+    | 'kahoku'
+    | 'tsubata'
+    | 'uchinada'
+    | 'kanazawa'
+    | 'nonoichi'
+    | 'hakusan'
+    | 'kawakita'
+    | 'nomi'
+    | 'komatsu'
+    | 'kaga'
+    | 'unknown'
+    | 'kengai';
+  note?: string[];
+  refs?: RefItem[];
+  source?: {
+    text: string;
+    url: string;
+    urlTitle: string;
+  }[];
+}
+
+interface CaseItem extends CaseItemBot, CaseItemCustom {}
 
 interface ConditionItem {
   date: string;
