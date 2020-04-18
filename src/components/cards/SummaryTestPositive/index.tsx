@@ -32,7 +32,7 @@ const DailyCases: React.FC<{ className: string }> = ({ className = '' }) => {
           </p>
         </div>
         <div className={styles.card}>
-          <h3 className={styles.title}>{dateFromNowLabel(updateTime.subtract(1, 'day'))}の感染者</h3>
+          <h3 className={styles.title}>{dateFromNowLabel(moment(updateTime).subtract(1, 'day'))}の感染者</h3>
           <p className={styles.number}>
             {yesterdayCases.length}
             <span>人</span>
