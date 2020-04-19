@@ -1,19 +1,19 @@
 {
-  "lastUpdateDateTime": "2020-04-19T07:35:03+09:00",
+  "lastUpdateDateTime": "2020-04-19T22:06:03+09:00",
   "items": [
     {
-      "date": "2020-04-19T07:35:03+09:00",
-      "total": 173,
-      "discharged": 11,
+      "date": "2020-04-19T22:06:03+09:00",
+      "total": 178,
+      "discharged": 14,
       "dead": 4,
-      "hospitalized": 158,
+      "hospitalized": 160,
       "list": [
         {
           "name": "金沢市",
-          "total": 113,
-          "discharged": 5,
+          "total": 115,
+          "discharged": 6,
           "dead": 3,
-          "hospitalized": 105
+          "hospitalized": 106
         },
         {
           "name": "七尾市",
@@ -45,10 +45,10 @@
         },
         {
           "name": "加賀市",
-          "total": 1,
+          "total": 2,
           "discharged": 0,
           "dead": 0,
-          "hospitalized": 1
+          "hospitalized": 2
         },
         {
           "name": "羽咋市",
@@ -59,17 +59,17 @@
         },
         {
           "name": "かほく市",
-          "total": 5,
+          "total": 6,
           "discharged": 0,
           "dead": 0,
-          "hospitalized": 5
+          "hospitalized": 6
         },
         {
           "name": "白山市",
           "total": 16,
-          "discharged": 1,
+          "discharged": 2,
           "dead": 1,
-          "hospitalized": 14
+          "hospitalized": 13
         },
         {
           "name": "能美市",
@@ -81,9 +81,9 @@
         {
           "name": "野々市市",
           "total": 15,
-          "discharged": 1,
+          "discharged": 2,
           "dead": 0,
-          "hospitalized": 14
+          "hospitalized": 13
         },
         {
           "name": "川北町",
@@ -115,10 +115,10 @@
         },
         {
           "name": "宝達志水町",
-          "total": 0,
+          "total": 1,
           "discharged": 0,
           "dead": 0,
-          "hospitalized": 0
+          "hospitalized": 1
         },
         {
           "name": "中能登町",
@@ -150,10 +150,10 @@
         },
         {
           "name": "計",
-          "total": 173,
-          "discharged": 11,
+          "total": 178,
+          "discharged": 14,
           "dead": 4,
-          "hospitalized": 158
+          "hospitalized": 160
         }
       ]
     }
