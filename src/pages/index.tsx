@@ -1,5 +1,5 @@
 import React from 'react';
-import Loadable from 'react-loadable';
+// import Loadable from 'react-loadable';
 import Layout from '@/components/layout';
 import SEO from '@/components/seo';
 import Header from '@/components/base/Header';
@@ -14,12 +14,12 @@ import styles from './index.module.scss';
 import containerStyles from '@/styles/modules/container.module.scss';
 import { getLastUpdateTime } from '@/plugins/conditionData';
 
-const Loading = () => <div>Loading</div>;
+// const Loading = () => <div>Loading</div>;
 
-const ChartTestPositive = Loadable({
-  loader: () => import('@/components/cards/ChartTestPositive'),
-  loading: Loading,
-});
+// const ChartTestPositive = Loadable({
+//   loader: () => import('@/components/cards/ChartTestPositive'),
+//   loading: Loading,
+// });
 
 const IndexPage = () => {
   const updateTime = getLastUpdateTime();
@@ -53,7 +53,7 @@ const IndexPage = () => {
                 <CityMapTotal className={styles.mapItem} />
               </div>
               <SummaryCondition className={styles.sectionSummaryCondition} />
-              <ChartTestPositive className={styles.sectionChartTestPositive} />
+              {/* <ChartTestPositive className={styles.sectionChartTestPositive} /> */}
             </div>
           </div>
 
