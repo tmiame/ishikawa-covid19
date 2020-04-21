@@ -1,19 +1,19 @@
 {
-  "lastUpdateDateTime": "2020-04-21T16:05:59+09:00",
+  "lastUpdateDateTime": "2020-04-22T01:28:05+09:00",
   "items": [
     {
-      "date": "2020-04-21T16:05:59+09:00",
-      "total": 180,
+      "date": "2020-04-22T01:28:05+09:00",
+      "total": 190,
       "discharged": 16,
-      "dead": 4,
-      "hospitalized": 160,
+      "dead": 5,
+      "hospitalized": 169,
       "list": [
         {
           "name": "金沢市",
-          "total": 116,
+          "total": 118,
           "discharged": 8,
           "dead": 3,
-          "hospitalized": 105
+          "hospitalized": 107
         },
         {
           "name": "七尾市",
@@ -59,17 +59,17 @@
         },
         {
           "name": "かほく市",
-          "total": 6,
+          "total": 8,
           "discharged": 0,
-          "dead": 0,
-          "hospitalized": 6
+          "dead": 1,
+          "hospitalized": 7
         },
         {
           "name": "白山市",
-          "total": 16,
+          "total": 17,
           "discharged": 2,
           "dead": 1,
-          "hospitalized": 13
+          "hospitalized": 14
         },
         {
           "name": "能美市",
@@ -94,10 +94,10 @@
         },
         {
           "name": "津幡町",
-          "total": 3,
+          "total": 6,
           "discharged": 0,
           "dead": 0,
-          "hospitalized": 3
+          "hospitalized": 6
         },
         {
           "name": "志賀町",
@@ -115,10 +115,10 @@
         },
         {
           "name": "宝達志水町",
-          "total": 2,
+          "total": 4,
           "discharged": 0,
           "dead": 0,
-          "hospitalized": 2
+          "hospitalized": 4
         },
         {
           "name": "中能登町",
@@ -150,10 +150,10 @@
         },
         {
           "name": "計",
-          "total": 180,
+          "total": 190,
           "discharged": 16,
-          "dead": 4,
-          "hospitalized": 160
+          "dead": 5,
+          "hospitalized": 169
         }
       ]
     }
