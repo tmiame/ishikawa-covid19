@@ -10,7 +10,7 @@ const Layout: React.FC<{ className?: string; title: string | React.ReactElement;
   return (
     <header className={`${className} ${styles.headline}`}>
       <h2 className="heading-1">{title}</h2>
-      <p className="body-small">{text}</p>
+      {text && <p className="body-small">{text}</p>}
       {children}
     </header>
   );
