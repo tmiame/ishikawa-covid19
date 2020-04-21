@@ -1,8 +1,6 @@
 name: data deploy
 
 on:
-  push:
-    branches: [ master ]
   schedule:
     - cron: '*/30 * * * *'
 
