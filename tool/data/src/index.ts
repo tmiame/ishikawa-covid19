@@ -38,7 +38,11 @@ const runPuppeteer = async () => {
 
     const mainContent: Element[] = Array.from(document.querySelectorAll(selector));
 
-    const caseContent = mainContent.reduce<Element[]>((acc, current) => {
+    const excludeContentIndex = mainContent.findIndex(
+      (el) => el.textContent === '石川県における新型コロナウイルス感染症情報',
+    );
+
+    const caseContent = mainContent.slice(0, excludeContentIndex).reduce<Element[]>((acc, current) => {
       return current.tagName === 'DIV' ? [...acc, ...current.children] : [...acc, current];
     }, []);
 
