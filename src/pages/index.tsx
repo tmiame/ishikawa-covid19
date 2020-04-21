@@ -33,10 +33,13 @@ const IndexPage = () => {
           <BrekingUpdate />
 
           <div className={styles.home}>
-            <Headline
-              title="県発表の最新状況"
-              text={`↓${updateTime.fromNow()}に更新 ${updateTime.format('YYYY年M月D日(ddd) HH:mm')}`}
-            />
+            <Headline title="県発表の最新状況">
+              <p className="body-small">
+                ↓<time dateTime={updateTime.toISOString()}>{updateTime.fromNow()}</time>に更新{' '}
+                {updateTime.format('YYYY年M月D日(ddd) HH:mm')}
+              </p>
+            </Headline>
+
             <div className={styles.headline_caution}>
               <p className="body-xsmall">
                 ※県の発表資料が更新され次第更新。各項目に更新日がない場合は上記の更新日時点のデータ。

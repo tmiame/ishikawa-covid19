@@ -6,6 +6,7 @@ import React, { useMemo } from 'react';
 import moment from 'moment';
 import styles from './index.module.scss';
 import { getCases, getBetweenCases, getCasesLatestDateTime } from '@/plugins/caseData';
+import { getLastConditionItem } from '@/plugins/conditionData';
 import dateFromNowLabel from '@/utils/dateFromNowLabel';
 
 const DailyCases: React.FC<{ className: string }> = ({ className = '' }) => {
@@ -14,6 +15,7 @@ const DailyCases: React.FC<{ className: string }> = ({ className = '' }) => {
   const yesterdayCases = useMemo(() => getCases(moment(updateTime).subtract(1, 'day')), [updateTime]);
   const weekCases = useMemo(() => getBetweenCases(moment(updateTime).subtract(6, 'day'), updateTime), [updateTime]);
   const allCases = useMemo(() => getCases(), []);
+  const conditionData = useMemo(() => getLastConditionItem(), []);
 
   return (
     <div className={className}>
@@ -21,7 +23,8 @@ const DailyCases: React.FC<{ className: string }> = ({ className = '' }) => {
         <div className={styles.card}>
           <h3 className={styles.title}>死亡者</h3>
           <p className={`${styles.number} ${styles.numberIsDead}`}>
-            4<span>人</span>
+            {conditionData.dead}
+            <span>人</span>
           </p>
         </div>
         <div className={styles.card}>
