@@ -1,19 +1,19 @@
 {
-  "lastUpdateDateTime": "2020-04-22T01:28:05+09:00",
+  "lastUpdateDateTime": "2020-04-23T00:35:17+09:00",
   "items": [
     {
-      "date": "2020-04-22T01:28:05+09:00",
-      "total": 190,
-      "discharged": 16,
+      "date": "2020-04-23T00:35:17+09:00",
+      "total": 199,
+      "discharged": 18,
       "dead": 5,
-      "hospitalized": 169,
+      "hospitalized": 176,
       "list": [
         {
           "name": "金沢市",
-          "total": 118,
-          "discharged": 8,
+          "total": 121,
+          "discharged": 10,
           "dead": 3,
-          "hospitalized": 107
+          "hospitalized": 108
         },
         {
           "name": "七尾市",
@@ -24,10 +24,10 @@
         },
         {
           "name": "小松市",
-          "total": 8,
+          "total": 9,
           "discharged": 2,
           "dead": 0,
-          "hospitalized": 6
+          "hospitalized": 7
         },
         {
           "name": "輪島市",
@@ -59,17 +59,17 @@
         },
         {
           "name": "かほく市",
-          "total": 8,
+          "total": 11,
           "discharged": 0,
           "dead": 1,
-          "hospitalized": 7
+          "hospitalized": 10
         },
         {
           "name": "白山市",
-          "total": 17,
+          "total": 18,
           "discharged": 2,
           "dead": 1,
-          "hospitalized": 14
+          "hospitalized": 15
         },
         {
           "name": "能美市",
@@ -80,10 +80,10 @@
         },
         {
           "name": "野々市市",
-          "total": 15,
+          "total": 16,
           "discharged": 2,
           "dead": 0,
-          "hospitalized": 13
+          "hospitalized": 14
         },
         {
           "name": "川北町",
@@ -150,10 +150,10 @@
         },
         {
           "name": "計",
-          "total": 190,
-          "discharged": 16,
+          "total": 199,
+          "discharged": 18,
           "dead": 5,
-          "hospitalized": 169
+          "hospitalized": 176
         }
       ]
     }
