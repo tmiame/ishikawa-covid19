@@ -1,17 +1,17 @@
 {
-  "lastUpdateDateTime": "2020-04-23T00:35:17+09:00",
+  "lastUpdateDateTime": "2020-04-25T13:06:33+09:00",
   "items": [
     {
-      "date": "2020-04-23T00:35:17+09:00",
-      "total": 199,
-      "discharged": 18,
+      "date": "2020-04-25T13:06:33+09:00",
+      "total": 222,
+      "discharged": 19,
       "dead": 5,
-      "hospitalized": 176,
+      "hospitalized": 198,
       "list": [
         {
           "name": "金沢市",
-          "total": 121,
-          "discharged": 10,
+          "total": 122,
+          "discharged": 11,
           "dead": 3,
           "hospitalized": 108
         },
@@ -24,10 +24,10 @@
         },
         {
           "name": "小松市",
-          "total": 9,
+          "total": 11,
           "discharged": 2,
           "dead": 0,
-          "hospitalized": 7
+          "hospitalized": 9
         },
         {
           "name": "輪島市",
@@ -59,24 +59,24 @@
         },
         {
           "name": "かほく市",
-          "total": 11,
+          "total": 26,
           "discharged": 0,
           "dead": 1,
-          "hospitalized": 10
+          "hospitalized": 25
         },
         {
           "name": "白山市",
-          "total": 18,
+          "total": 21,
           "discharged": 2,
           "dead": 1,
-          "hospitalized": 15
+          "hospitalized": 18
         },
         {
           "name": "能美市",
-          "total": 1,
+          "total": 2,
           "discharged": 1,
           "dead": 0,
-          "hospitalized": 0
+          "hospitalized": 1
         },
         {
           "name": "野々市市",
@@ -115,10 +115,10 @@
         },
         {
           "name": "宝達志水町",
-          "total": 4,
+          "total": 5,
           "discharged": 0,
           "dead": 0,
-          "hospitalized": 4
+          "hospitalized": 5
         },
         {
           "name": "中能登町",
@@ -150,10 +150,10 @@
         },
         {
           "name": "計",
-          "total": 199,
-          "discharged": 18,
+          "total": 222,
+          "discharged": 19,
           "dead": 5,
-          "hospitalized": 176
+          "hospitalized": 198
         }
       ]
     }
