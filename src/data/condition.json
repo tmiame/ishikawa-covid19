@@ -1,17 +1,17 @@
 {
-  "lastUpdateDateTime": "2020-04-25T21:07:32+09:00",
+  "lastUpdateDateTime": "2020-04-27T00:06:08+09:00",
   "items": [
     {
-      "date": "2020-04-25T21:07:32+09:00",
-      "total": 224,
-      "discharged": 29,
+      "date": "2020-04-27T00:06:08+09:00",
+      "total": 229,
+      "discharged": 31,
       "dead": 5,
-      "hospitalized": 190,
+      "hospitalized": 193,
       "list": [
         {
           "name": "金沢市",
-          "total": 122,
-          "discharged": 19,
+          "total": 123,
+          "discharged": 20,
           "dead": 3,
           "hospitalized": 100
         },
@@ -59,31 +59,31 @@
         },
         {
           "name": "かほく市",
-          "total": 27,
+          "total": 28,
           "discharged": 0,
           "dead": 1,
-          "hospitalized": 26
+          "hospitalized": 27
         },
         {
           "name": "白山市",
-          "total": 21,
+          "total": 22,
           "discharged": 3,
           "dead": 1,
-          "hospitalized": 17
+          "hospitalized": 18
         },
         {
           "name": "能美市",
-          "total": 2,
+          "total": 3,
           "discharged": 1,
           "dead": 0,
-          "hospitalized": 1
+          "hospitalized": 2
         },
         {
           "name": "野々市市",
           "total": 16,
-          "discharged": 2,
+          "discharged": 3,
           "dead": 0,
-          "hospitalized": 14
+          "hospitalized": 13
         },
         {
           "name": "川北町",
@@ -94,10 +94,10 @@
         },
         {
           "name": "津幡町",
-          "total": 7,
+          "total": 8,
           "discharged": 1,
           "dead": 0,
-          "hospitalized": 6
+          "hospitalized": 7
         },
         {
           "name": "志賀町",
@@ -150,10 +150,10 @@
         },
         {
           "name": "計",
-          "total": 224,
-          "discharged": 29,
+          "total": 229,
+          "discharged": 31,
           "dead": 5,
-          "hospitalized": 190
+          "hospitalized": 193
         }
       ]
     }
