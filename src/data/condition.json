@@ -1,19 +1,19 @@
 {
-  "lastUpdateDateTime": "2020-04-27T00:06:08+09:00",
+  "lastUpdateDateTime": "2020-04-28T23:34:49+09:00",
   "items": [
     {
-      "date": "2020-04-27T00:06:08+09:00",
-      "total": 229,
-      "discharged": 31,
-      "dead": 5,
-      "hospitalized": 193,
+      "date": "2020-04-28T23:34:49+09:00",
+      "total": 245,
+      "discharged": 49,
+      "dead": 6,
+      "hospitalized": 190,
       "list": [
         {
           "name": "金沢市",
           "total": 123,
-          "discharged": 20,
-          "dead": 3,
-          "hospitalized": 100
+          "discharged": 37,
+          "dead": 4,
+          "hospitalized": 82
         },
         {
           "name": "七尾市",
@@ -52,24 +52,24 @@
         },
         {
           "name": "羽咋市",
-          "total": 1,
+          "total": 2,
           "discharged": 0,
           "dead": 0,
-          "hospitalized": 1
+          "hospitalized": 2
         },
         {
           "name": "かほく市",
-          "total": 28,
+          "total": 38,
           "discharged": 0,
           "dead": 1,
-          "hospitalized": 27
+          "hospitalized": 37
         },
         {
           "name": "白山市",
-          "total": 22,
+          "total": 25,
           "discharged": 3,
           "dead": 1,
-          "hospitalized": 18
+          "hospitalized": 21
         },
         {
           "name": "能美市",
@@ -81,9 +81,9 @@
         {
           "name": "野々市市",
           "total": 16,
-          "discharged": 3,
+          "discharged": 4,
           "dead": 0,
-          "hospitalized": 13
+          "hospitalized": 12
         },
         {
           "name": "川北町",
@@ -94,17 +94,10 @@
         },
         {
           "name": "津幡町",
-          "total": 8,
+          "total": 9,
           "discharged": 1,
           "dead": 0,
-          "hospitalized": 7
-        },
-        {
-          "name": "志賀町",
-          "total": 0,
-          "discharged": 0,
-          "dead": 0,
-          "hospitalized": 0
+          "hospitalized": 8
         },
         {
           "name": "内灘町",
@@ -114,11 +107,18 @@
           "hospitalized": 5
         },
         {
-          "name": "宝達志水町",
-          "total": 5,
+          "name": "志賀町",
+          "total": 0,
           "discharged": 0,
           "dead": 0,
-          "hospitalized": 5
+          "hospitalized": 0
+        },
+        {
+          "name": "宝達志水町",
+          "total": 6,
+          "discharged": 0,
+          "dead": 0,
+          "hospitalized": 6
         },
         {
           "name": "中能登町",
@@ -150,10 +150,10 @@
         },
         {
           "name": "計",
-          "total": 229,
-          "discharged": 31,
-          "dead": 5,
-          "hospitalized": 193
+          "total": 245,
+          "discharged": 49,
+          "dead": 6,
+          "hospitalized": 190
         }
       ]
     }
