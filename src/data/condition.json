@@ -1,17 +1,17 @@
 {
-  "lastUpdateDateTime": "2020-04-28T23:34:49+09:00",
+  "lastUpdateDateTime": "2020-04-29T21:35:04+09:00",
   "items": [
     {
-      "date": "2020-04-28T23:34:49+09:00",
-      "total": 245,
-      "discharged": 49,
-      "dead": 6,
-      "hospitalized": 190,
+      "date": "2020-04-29T21:35:04+09:00",
+      "total": 250,
+      "discharged": 51,
+      "dead": 8,
+      "hospitalized": 191,
       "list": [
         {
           "name": "金沢市",
-          "total": 123,
-          "discharged": 37,
+          "total": 124,
+          "discharged": 38,
           "dead": 4,
           "hospitalized": 82
         },
@@ -59,10 +59,10 @@
         },
         {
           "name": "かほく市",
-          "total": 38,
+          "total": 41,
           "discharged": 0,
-          "dead": 1,
-          "hospitalized": 37
+          "dead": 3,
+          "hospitalized": 38
         },
         {
           "name": "白山市",
@@ -81,9 +81,9 @@
         {
           "name": "野々市市",
           "total": 16,
-          "discharged": 4,
+          "discharged": 5,
           "dead": 0,
-          "hospitalized": 12
+          "hospitalized": 11
         },
         {
           "name": "川北町",
@@ -94,10 +94,10 @@
         },
         {
           "name": "津幡町",
-          "total": 9,
+          "total": 10,
           "discharged": 1,
           "dead": 0,
-          "hospitalized": 8
+          "hospitalized": 9
         },
         {
           "name": "内灘町",
@@ -150,10 +150,10 @@
         },
         {
           "name": "計",
-          "total": 245,
-          "discharged": 49,
-          "dead": 6,
-          "hospitalized": 190
+          "total": 250,
+          "discharged": 51,
+          "dead": 8,
+          "hospitalized": 191
         }
       ]
     }
