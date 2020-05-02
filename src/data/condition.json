@@ -1,19 +1,19 @@
 {
-  "lastUpdateDateTime": "2020-04-29T21:35:04+09:00",
+  "lastUpdateDateTime": "2020-05-02T10:34:54+09:00",
   "items": [
     {
-      "date": "2020-04-29T21:35:04+09:00",
-      "total": 250,
-      "discharged": 51,
-      "dead": 8,
-      "hospitalized": 191,
+      "date": "2020-05-02T10:34:54+09:00",
+      "total": 254,
+      "discharged": 76,
+      "dead": 11,
+      "hospitalized": 167,
       "list": [
         {
           "name": "金沢市",
-          "total": 124,
-          "discharged": 38,
+          "total": 125,
+          "discharged": 58,
           "dead": 4,
-          "hospitalized": 82
+          "hospitalized": 63
         },
         {
           "name": "七尾市",
@@ -25,9 +25,9 @@
         {
           "name": "小松市",
           "total": 11,
-          "discharged": 2,
+          "discharged": 3,
           "dead": 0,
-          "hospitalized": 9
+          "hospitalized": 8
         },
         {
           "name": "輪島市",
@@ -53,21 +53,21 @@
         {
           "name": "羽咋市",
           "total": 2,
-          "discharged": 0,
+          "discharged": 1,
           "dead": 0,
-          "hospitalized": 2
+          "hospitalized": 1
         },
         {
           "name": "かほく市",
-          "total": 41,
-          "discharged": 0,
-          "dead": 3,
-          "hospitalized": 38
+          "total": 43,
+          "discharged": 1,
+          "dead": 6,
+          "hospitalized": 36
         },
         {
           "name": "白山市",
-          "total": 25,
-          "discharged": 3,
+          "total": 26,
+          "discharged": 4,
           "dead": 1,
           "hospitalized": 21
         },
@@ -81,9 +81,9 @@
         {
           "name": "野々市市",
           "total": 16,
-          "discharged": 5,
+          "discharged": 6,
           "dead": 0,
-          "hospitalized": 11
+          "hospitalized": 10
         },
         {
           "name": "川北町",
@@ -150,10 +150,10 @@
         },
         {
           "name": "計",
-          "total": 250,
-          "discharged": 51,
-          "dead": 8,
-          "hospitalized": 191
+          "total": 254,
+          "discharged": 76,
+          "dead": 11,
+          "hospitalized": 167
         }
       ]
     }
