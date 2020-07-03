@@ -1,159 +1,166 @@
 {
-  "lastUpdateDateTime": "2020-05-02T10:34:54+09:00",
+  "lastUpdateDateTime": "2020-06-23T20:34:52+09:00",
   "items": [
     {
-      "date": "2020-05-02T10:34:54+09:00",
-      "total": 254,
-      "discharged": 76,
-      "dead": 11,
-      "hospitalized": 167,
+      "date": "2020-06-23T20:34:52+09:00",
+      "total": 24,
+      "discharged": null,
+      "dead": null,
+      "hospitalized": null,
       "list": [
         {
-          "name": "金沢市",
-          "total": 125,
-          "discharged": 58,
-          "dead": 4,
-          "hospitalized": 63
-        },
-        {
-          "name": "七尾市",
-          "total": 0,
-          "discharged": 0,
-          "dead": 0,
-          "hospitalized": 0
-        },
-        {
-          "name": "小松市",
-          "total": 11,
-          "discharged": 3,
-          "dead": 0,
-          "hospitalized": 8
-        },
-        {
-          "name": "輪島市",
-          "total": 0,
-          "discharged": 0,
-          "dead": 0,
-          "hospitalized": 0
-        },
-        {
-          "name": "珠洲市",
-          "total": 0,
-          "discharged": 0,
-          "dead": 0,
-          "hospitalized": 0
-        },
-        {
-          "name": "加賀市",
-          "total": 2,
-          "discharged": 0,
-          "dead": 0,
-          "hospitalized": 2
-        },
-        {
-          "name": "羽咋市",
-          "total": 2,
-          "discharged": 1,
-          "dead": 0,
-          "hospitalized": 1
-        },
-        {
-          "name": "かほく市",
-          "total": 43,
-          "discharged": 1,
-          "dead": 6,
-          "hospitalized": 36
-        },
-        {
-          "name": "白山市",
-          "total": 26,
-          "discharged": 4,
-          "dead": 1,
-          "hospitalized": 21
-        },
-        {
-          "name": "能美市",
-          "total": 3,
-          "discharged": 1,
-          "dead": 0,
-          "hospitalized": 2
-        },
-        {
-          "name": "野々市市",
-          "total": 16,
-          "discharged": 6,
-          "dead": 0,
-          "hospitalized": 10
-        },
-        {
-          "name": "川北町",
-          "total": 3,
-          "discharged": 0,
-          "dead": 0,
-          "hospitalized": 3
-        },
-        {
-          "name": "津幡町",
-          "total": 10,
-          "discharged": 1,
-          "dead": 0,
-          "hospitalized": 9
-        },
-        {
-          "name": "内灘町",
-          "total": 5,
-          "discharged": 0,
-          "dead": 0,
+          "name": "備考",
+          "total": null,
+          "discharged": 129,
+          "dead": 123,
           "hospitalized": 5
         },
         {
-          "name": "志賀町",
-          "total": 0,
+          "name": "1",
+          "total": null,
           "discharged": 0,
           "dead": 0,
           "hospitalized": 0
         },
         {
-          "name": "宝達志水町",
-          "total": 6,
-          "discharged": 0,
-          "dead": 0,
-          "hospitalized": 6
+          "name": "0",
+          "total": null,
+          "discharged": 12,
+          "dead": 12,
+          "hospitalized": 0
         },
         {
-          "name": "中能登町",
-          "total": 1,
+          "name": "0",
+          "total": null,
           "discharged": 0,
           "dead": 0,
+          "hospitalized": 0
+        },
+        {
+          "name": "0",
+          "total": null,
+          "discharged": 0,
+          "dead": 0,
+          "hospitalized": 0
+        },
+        {
+          "name": "0",
+          "total": null,
+          "discharged": 2,
+          "dead": 2,
+          "hospitalized": 0
+        },
+        {
+          "name": "0",
+          "total": null,
+          "discharged": 3,
+          "dead": 3,
+          "hospitalized": 0
+        },
+        {
+          "name": "0",
+          "total": null,
+          "discharged": 75,
+          "dead": 33,
+          "hospitalized": 21
+        },
+        {
+          "name": "21",
+          "total": 56,
+          "discharged": null,
+          "dead": 28,
+          "hospitalized": 26
+        },
+        {
+          "name": "1",
+          "total": 1,
+          "discharged": null,
+          "dead": 3,
+          "hospitalized": 3
+        },
+        {
+          "name": "0",
+          "total": 0,
+          "discharged": null,
+          "dead": 16,
+          "hospitalized": 16
+        },
+        {
+          "name": "0",
+          "total": 0,
+          "discharged": null,
+          "dead": 3,
+          "hospitalized": 3
+        },
+        {
+          "name": "0",
+          "total": 0,
+          "discharged": null,
+          "dead": 12,
+          "hospitalized": 12
+        },
+        {
+          "name": "0",
+          "total": 0,
+          "discharged": null,
+          "dead": 5,
+          "hospitalized": 5
+        },
+        {
+          "name": "0",
+          "total": 0,
+          "discharged": null,
+          "dead": 0,
+          "hospitalized": 0
+        },
+        {
+          "name": "0",
+          "total": 0,
+          "discharged": null,
+          "dead": 9,
+          "hospitalized": 9
+        },
+        {
+          "name": "0",
+          "total": 0,
+          "discharged": null,
+          "dead": 1,
           "hospitalized": 1
         },
         {
-          "name": "穴水町",
+          "name": "0",
           "total": 0,
-          "discharged": 0,
+          "discharged": null,
           "dead": 0,
           "hospitalized": 0
         },
         {
-          "name": "能登町",
+          "name": "0",
           "total": 0,
-          "discharged": 0,
+          "discharged": null,
           "dead": 0,
           "hospitalized": 0
         },
         {
-          "name": "県外",
+          "name": "0",
+          "total": 0,
+          "discharged": null,
+          "dead": 2,
+          "hospitalized": 1
+        },
+        {
+          "name": "0",
           "total": 1,
-          "discharged": 1,
-          "dead": 0,
-          "hospitalized": 0
+          "discharged": null,
+          "dead": 300,
+          "hospitalized": 249
         },
         {
-          "name": "計",
-          "total": 254,
-          "discharged": 76,
-          "dead": 11,
-          "hospitalized": 167
+          "name": "27",
+          "total": 24,
+          "discharged": null,
+          "dead": null,
+          "hospitalized": null
         }
       ]
     }
